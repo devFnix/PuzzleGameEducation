@@ -1,0 +1,188 @@
+[
+  {
+    "categoria": "Días de la semana",
+    "niveles": [
+      {
+        "nivel": "nivel1",
+        "opciones": [
+          {
+            "opcion_qh": "Killachay",
+            "opcion_es": "lunes",
+            "descripcion_qh": "qallariy p’unchaw Yachay wasiman rina",
+            "descripcion_es": "Primer día de ir a la escuela"
+          },
+          {
+            "opcion_qh": "Antichay",
+            "opcion_es": "martes",
+            "descripcion_qh": "Iskay kaq p’unchaw yachay wasiman rina",
+            "descripcion_es": "Segundo día de ir a la escuela"
+          },
+          {
+            "opcion_qh": "Qoyllurchay",
+            "opcion_es": "miércoles",
+            "descripcion_qh": "Kimsa p'unchaw yachay wasiman rina",
+            "descripcion_es": "Tercer día de ir a la escuela"
+          },
+          {
+            "opcion_qh": "Ch’askachay",
+            "opcion_es": "jueves",
+            "descripcion_qh": "Tawa p'unchaw yachay wasiman rina",
+            "descripcion_es": "Cuarto día de ir a la escuela"
+          },
+          {
+            "opcion_qh": "Illapachay",
+            "opcion_es": "viernes",
+            "descripcion_qh": "Pishqa p'unchaw yachay wasiman rina",
+            "descripcion_es": "Quinto día de ir a la escuela"
+          },
+          {
+            "opcion_qh": "K’uychichay",
+            "opcion_es": "sábado",
+            "descripcion_qh": "qallariy p’unchaw samana",
+            "descripcion_es": "Primer día de descanso"
+          },
+          {
+            "opcion_qh": "Intichay",
+            "opcion_es": "domingo",
+            "descripcion_qh": "Iskay kaq p’unchaw samana",
+            "descripcion_es": "Segundo día de descanso"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Adjetivos",
+    "niveles": [
+      {
+        "nivel": "nivel2",
+        "opciones": [
+          {
+            "opcion_qh": "Allin",
+            "opcion_es": "bueno",
+            "descripcion_qh": "Kay sipasqa",
+            "descripcion_es": "Esta niña es"
+          },
+          {
+            "opcion_qh": "Mana allin",
+            "opcion_es": "malo",
+            "descripcion_qh": "Kay wawaqa",
+            "descripcion_es": "Este niño es"
+          },
+          {
+            "opcion_qh": "Ch'uya",
+            "opcion_es": "limpio",
+            "descripcion_qh": "Kay tablaqa........kashan",
+            "descripcion_es": "Esta mesa está"
+          },
+          {
+            "opcion_qh": "Qhelle",
+            "opcion_es": "sucio",
+            "descripcion_qh": "Kay mikhunaqa.......kashan",
+            "descripcion_es": "Este plato está"
+          },
+          {
+            "opcion_qh": "Sumaq",
+            "opcion_es": "rico",
+            "descripcion_qh": "kay mikhunaqa",
+            "descripcion_es": "Esta comida es"
+          },
+          {
+            "opcion_qh": "Millay",
+            "opcion_es": "feo",
+            "descripcion_qh": "kay huk'uchaqa",
+            "descripcion_es": "Esta rata es"
+          },
+          {
+            "opcion_qh": "Hatun",
+            "opcion_es": "grande",
+            "descripcion_qh": "Kay qhelqaqa",
+            "descripcion_es": "Este libro es"
+          },
+          {
+            "opcion_qh": "huch'uy",
+            "opcion_es": "pequeño",
+            "descripcion_qh": "Kay cuadernoqa",
+            "descripcion_es": "Este cuaderno es"
+          },
+          {
+            "opcion_qh": "Rakhu",
+            "opcion_es": "grueso",
+            "descripcion_qh": "Kay llimp’iqa",
+            "descripcion_es": "Este color es"
+          },
+          {
+            "opcion_qh": "Llañu",
+            "opcion_es": "delgado",
+            "descripcion_qh": "Kay qhelqanaqa",
+            "descripcion_es": "Este lapiz es"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Elementos de la naturaleza",
+    "niveles": [
+      {
+        "nivel": "nivel3",
+        "opciones": [
+          {
+            "opcion_qh": "K’anchay",
+            "opcion_es": "luz",
+            "descripcion_qh": "Tutaq t'iqrayñin",
+            "descripcion_es": "Lo contrario de oscuridad"
+          },
+          {
+            "opcion_qh": "Mayuman",
+            "opcion_es": "al río",
+            "descripcion_qh": "Paraptin maymanmi para rin",
+            "descripcion_es": "Cuando llueve a donde va la lluvia"
+          },
+          {
+            "opcion_qh": "Inti",
+            "opcion_es": "sol",
+            "descripcion_qh": "Hanaq pachapi nishuta k’ancharin",
+            "descripcion_es": "Brilla mucho en el cielo"
+          },
+          {
+            "opcion_qh": "Killa",
+            "opcion_es": "luna",
+            "descripcion_qh": "Tutalla lluqsini, muyutaq kani",
+            "descripcion_es": "Solo salgo en las noches y soy redonda"
+          },
+          {
+            "opcion_qh": "Sach'a",
+            "opcion_es": "árbol",
+            "descripcion_qh": "Hatunta wiñani llanthutataq quni",
+            "descripcion_es": "Crezco grande y doy sombra"
+          },
+          {
+            "opcion_qh": "Wayra",
+            "opcion_es": "viento",
+            "descripcion_qh": "Imakunatapas altunta phawachini",
+            "descripcion_es": "Hago volar las cosas"
+          },
+          {
+            "opcion_qh": "Phuyu",
+            "opcion_es": "nube",
+            "descripcion_qh": "Hanaq pachapi kani yuraqtaqmi kani",
+            "descripcion_es": "Estoy en el cielo y soy blanco"
+          },
+          {
+            "opcion_qh": "Orqo",
+            "opcion_es": "cerro",
+            "descripcion_qh": "Yachay wasiqa ..........muyurisqam kashan",
+            "descripcion_es": "La escuela esta rodeada de"
+          },
+          {
+            "opcion_qh": "Qocha",
+            "opcion_es": "lago",
+            "descripcion_qh": "Yakuta qunaypaqmi huñukuni",
+            "descripcion_es": "Me acumulo para darte agua"
+          }
+        ]
+      }
+    ]
+  }
+]

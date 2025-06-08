@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.kyrylokuzyk.primetween": {
+      "tarball": {
+        "hash": "2cb038d4150a",
+        "mtime": 1743753655000,
+        "size": 339788,
+        "localPath": "C:\\Users\\Usuario\\Projects Unity\\PuzzleGameEducation\\Assets\\Plugins\\PrimeTween\\internal\\com.kyrylokuzyk.primetween.tgz"
+      }
+    }
+  }
+}

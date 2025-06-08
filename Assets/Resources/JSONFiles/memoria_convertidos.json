@@ -1,0 +1,250 @@
+[
+  {
+    "categoria": "Animales",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "michi",
+            "opcion_es": "Gato",
+            "descripcion_qh": "michiq masinta mashkay",
+            "descripcion_es": "Busca su pareja del gato"
+          },
+          {
+            "opcion_qh": "alqo",
+            "opcion_es": "Perro",
+            "descripcion_qh": "allqoq masinta mashkay",
+            "descripcion_es": "Busca su pareja del perro"
+          },
+          {
+            "opcion_qh": "chiwchi",
+            "opcion_es": "Pollo",
+            "descripcion_qh": "chiwchiq masinta mashkay",
+            "descripcion_es": "Busca su pareja del pollito"
+          },
+          {
+            "opcion_qh": "Wallpa",
+            "opcion_es": "Gallina",
+            "descripcion_qh": "wallpaq masinta mashkay",
+            "descripcion_es": "Busca su pareja de la gallina"
+          },
+          {
+            "opcion_qh": "Waka",
+            "opcion_es": "Vaca",
+            "descripcion_qh": "wakaq masinkita mashkay",
+            "descripcion_es": "Busca su pareja de la vaca"
+          },
+          {
+            "opcion_qh": "Asnu",
+            "opcion_es": "burro",
+            "descripcion_qh": "asnuq masinta mashkay",
+            "descripcion_es": "Busca su pareja del asno"
+          },
+          {
+            "opcion_qh": "Atoq",
+            "opcion_es": "Zorro",
+            "descripcion_qh": "atuqpa masinta mashkay",
+            "descripcion_es": "Busca su pareja del zorro"
+          },
+          {
+            "opcion_qh": "kawallu",
+            "opcion_es": "Caballo",
+            "descripcion_qh": "kawalloq masinta mashkay",
+            "descripcion_es": "Busca su pareja del caballo"
+          },
+          {
+            "opcion_qh": "Khuchi",
+            "opcion_es": "Cerdo",
+            "descripcion_qh": "khuchiq masinta mashkay",
+            "descripcion_es": "Busca su pareja del cerdo"
+          },
+          {
+            "opcion_qh": "Qowe",
+            "opcion_es": "Conejo",
+            "descripcion_qh": "Qowiq masinta mashkay",
+            "descripcion_es": "Busca su pareja del conejo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Números",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "Ch´usaq",
+            "opcion_es": "Cero",
+            "descripcion_qh": "ch'usaqta tariy",
+            "descripcion_es": "encuentra el cero"
+          },
+          {
+            "opcion_qh": "Huk",
+            "opcion_es": "Uno",
+            "descripcion_qh": "hukta tariy",
+            "descripcion_es": "encuentra el uno"
+          },
+          {
+            "opcion_qh": "Iskay",
+            "opcion_es": "Dos",
+            "descripcion_qh": "iskayta tariy",
+            "descripcion_es": "encuentra el cero"
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 2",
+        "opciones": [
+          {
+            "opcion_qh": "Kimsa",
+            "opcion_es": "Tres",
+            "descripcion_qh": "kimsata tariy",
+            "descripcion_es": "encuentra el tres"
+          },
+          {
+            "opcion_qh": "Tawa",
+            "opcion_es": "Cuatro",
+            "descripcion_qh": "tawata tariy",
+            "descripcion_es": "encuentra el cuatro"
+          },
+          {
+            "opcion_qh": "Pishqa",
+            "opcion_es": "Cinco",
+            "descripcion_qh": "pishqata tariy",
+            "descripcion_es": "encuentra el cinco"
+          },
+          {
+            "opcion_qh": "Suqta",
+            "opcion_es": "Seis",
+            "descripcion_qh": "soqtata tariy",
+            "descripcion_es": "encuentra el seis"
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 3",
+        "opciones": [
+          {
+            "opcion_qh": "Qanchis",
+            "opcion_es": "Siete",
+            "descripcion_qh": "qanchista tariy",
+            "descripcion_es": "encuentra el siete"
+          },
+          {
+            "opcion_qh": "Pusaq",
+            "opcion_es": "Ocho",
+            "descripcion_qh": "pusaqta tariy",
+            "descripcion_es": "encuentra el ocho"
+          },
+          {
+            "opcion_qh": "Isqun",
+            "opcion_es": "Nueve",
+            "descripcion_qh": "esqunkunata tariy",
+            "descripcion_es": "encuentra el nueve"
+          },
+          {
+            "opcion_qh": "Chunka",
+            "opcion_es": "Diez",
+            "descripcion_qh": "chunkata tariy",
+            "descripcion_es": "encuentra el diez"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Meses del año",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "Kamay Raymi killa",
+            "opcion_es": "enero",
+            "descripcion_qh": "Watapi ñawpaq killaqa?",
+            "descripcion_es": "El primer mes del año es?"
+          },
+          {
+            "opcion_qh": "Hatun Poqoy killa",
+            "opcion_es": "febrero",
+            "descripcion_qh": "¿Mayqin killapitaq pukllayta raymichanki?",
+            "descripcion_es": "En que mes festejas los carnavales?"
+          },
+          {
+            "opcion_qh": "Pawqar Waray killa",
+            "opcion_es": "marzo",
+            "descripcion_qh": "¿Hayk’aqmi yachaywasiykipi llank’ayta qallarinki?",
+            "descripcion_es": "Cuándo inicias las labores en tu escuela?"
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 2",
+        "opciones": [
+          {
+            "opcion_qh": "Ayriway killa",
+            "opcion_es": "abril",
+            "descripcion_qh": "¿Ima killapin tawa kaq killa watapi?",
+            "descripcion_es": "Cuál es el cuarto mes del año?"
+          },
+          {
+            "opcion_qh": "Aymuray killa",
+            "opcion_es": "mayo",
+            "descripcion_qh": "¿Ima killapin mamakunaq p'unchawninta raymichaku?",
+            "descripcion_es": "En qué mes se celebra el dia de la madre?"
+          },
+          {
+            "opcion_qh": "Inti Raymi killa",
+            "opcion_es": "junio",
+            "descripcion_qh": "¿Ima killapin chuñuta ruwanki?",
+            "descripcion_es": "En qué mes elaboras el chuño?"
+          },
+          {
+            "opcion_qh": "Anta Situwa killa",
+            "opcion_es": "julio",
+            "descripcion_qh": "ima killapin fiestas patrias nisqata raymichakun?",
+            "descripcion_es": "Las fiestas patrias se celebran en el mes de?"
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 3",
+        "opciones": [
+          {
+            "opcion_qh": "Qhapaq Situwa killa",
+            "opcion_es": "agosto",
+            "descripcion_qh": "¿Ima killapin cometaykita phawachinki?",
+            "descripcion_es": "En qué mes haces volar tu cometa?"
+          },
+          {
+            "opcion_qh": "Unu Raymi killa",
+            "opcion_es": "setiembre",
+            "descripcion_qh": "¿Ima killapin paukar waray mit'a qallarin?",
+            "descripcion_es": "En qué mes inicia la primavera?"
+          },
+          {
+            "opcion_qh": "Qoya Raymi killa",
+            "opcion_es": "octubre",
+            "descripcion_qh": "¿Ima killapin Señor de los Milagros nisqata raymichakun?",
+            "descripcion_es": "En qué mes se celebra al Señor de los Milagros?"
+          },
+          {
+            "opcion_qh": "Ayamarq’a killa",
+            "opcion_es": "noviembre",
+            "descripcion_qh": "¿Ima killapin Wañuqkunaq p’unchawninta raymichanku?",
+            "descripcion_es": "En qué mes se festeja el dia de los muertos?"
+          },
+          {
+            "opcion_qh": "Qhapaq Raymi killa",
+            "opcion_es": "diciembre",
+            "descripcion_qh": "¿Ima killapin navidad nisqata raymichakun?",
+            "descripcion_es": "En que mes celebras la navidad?"
+          }
+        ]
+      }
+    ]
+  }
+]

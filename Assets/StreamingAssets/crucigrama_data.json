@@ -1,0 +1,55 @@
+{
+  "filas": 7,
+  "columnas": 7,
+  "palabras": [
+    {
+      "palabra": "TRONCO",
+      "filaInicio": 0,
+      "columnaInicio": 0,
+      "orientacion": "horizontal",
+      "pista": "troncos"
+    },
+    {
+      "palabra": "BELLOTA",
+      "filaInicio": 0,
+      "columnaInicio": 2,
+      "orientacion": "vertical",
+      "pista": "bellota"
+    },
+    {
+      "palabra": "PATO",
+      "filaInicio": 2,
+      "columnaInicio": 4,
+      "orientacion": "horizontal",
+      "pista": "pato"
+    },
+    {
+      "palabra": "RAMA",
+      "filaInicio": 4,
+      "columnaInicio": 0,
+      "orientacion": "horizontal",
+      "pista": "rama"
+    },
+    {
+      "palabra": "SETA",
+      "filaInicio": 2,
+      "columnaInicio": 2,
+      "orientacion": "vertical",
+      "pista": "seta"
+    },
+    {
+      "palabra": "ARDILLA",
+      "filaInicio": 1,
+      "columnaInicio": 6,
+      "orientacion": "vertical",
+      "pista": "ardilla"
+    },
+    {
+      "palabra": "CARACOL",
+      "filaInicio": 4,
+      "columnaInicio": 4,
+      "orientacion": "vertical",
+      "pista": "caracol"
+    }
+  ]
+}

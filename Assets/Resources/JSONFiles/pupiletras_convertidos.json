@@ -1,0 +1,230 @@
+[
+  {
+    "categoria": "Oficios",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "amachaq",
+            "opcion_es": "Abogado",
+            "descripcion_qh": "Ayuda a las personas con problemas legales y saben cómo resolver casos y proteger los derechos de las personas.",
+            "descripcion_es": "Runakunaq llakiyninkunata allchaysista yanapan, hinallataq yachankun imaynatan llakiykunata allinchakun chayta, chaymantapas yachankun kay derechos nisqakuna hark'ayta."
+          },
+          {
+            "opcion_qh": "Michiq",
+            "opcion_es": "Pastor",
+            "descripcion_qh": "Es una persona que cuida y guía a las ovejas",
+            "descripcion_es": "Kay runaqa uywakunata qhawaspa michin."
+          },
+          {
+            "opcion_qh": "Siraq",
+            "opcion_es": "Sastre",
+            "descripcion_qh": "Es una persona que crea y arregla ropa",
+            "descripcion_es": "Kay runaqa p'achakunata ruwan, hinallataq sirampas."
+          },
+          {
+            "opcion_qh": "Takiq",
+            "opcion_es": "Cantante",
+            "descripcion_qh": "Es una persona que utiliza su voz para interpretar canciones",
+            "descripcion_es": "Kay runaqa kunkanwanmi takikunata takin"
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 2",
+        "opciones": [
+          {
+            "opcion_qh": "Yachachiq",
+            "opcion_es": "Profesor – a",
+            "descripcion_qh": "Es una persona que enseña a otros y comparte conocimientos.",
+            "descripcion_es": "Kay runaqa yachaqkunamanmi imaymana yachaykunata yachachin."
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 3",
+        "opciones": [
+          {
+            "opcion_qh": "Hanpikamayuq",
+            "opcion_es": "Médico",
+            "descripcion_qh": "Es una persona que se dedica a cuidar la salud de las personas.",
+            "descripcion_es": "Kay yachaysapa runaqa unqoq runkunata hampin."
+          },
+          {
+            "opcion_qh": "Kirukamayuq",
+            "opcion_es": "Dentista",
+            "descripcion_qh": "Es una persona que se dedica a cuida los dientes.",
+            "descripcion_es": "Kay yachaysapa runaqa kirukunata hampin."
+          },
+          {
+            "opcion_qh": "qara q'ompu hayt’aq",
+            "opcion_es": "Futbolista",
+            "descripcion_qh": "Es una persona que juega al fútbol de manera profesional o como pasatiempo.",
+            "descripcion_es": "kay yachaysapa runaqa qaraq'omputa hayt'an"
+          },
+          {
+            "opcion_qh": "Qhelqaq",
+            "opcion_es": "Escritor",
+            "descripcion_qh": "Es una persona creativa que utiliza las palabras para contar historias y expresar ideas.",
+            "descripcion_es": "Kay runaqa imaymana willakuykunatan willanampaq qhelqan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Emociones",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "Kusisqa",
+            "opcion_es": "Alegre. feliz, contenta",
+            "descripcion_qh": "Es cuando te sientes feliz y contento.",
+            "descripcion_es": "Kusisqa tarikuqtiyki"
+          },
+          {
+            "opcion_qh": "Phiñakusqa",
+            "opcion_es": "Molesto, fastidiado",
+            "descripcion_qh": "Es cuando te sientes frustrado, irritado o enfadado",
+            "descripcion_es": "Phiñasqa, llakisqa takikuqtiyki"
+          },
+          {
+            "opcion_qh": "Unqusqa",
+            "opcion_es": "Enfermo",
+            "descripcion_qh": "Es cuando no te sientes bien y tienes síntomas incómodos en tu cuerpo.",
+            "descripcion_es": "Mana allin tarikuqtiyki, hinallataq llapan cuerpuyki nanaqtin"
+          },
+          {
+            "opcion_qh": "sayk'usqa",
+            "opcion_es": "Cansado",
+            "descripcion_qh": "Es cuando sientes que tienes poca energía y necesitas descansar.",
+            "descripcion_es": "Sayk'usqalla tarikuqtiyki, mana imatapas ruwayta munankichu, chaymantapas puñuyllatan munayki."
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 2",
+        "opciones": [
+          {
+            "opcion_qh": "Llakikusqa",
+            "opcion_es": "Preocupado",
+            "descripcion_qh": "Es cuando sientes inquietud por algo que te preocupa.",
+            "descripcion_es": "llakisqa tarikuqtiyki mana imatapas ruwayta atispa."
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 3",
+        "opciones": [
+          {
+            "opcion_qh": "Utikayasqa",
+            "opcion_es": "Sorprendido",
+            "descripcion_qh": "Es cuando te sientes asombrado o impresionado por algo inesperado o increíble.",
+            "descripcion_es": "mancharisqa tarikuqtiyki huk sumaq imatapas rikuqtiyki"
+          },
+          {
+            "opcion_qh": "Mancharisqa",
+            "opcion_es": "Asustado",
+            "descripcion_qh": "Es cuando sientes miedo",
+            "descripcion_es": "manchasqa, llakisqa tarikuqtiyku"
+          },
+          {
+            "opcion_qh": "Phiñanasqa",
+            "opcion_es": "Aburrido",
+            "descripcion_qh": "Es cuando te sientes sin interés o entretenimiento.",
+            "descripcion_es": "mana imatapas ruwanayasuqtiyki"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoria": "Comunidad",
+    "niveles": [
+      {
+        "nivel": "Nivel 1",
+        "opciones": [
+          {
+            "opcion_qh": "tukuyrikuq",
+            "opcion_es": "Policia",
+            "descripcion_qh": "Es una persona encargada de proteger y mantener el orden en la comunidad.",
+            "descripcion_es": "kay runaqa allinta aylluta hark'an, hinallataq allinta conflictos nisqakunata amachan."
+          },
+          {
+            "opcion_qh": "Hanpiq",
+            "opcion_es": "Curandero",
+            "descripcion_qh": "Es una persona que utiliza métodos tradicionales para sanar y cuidar la salud de las personas.",
+            "descripcion_es": "Kay runaqa imaymana hampikunawan runakunata onqoyninkunata khaliachin."
+          },
+          {
+            "opcion_qh": "Yupaq",
+            "opcion_es": "Contador",
+            "descripcion_qh": "Es una persona que se encarga de llevar registros financieros y realizar tareas relacionadas con el manejo del dinero.",
+            "descripcion_es": "Kay runaqa qolqeq yupayninta apan, hinallataq imaymana qolqemanta llan'aykunata ruwan."
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 2",
+        "opciones": [
+          {
+            "opcion_qh": "Challwaq",
+            "opcion_es": "Pescador – a",
+            "descripcion_qh": "Es una persona que se dedica a pescar peces y otros animales acuáticos.",
+            "descripcion_es": "Kay runaqa challwata hap'in, hinallataq mayupi tiyaq imaymana uywakunatapas."
+          },
+          {
+            "opcion_qh": "Llinphiq",
+            "opcion_es": "Pintor",
+            "descripcion_qh": "Es una persona creativa que utiliza colores y pinceles para crear obras de arte.",
+            "descripcion_es": "Kay runaqa imaymana llimp'ikunawan munay qelqakunata qallarichin."
+          },
+          {
+            "opcion_qh": "Llakisqa",
+            "opcion_es": "Triste",
+            "descripcion_qh": "Es cuando te sientes con ganas de llorar.",
+            "descripcion_es": "Llakisqa kaqtiyki, hinallataq waqanayaqtiyki"
+          },
+          {
+            "opcion_qh": "Ayllu",
+            "opcion_es": "familia o comunidad",
+            "descripcion_qh": "Es un grupo de personas que se quieren y se cuidan mutuamente.",
+            "descripcion_es": "Ashkha runakuna, qawarinakuspa, hinallataq munanayakuspa tiyanku."
+          },
+          {
+            "opcion_qh": "Umalliq",
+            "opcion_es": "Presidente",
+            "descripcion_qh": "Es una persona que tiene un papel importante en el gobierno de un país.",
+            "descripcion_es": "Kay yachaysapa runaqa hatun suyunchistan umallin."
+          }
+        ]
+      },
+      {
+        "nivel": "Nivel 3",
+        "opciones": [
+          {
+            "opcion_qh": "Wayk’uq",
+            "opcion_es": "Cocinero",
+            "descripcion_qh": "Es una persona que prepara comida deliciosa y creativa",
+            "descripcion_es": "Kay yachaysapa runaqa mishk'i mikhunakunata wayk'un"
+          },
+          {
+            "opcion_qh": "T’anta ruwaq",
+            "opcion_es": "Panadero",
+            "descripcion_qh": "Es una persona que se dedica a hacer pan.",
+            "descripcion_es": "kay runaqa t'antata ruwan"
+          },
+          {
+            "opcion_qh": "Chaqra llankaq",
+            "opcion_es": "Agricultor",
+            "descripcion_qh": "Es una persona que se dedica a cultivar y cuidar la tierra para obtener alimentos.",
+            "descripcion_es": "kay runaqa ayllupi chaqrata ruwan"
+          }
+        ]
+      }
+    ]
+  }
+]
