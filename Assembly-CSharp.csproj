@@ -59,8 +59,9 @@
     <UnityVersion>2021.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CRUCIGRAMA\WordConnectManager.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\CruciAristas.cs" />
     <Compile Include="Assets\Scripts\GoToScene.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\CrosswordGenerator.cs" />
     <Compile Include="Assets\Scripts\ShowCategories.cs" />
     <Compile Include="Assets\CONECTAR\Letter.cs" />
     <Compile Include="Assets\MENU\CardOption.cs" />
@@ -70,7 +71,8 @@
     <Compile Include="Assets\Scripts\SelectionController.cs" />
     <Compile Include="Assets\Scripts\JuegoData.cs" />
     <Compile Include="Assets\Scripts\PanelAnimationManager.cs" />
-    <Compile Include="Assets\CRUCIGRAMA\CrucigramaManager.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\CrosswordManager.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\RamdomWordCruci.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\CONECTAR\RandomWordGenerator.cs" />
     <Compile Include="Assets\Scripts\LevelItem.cs" />
@@ -83,18 +85,21 @@
     <Compile Include="Assets\LOGIN\SessionData.cs" />
     <Compile Include="Assets\Scripts\CategoryItem.cs" />
     <Compile Include="Assets\Scripts\DataGame.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\CellView.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\SlidingButton.cs" />
     <Compile Include="Assets\Scripts\LoadLevels.cs" />
     <Compile Include="Assets\Scripts\ButtonSoundManager.cs" />
     <Compile Include="Assets\Scripts\DBsql.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\MENU\ShowUserInfo.cs" />
-    <Compile Include="Assets\CRUCIGRAMA\LetterCell.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\LetterCruci.cs" />
     <Compile Include="Assets\Scripts\HelpMenuMemoria.cs" />
     <Compile Include="Assets\Scripts\OptionPhoto.cs" />
     <Compile Include="Assets\LOGIN\PasswordToggle.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\WordPlacement.cs" />
+    <Compile Include="Assets\CRUCIGRAMA\CrosswordGrid.cs" />
     <Compile Include="Assets\LOGIN\LoginManager.cs" />
     <Compile Include="Assets\LOGIN\UserMunanky.cs" />
-    <Compile Include="Assets\CRUCIGRAMA\Cell.cs" />
     <Compile Include="Assets\Scripts\MusicApp.cs" />
     <Compile Include="Assets\LOGIN\ManagerLogin.cs" />
     <Compile Include="Assets\PUPILETRAS\Scripts\LetraP.cs" />
@@ -103,6 +108,7 @@
     <Compile Include="Assets\MEMORIA\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\UsuarioManager.cs" />
     <Compile Include="Assets\Scripts\ClicButton.cs" />
+    <Compile Include="Assets\Scripts\SoundsCorrectIncorrect\AudioControllerCoIn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -112,6 +118,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\CRUCIGRAMA\Program.txt" />
     <None Include="Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\Plugins\Newtonsoft.Json.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -979,6 +986,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Samsung.Android.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Cursor.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Cursor.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1193,10 +1204,6 @@
     </Reference>
     <Reference Include="Unity.AdaptivePerformance.Samsung.Android">
       <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Samsung.Android.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Cursor.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Cursor.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -1,0 +1,417 @@
+using System; // Para Console, Random
+using System.Collections.Generic; // Para List, Dictionary
+using System.Linq; // Para LINQ (OrderBy, etc.)
+
+// Definición de una clase para representar una palabra en el crucigrama
+public class WordPlacement
+{
+    public string Word { get; set; }        // La palabra en sí
+    public string Clue { get; set; }        // La pista para la palabra
+    public int Row { get; set; }            // Fila de inicio
+    public int Col { get; set; }            // Columna de inicio
+    public bool IsHorizontal { get; set; }  // true si es horizontal, false si es vertical
+    public bool Placed { get; set; }        // true si la palabra ha sido colocada en la cuadrícula
+
+    // Constructor con parámetros
+    public WordPlacement(string word, string clue, int row, int col, bool isHorizontal)
+    {
+        Word = word;
+        Clue = clue;
+        Row = row;
+        Col = col;
+        IsHorizontal = isHorizontal;
+        Placed = false;
+    }
+
+    // Constructor por defecto
+    public WordPlacement()
+    {
+        Word = "";
+        Clue = "";
+        Row = -1;
+        Col = -1;
+        IsHorizontal = false;
+        Placed = false;
+    }
+}
+
+// Clase para representar el tablero del crucigrama
+public class CrosswordGrid
+{
+    private int rows_;                  // Número de filas de la cuadrícula
+    private int cols_;                  // Número de columnas de la cuadrícula
+    private char empty_char_;           // Carácter que representa una celda vacía
+    private char[,] grid_;              // La cuadrícula del crucigrama
+
+    // Constructor de la cuadrícula con dimensiones dadas y carácter de espacio vacío
+    public CrosswordGrid(int rows, int cols, char emptyChar = ' ')
+    {
+        rows_ = rows;
+        cols_ = cols;
+        empty_char_ = emptyChar;
+        grid_ = new char[rows_, cols_];
+        // Inicializa la cuadrícula con el carácter vacío
+        for (int r = 0; r < rows_; r++)
+        {
+            for (int c = 0; c < cols_; c++)
+            {
+                grid_[r, c] = empty_char_;
+            }
+        }
+    }
+
+    // Constructor de copia
+    public CrosswordGrid(CrosswordGrid other)
+    {
+        rows_ = other.rows_;
+        cols_ = other.cols_;
+        empty_char_ = other.empty_char_;
+        grid_ = new char[rows_, cols_];
+        Array.Copy(other.grid_, grid_, other.grid_.Length);
+    }
+
+    // Intenta colocar una palabra en una posición específica
+    // Retorna true si la palabra se puede colocar, false en caso contrario
+    public bool CanPlaceWord(WordPlacement wp)
+    {
+        // Verifica si la palabra excede los límites de la cuadrícula
+        if (wp.IsHorizontal)
+        {
+            if (wp.Col < 0 || wp.Col + wp.Word.Length > cols_ || wp.Row < 0 || wp.Row >= rows_)
+            {
+                return false;
+            }
+        }
+        else // Vertical
+        {
+            if (wp.Row < 0 || wp.Row + wp.Word.Length > rows_ || wp.Col < 0 || wp.Col >= cols_)
+            {
+                return false;
+            }
+        }
+
+        // Verifica si hay conflictos con letras existentes o si hay letras adyacentes no permitidas
+        for (int i = 0; i < wp.Word.Length; ++i)
+        {
+            int r = wp.IsHorizontal ? wp.Row : wp.Row + i;
+            int c = wp.IsHorizontal ? wp.Col + i : wp.Col;
+
+            char gridChar = grid_[r, c];
+            char wordChar = wp.Word[i];
+
+            // Si la celda no está vacía y no coincide con la letra de la palabra, hay un conflicto
+            if (gridChar != empty_char_ && gridChar != wordChar)
+            {
+                return false;
+            }
+
+            // Reglas para adyacencia (horizontal y vertical)
+            // No debe haber letras adyacentes a los lados si la palabra no se superpone allí
+            if (gridChar == empty_char_) // Solo verificar si la celda está vacía
+            {
+                // Verificar celda a la izquierda/arriba (dependiendo de la orientación)
+                if (i == 0) // Solo para el inicio de la palabra
+                {
+                    if (wp.IsHorizontal)
+                    {
+                        if (c > 0 && grid_[r, c - 1] != empty_char_) return false;
+                    }
+                    else
+                    {
+                        if (r > 0 && grid_[r - 1, c] != empty_char_) return false;
+                    }
+                }
+                // Verificar celda a la derecha/abajo (dependiendo de la orientación)
+                if (i == wp.Word.Length - 1) // Solo para el final de la palabra
+                {
+                    if (wp.IsHorizontal)
+                    {
+                        if (c + 1 < cols_ && grid_[r, c + 1] != empty_char_) return false;
+                    }
+                    else
+                    {
+                        if (r + 1 < rows_ && grid_[r + 1, c] != empty_char_) return false;
+                    }
+                }
+                // Verificar celdas perpendiculares (arriba/abajo para horizontal, izquierda/derecha para vertical)
+                if (wp.IsHorizontal)
+                {
+                    if (r > 0 && grid_[r - 1, c] != empty_char_) return false;
+                    if (r + 1 < rows_ && grid_[r + 1, c] != empty_char_) return false;
+                }
+                else
+                {
+                    if (c > 0 && grid_[r, c - 1] != empty_char_) return false;
+                    if (c + 1 < cols_ && grid_[r, c + 1] != empty_char_) return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    // Coloca una palabra en la cuadrícula (asume que CanPlaceWord ya verificó la validez)
+    public void PlaceWord(WordPlacement wp)
+    {
+        for (int i = 0; i < wp.Word.Length; ++i)
+        {
+            int r = wp.IsHorizontal ? wp.Row : wp.Row + i;
+            int c = wp.IsHorizontal ? wp.Col + i : wp.Col;
+            grid_[r, c] = wp.Word[i];
+        }
+    }
+
+    // Obtiene el carácter en una posición dada
+    public char GetChar(int r, int c)
+    {
+        if (r >= 0 && r < rows_ && c >= 0 && c < cols_)
+        {
+            return grid_[r, c];
+        }
+        return empty_char_; // Retorna el carácter vacío si está fuera de límites
+    }
+
+    // Imprime la cuadrícula del crucigrama
+    public void PrintGrid()
+    {
+        Console.Write("  "); // Espacio para los números de columna
+        for (int c = 0; c < cols_; ++c)
+        {
+            Console.Write($" {c % 10} "); // Imprime el último dígito del número de columna
+        }
+        Console.WriteLine();
+
+        for (int r = 0; r < rows_; ++r)
+        {
+            Console.Write($"{r % 10} "); // Imprime el último dígito del número de fila
+            for (int c = 0; c < cols_; ++c)
+            {
+                Console.Write($" {grid_[r, c]} ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    // Obtiene el número de filas
+    public int GetRows() { return rows_; }
+    // Obtiene el número de columnas
+    public int GetCols() { return cols_; }
+    // Obtiene el carácter vacío
+    public char GetEmptyChar() { return empty_char_; }
+}
+
+public class CrosswordGenerator
+{
+    private Random random = new Random(); // Generador de números aleatorios
+
+    // Función para generar el crucigrama
+    public List<WordPlacement> GenerateCrossword(
+        List<Tuple<string, string>> wordsAndClues, // Lista de palabras y pistas
+        CrosswordGrid grid) // La cuadrícula del crucigrama
+    {
+        List<WordPlacement> placedWords = new List<WordPlacement>(); // Palabras que fueron colocadas con éxito
+
+        // Ordena las palabras por longitud descendente para intentar colocar las más largas primero
+        wordsAndClues = wordsAndClues.OrderByDescending(wc => wc.Item1.Length).ToList();
+
+        // Intenta colocar la primera palabra (la más larga) en el centro de la cuadrícula
+        if (wordsAndClues.Any())
+        {
+            string firstWord = wordsAndClues[0].Item1;
+            string firstClue = wordsAndClues[0].Item2;
+
+            // Decide aleatoriamente si la primera palabra es horizontal o vertical
+            bool isHorizontal = (random.Next(2) == 0);
+
+            int startRow, startCol;
+            if (isHorizontal)
+            {
+                startRow = grid.GetRows() / 2;
+                startCol = (grid.GetCols() - firstWord.Length) / 2;
+            }
+            else
+            {
+                startRow = (grid.GetRows() - firstWord.Length) / 2;
+                startCol = grid.GetCols() / 2;
+            }
+
+            WordPlacement wp = new WordPlacement(firstWord, firstClue, startRow, startCol, isHorizontal);
+            if (grid.CanPlaceWord(wp))
+            {
+                grid.PlaceWord(wp);
+                wp.Placed = true;
+                placedWords.Add(wp);
+                wordsAndClues.RemoveAt(0); // Elimina la palabra ya colocada de la lista original
+            }
+        }
+
+        // Intenta colocar las palabras restantes
+        // Creamos una copia de la lista para poder modificar la original durante la iteración
+        List<Tuple<string, string>> remainingWords = new List<Tuple<string, string>>(wordsAndClues);
+
+        foreach (var wordAndClue in remainingWords)
+        {
+            string currentWord = wordAndClue.Item1;
+            string currentClue = wordAndClue.Item2;
+
+            WordPlacement bestPlacement = null;
+            int maxIntersections = -1; // Para encontrar la mejor ubicación basada en intersecciones
+
+            // Itera sobre todas las posibles filas, columnas y orientaciones
+            for (int r = 0; r < grid.GetRows(); r++)
+            {
+                for (int c = 0; c < grid.GetCols(); c++)
+                {
+                    // Intenta colocación horizontal
+                    WordPlacement horizontalWp = new WordPlacement(currentWord, currentClue, r, c, true);
+                    CrosswordGrid tempGridHorizontal = new CrosswordGrid(grid); // Copia de la cuadrícula actual
+                    if (tempGridHorizontal.CanPlaceWord(horizontalWp))
+                    {
+                        // Calcula las intersecciones si la palabra se colocara aquí
+                        int intersections = CalculateIntersections(grid, horizontalWp);
+                        if (intersections > maxIntersections)
+                        {
+                            maxIntersections = intersections;
+                            bestPlacement = horizontalWp;
+                        }
+                    }
+
+                    // Intenta colocación vertical
+                    WordPlacement verticalWp = new WordPlacement(currentWord, currentClue, r, c, false);
+                    CrosswordGrid tempGridVertical = new CrosswordGrid(grid); // Copia de la cuadrícula actual
+                    if (tempGridVertical.CanPlaceWord(verticalWp))
+                    {
+                        // Calcula las intersecciones si la palabra se colocara aquí
+                        int intersections = CalculateIntersections(grid, verticalWp);
+                        if (intersections > maxIntersections)
+                        {
+                            maxIntersections = intersections;
+                            bestPlacement = verticalWp;
+                        }
+                    }
+                }
+            }
+
+            // Si se encontró una mejor posición, coloca la palabra
+            if (bestPlacement != null)
+            {
+                grid.PlaceWord(bestPlacement);
+                bestPlacement.Placed = true;
+                placedWords.Add(bestPlacement);
+            }
+        }
+
+        return placedWords;
+    }
+
+    // Función auxiliar para calcular las intersecciones para una colocación de palabra dada
+    private int CalculateIntersections(CrosswordGrid currentGrid, WordPlacement wp)
+    {
+        int intersections = 0;
+        for (int i = 0; i < wp.Word.Length; ++i)
+        {
+            int r = wp.IsHorizontal ? wp.Row : wp.Row + i;
+            int c = wp.IsHorizontal ? wp.Col + i : wp.Col;
+
+            // Asegurarse de que la celda esté dentro de los límites de la cuadrícula
+            if (r >= 0 && r < currentGrid.GetRows() && c >= 0 && c < currentGrid.GetCols())
+            {
+                char gridChar = currentGrid.GetChar(r, c);
+                char wordChar = wp.Word[i];
+
+                // Una intersección ocurre si la celda de la cuadrícula no está vacía Y los caracteres coinciden
+                if (gridChar != currentGrid.GetEmptyChar() && gridChar == wordChar)
+                {
+                    intersections++;
+                }
+            }
+        }
+        return intersections;
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Define las palabras y sus pistas
+        List<Tuple<string, string>> wordsAndClues = new List<Tuple<string, string>>
+        {
+            Tuple.Create("aPROGRAMACION", "Arte de escribir código."),
+            Tuple.Create("bALGORITMO", "Secuencia de pasos para resolver un problema."),
+            Tuple.Create("cCOMPILADOR", "Traduce código fuente a código máquina."),
+            Tuple.Create("dVARIABLES", "Espacios de memoria para almacenar datos."),
+            Tuple.Create("eFUNCION", "Bloque de código reutilizable."),
+            Tuple.Create("fCLASE", "Plantilla para crear objetos."),
+            Tuple.Create("gOBJETO", "Instancia de una clase."),
+            Tuple.Create("hHERENCIA", "Mecanismo para reutilizar código entre clases."),
+            Tuple.Create("iPOLIMORFISMO", "Capacidad de un objeto de tomar muchas formas."),
+            Tuple.Create("jDEPURACION", "Proceso de encontrar y corregir errores."),
+            Tuple.Create("kBUCLE", "Estructura de control para repetir código."),
+            Tuple.Create("lARREGLO", "Colección de elementos del mismo tipo."),
+            Tuple.Create("mPUNTERO", "Variable que almacena una dirección de memoria."),
+            Tuple.Create("nBIBLIOTECA", "Conjunto de funciones y clases predefinidas."),
+            Tuple.Create("oRECURSION", "Función que se llama a sí misma.")
+        };
+
+        // Define el tamaño de la cuadrícula
+        int rows = 20;
+        int cols = 20;
+        CrosswordGrid grid = new CrosswordGrid(rows, cols); // Crea una cuadrícula de 20x20
+
+        Console.WriteLine("Generando crucigrama...");
+
+        CrosswordGenerator generator = new CrosswordGenerator();
+        // Genera el crucigrama
+        List<WordPlacement> finalPlacedWords = generator.GenerateCrossword(wordsAndClues, grid);
+
+        Console.WriteLine("\n--- Crucigrama Generado ---");
+        grid.PrintGrid(); // Imprime la cuadrícula
+
+        Console.WriteLine("\n--- Palabras y Pistas ---");
+        // Usamos un diccionario para asignar números a las celdas de inicio de las palabras
+        Dictionary<Tuple<int, int>, int> cellNumbers = new Dictionary<Tuple<int, int>, int>();
+
+        // Marcar para posterior numeración
+        foreach (var wp in finalPlacedWords)
+        {
+            if (wp.Placed)
+            {
+                cellNumbers[Tuple.Create(wp.Row, wp.Col)] = 0;
+            }
+        }
+
+        // Numerar las celdas en orden de lectura
+        int currentNumber = 1;
+        for (int r = 0; r < rows; ++r)
+        {
+            for (int c = 0; c < cols; ++c)
+            {
+                if (cellNumbers.ContainsKey(Tuple.Create(r, c)))
+                {
+                    cellNumbers[Tuple.Create(r, c)] = currentNumber++;
+                }
+            }
+        }
+
+        // Imprime las pistas
+        Console.WriteLine("\nHorizontales:");
+        foreach (var wp in finalPlacedWords)
+        {
+            if (wp.Placed && wp.IsHorizontal)
+            {
+                Console.WriteLine($"{cellNumbers[Tuple.Create(wp.Row, wp.Col)]}. {wp.Clue} ({wp.Word.Length} letras)");
+            }
+        }
+
+        Console.WriteLine("\nVerticales:");
+        foreach (var wp in finalPlacedWords)
+        {
+            if (wp.Placed && !wp.IsHorizontal)
+            {
+                Console.WriteLine($"{cellNumbers[Tuple.Create(wp.Row, wp.Col)]}. {wp.Clue} ({wp.Word.Length} letras)");
+            }
+        }
+
+        Console.WriteLine("\n--- Fin del Crucigrama ---");
+    }
+}
