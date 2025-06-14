@@ -713,8 +713,8 @@
                 "sonido": "fogon.mp3"
               },
               {
-                "opciones": "colador",
-                "opciones_es": "suysuna",
+                "opciones": "suysuna",
+                "opciones_es": "colador",
                 "verificacion": "colador.png",
                 "descripcion_quechua": "¿imawantaq yakuta kinuwamanta t’aqanki?",
                 "descripcion_es": "que usas para separar el agua de la quinua",
@@ -722,8 +722,8 @@
                 "sonido": "colador.mp3"
               },
               {
-                "opciones": "sartén",
-                "opciones_es": "payla",
+                "opciones": "payla",
+                "opciones_es": "sartén",
                 "verificacion": "sarten.png",
                 "descripcion_quechua": "¿imawantaq aychaykikunata rawrachinki?",
                 "descripcion_es": "que usas para freir tus carnes",

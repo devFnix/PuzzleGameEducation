@@ -214,7 +214,7 @@ public class RamdomWordCruci : MonoBehaviour
             }
             else
             {
-                Debug.Log("Desiguales");
+                Debug.Log("Desiguales Cruci");
                 ClearAristas();
             }
         }

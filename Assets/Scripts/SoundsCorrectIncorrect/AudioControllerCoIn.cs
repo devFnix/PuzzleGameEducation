@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class AudioControllerCoIn : MonoBehaviour
 {
-    [Header("Audio Sources")]
+     public static AudioControllerCoIn instance;  // Add this line at the top
+     [Header("Audio Sources")]
     [SerializeField] private AudioSource correctAudioSource;
     [SerializeField] private AudioSource incorrectAudioSource;
     
@@ -13,18 +14,22 @@ public class AudioControllerCoIn : MonoBehaviour
     [Header("Volume Control")]
     [SerializeField] [Range(0f, 1f)] private float volume = 1f;
     
-    void Start()
+    void Awake()  // Change Start to Awake
     {
-        // Configurar AudioSources si no están asignados
+        // Singleton pattern
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        
+        // Rest of your existing Start code
         SetupAudioSources();
-        
-        // Cargar los sonidos desde Resources
         LoadAudioClips();
-        
-        // Aplicar volumen inicial
         UpdateVolume();
     }
-    
     void SetupAudioSources()
     {
         // Si no hay AudioSource para sonido correcto, crear uno

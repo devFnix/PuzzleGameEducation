@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class HelpConectar : MonoBehaviour
 {
     [Header("Referencias UI")]
+    public Image image;
     [SerializeField] private GameObject helpPanel;
     [SerializeField] private Button openHelpButton;
     [SerializeField] private Button playSoundButton;
@@ -14,7 +15,7 @@ public class HelpConectar : MonoBehaviour
 
     void Awake()
     {
-        // Asegura que el panel esté oculto al inicio
+        // Asegura que el panel estï¿½ oculto al inicio
         if (helpPanel != null)
             helpPanel.SetActive(true);
 
@@ -55,21 +56,23 @@ public class HelpConectar : MonoBehaviour
     {
         if (PlayerController.instance == null)
         {
-            Debug.LogWarning("PlayerController.instance no está disponible.");
+            Debug.LogWarning("PlayerController.instance no estï¿½ disponible.");
             return;
         }
 
-        // Obtén la opción actual (ajusta el nombre si tu método es diferente)
+        // Obtï¿½n la opciï¿½n actual (ajusta el nombre si tu mï¿½todo es diferente)
         Opciones option = PlayerController.instance.GetPositionOption();
         if (option == null)
         {
-            Debug.LogWarning("No se encontró la opción actual.");
+            Debug.LogWarning("No se encontrï¿½ la opciï¿½n actual.");
             return;
         }
         Debug.Log(option.sonido);
         description.text = option.descripcion_quechua;
+        string nameImage = option.imagen.Replace(".png", "");
+        image.sprite = Resources.Load<Sprite>("images/" + nameImage);
         string nameSound = option.sonido.Replace(".mp3", "");
-        // El campo 'sonido' debe contener el nombre del archivo de sonido (sin extensión)
+        // El campo 'sonido' debe contener el nombre del archivo de sonido (sin extensiï¿½n)
         string soundPath = "todos/descripcion_" + nameSound;
         AudioClip clip = Resources.Load<AudioClip>(soundPath);
 
@@ -80,7 +83,7 @@ public class HelpConectar : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró el sonido en: Resources/" + soundPath);
+            Debug.LogWarning("No se encontrï¿½ el sonido en: Resources/" + soundPath);
         }
     }
 }

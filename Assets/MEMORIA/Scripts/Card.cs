@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using PrimeTween;
+using TMPro;
 
 public class Card : MonoBehaviour
 {
     [SerializeField] private Image iconImage;
-
+    public string texto= "";
+    public TextMeshProUGUI textMeshProUGUI;
     public Sprite hiddenIconSprite;
     public Sprite iconSprite;
     public string matchId;  // Nuevo: ID para identificar pares relacionados
+
 
     public bool isSelected;
     public CardsController cardsController;
@@ -36,6 +39,7 @@ public class Card : MonoBehaviour
 
         Tween.Delay(0.1f, () => iconImage.sprite = iconSprite);
         isSelected = true;
+        textMeshProUGUI.text = texto;
     }
 
     public void Hide()
@@ -46,5 +50,6 @@ public class Card : MonoBehaviour
             iconImage.sprite = hiddenIconSprite;
             isSelected = false;
         });
+        textMeshProUGUI.text = "";
     }
 }

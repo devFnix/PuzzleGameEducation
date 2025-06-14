@@ -9,6 +9,7 @@ public class SpritePair
     public Sprite frontSprite; // Dibujo
     public Sprite backSprite;  // Imagen real
     public string matchId;     // ID para identificar pares relacionados
+    public string texto;
 }
 
 public class CardsController : MonoBehaviour
@@ -28,7 +29,7 @@ public class CardsController : MonoBehaviour
     }
     private IEnumerator WaitPlayerController()
     {
-        // Espera hasta que PlayerController.instance y levelSelected y opciones estén disponibles
+        // Espera hasta que PlayerController.instance y levelSelected y opciones estï¿½n disponibles
         while (PlayerController.instance == null ||
                PlayerController.instance.levelSelected == null ||
                PlayerController.instance.levelSelected.opciones == null ||
@@ -48,7 +49,10 @@ public class CardsController : MonoBehaviour
         {
             // Carga el sprite desde Resources/images/(nombreImagen)
             string procesar = item.imagen.Replace(".png", "");
-            string rutaA = "images/" + procesar + "_a";  // Nota: Resources.Load no necesita extensión
+            //string rutaA = "images/" + procesar + "_a";
+            string rutaA = "images/empty_memoria";
+              // Nota: Resources.Load no necesita extensiï¿½n
+
 
             //string rutaA = "images/empty_memoria";
             string rutaB = "images/" + procesar + "_b";
@@ -58,12 +62,13 @@ public class CardsController : MonoBehaviour
 
             if (loadedSprite == null)
             {
-                Debug.LogWarning("No se encontró la imagen: " + "images/" + procesar + "_a.png");
+                //Debug.LogWarning("No se encontrï¿½ la imagen: " + "images/" + procesar + "_a.png");
+                Debug.LogWarning("No se encontrï¿½ la imagen: " + "images/empty_memoria.png");
                 continue;
             }
             if (loadedSprite_ == null)
             {
-                Debug.LogWarning("No se encontró la imagen: " + "images/" + procesar + "_b.png");
+                Debug.LogWarning("No se encontrï¿½ la imagen: " + "images/" + procesar + "_b.png");
                 continue;
             }
             else
@@ -71,12 +76,13 @@ public class CardsController : MonoBehaviour
                 Debug.Log("Imagen cargada: " + loadedSprite.name);
                 Debug.Log("Imagen cargada: " + loadedSprite_.name);
             }
-            // Crea el SpritePair (puedes usar el mismo sprite para front y back, o modificar según tu lógica)
+            // Crea el SpritePair (puedes usar el mismo sprite para front y back, o modificar segï¿½n tu lï¿½gica)
             SpritePair pair = new SpritePair
             {
                 frontSprite = loadedSprite,
                 backSprite = loadedSprite_, // O pon otro sprite si tienes uno diferente
-                matchId = matchId.ToString()
+                matchId = matchId.ToString(),
+                texto = item?.opciones
             };
 
             pairs.Add(pair);
@@ -98,14 +104,16 @@ public class CardsController : MonoBehaviour
             cardDataList.Add(new CardData()
             {
                 sprite = spritePairs[i].frontSprite,
-                matchId = spritePairs[i].matchId
+                matchId = spritePairs[i].matchId,
+                texto = spritePairs[i].texto
             });
 
             // Crear datos para la carta con la imagen real
             cardDataList.Add(new CardData()
             {
                 sprite = spritePairs[i].backSprite,
-                matchId = spritePairs[i].matchId
+                matchId = spritePairs[i].matchId,
+                texto = ""
             });
         }
 
@@ -132,6 +140,7 @@ public class CardsController : MonoBehaviour
             Card card = Instantiate(cardPrefab, gridTransform);
             card.SetIconSprite(cardDataList[i].sprite);
             card.matchId = cardDataList[i].matchId;  // Asignar el ID de coincidencia
+            card.texto = cardDataList[i].texto;
             card.cardsController = this;
         }
     }
@@ -164,6 +173,7 @@ public class CardsController : MonoBehaviour
         // Ahora comparamos los matchId en lugar de los sprites
         if (a.matchId == b.matchId && a != b)
         {
+            AudioControllerCoIn.instance.PlayCorrectSound();
             // Coinciden
             matchCounts++;
             if (matchCounts >= spritePairs.Length)
@@ -176,6 +186,7 @@ public class CardsController : MonoBehaviour
         }
         else
         {
+            AudioControllerCoIn.instance.PlayIncorrectSound();
             // No coinciden
 
             a.Hide();
@@ -190,4 +201,5 @@ public class CardData
 {
     public Sprite sprite;
     public string matchId;
+    public string texto {get; set;}
 }

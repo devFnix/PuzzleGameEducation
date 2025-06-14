@@ -12,7 +12,7 @@ public class RandomWordGenerator : MonoBehaviour
     public Button buttonPrefab;
     public Button confirmButton;
     public string selectedWord;
-    private List<string> words;// = { "Wasi","Punku","Wayk’una wasi","Hisp’ana wasi","Puñuna wasi","Tiyana wasi"};
+    private List<string> words;// = { "Wasi","Punku","Waykï¿½una wasi","Hispï¿½ana wasi","Puï¿½una wasi","Tiyana wasi"};
     public List<Button> listaButtons = new List<Button>();
     public string concatenatedString = "";
     Text concatenatedText;
@@ -25,7 +25,7 @@ public class RandomWordGenerator : MonoBehaviour
     }
     private IEnumerator WaitPlayerController()
     {
-        // Espera hasta que PlayerController.instance y levelSelected y opciones estén disponibles
+        // Espera hasta que PlayerController.instance y levelSelected y opciones estï¿½n disponibles
         while (PlayerController.instance == null ||
                PlayerController.instance.levelSelected == null ||
                PlayerController.instance.levelSelected.opciones == null ||
@@ -110,12 +110,26 @@ public class RandomWordGenerator : MonoBehaviour
             concatenatedText.text = concatenatedString;
         }
     }
+ public int getCurrentPosition(string word){
+    int index = 0;
+    foreach (Opciones item in niveles.opciones)
+    {
+        if (item.opciones == word)
+        {
+            return index;
+        }
+        index++;
+    }
+    return -1;
+ }
 
     void GenerateButtons()
     {
         int index = Random.Range(0, words.Count);
         selectedWord = words[index];
-
+        int currentPosition = getCurrentPosition(selectedWord);
+        //Debug.Log("currentPosition: " + currentPosition);
+        PlayerController.instance.SetCurrentOption(currentPosition);
         Vector2[] positions = new Vector2[selectedWord.Length];
         char[] letters = new char[selectedWord.Length];
 
@@ -144,18 +158,18 @@ public class RandomWordGenerator : MonoBehaviour
             Button newButton = Instantiate(buttonPrefab, panelLetras);
             RectTransform buttonRect = newButton.GetComponent<RectTransform>();
 
-            // Asignar la posición recibida
+            // Asignar la posiciï¿½n recibida
             buttonRect.anchoredPosition = positions[i];
 
-            // Asignar la letra al botón
+            // Asignar la letra al botï¿½n
             Letter letraComponent = newButton.GetComponentInChildren<Letter>();
             if (letraComponent != null)
             {
-                letraComponent.Setear(i, letters[i].ToString()); // Setear el índice y letra
+                letraComponent.Setear(i, letters[i].ToString()); // Setear el ï¿½ndice y letra
             }
             newButton.onClick.AddListener(() => OnButtonClick(newButton));
 
-            listaButtons.Add(newButton); // Agregar el botón a la lista local
+            listaButtons.Add(newButton); // Agregar el botï¿½n a la lista local
         }
     }
 
@@ -163,11 +177,11 @@ public class RandomWordGenerator : MonoBehaviour
     {
         int buttonIndex = clickedButton.GetComponent<Letter>().position;
         string letter = clickedButton.GetComponent<Letter>().texto;
-        visitButton.Add(clickedButton); // Agregar el botón a la lista de visitados
+        visitButton.Add(clickedButton); // Agregar el botï¿½n a la lista de visitados
 
         Debug.Log($"Button clicked: {buttonIndex}, {letter}");
         HandleButtonClick(buttonIndex, letter);
-        TryDrawLine(); // Intentar dibujar una línea si hay al menos 2 botones visitados
+        TryDrawLine(); // Intentar dibujar una lï¿½nea si hay al menos 2 botones visitados
     }
 
     void HandleButtonClick(int buttonIndex, string letter)
@@ -201,7 +215,7 @@ public class RandomWordGenerator : MonoBehaviour
         Vector2 startPos = secondLastButton.GetComponent<RectTransform>().anchoredPosition;
         Vector2 endPos = lastButton.GetComponent<RectTransform>().anchoredPosition;
 
-        // Llamar directamente a la función para dibujar la línea
+        // Llamar directamente a la funciï¿½n para dibujar la lï¿½nea
         createAristas.DibujarLine(startPos, endPos);
     }
     private void Update()
@@ -213,21 +227,22 @@ public class RandomWordGenerator : MonoBehaviour
             {
                 Debug.Log("Iguales");
                 words.Remove(selectedWord);
-
+                AudioControllerCoIn.instance.PlayCorrectSound();
                 if (words.Count > 0)
                 {
-                    OnConfirm(); // Generar nueva palabra si aún hay palabras disponibles
+                    OnConfirm(); // Generar nueva palabra si aï¿½n hay palabras disponibles
                 }
                 else
                 {
-                    Debug.Log("¡Completaste todas las palabras!");
-                    // Aquí puedes agregar código para manejar cuando se completan todas las palabras
+                    Debug.Log("ï¿½Completaste todas las palabras!");
+                    // Aquï¿½ puedes agregar cï¿½digo para manejar cuando se completan todas las palabras
                     // Por ejemplo, cargar otra escena o mostrar un mensaje de victoria
                 }
             }
             else
             {
                 Debug.Log("Desiguales");
+                AudioControllerCoIn.instance.PlayIncorrectSound();
                 ClearAristas();
             }
         }
