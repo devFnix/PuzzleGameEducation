@@ -16,40 +16,62 @@ public class WordToFind
 
 public class WordSearchGame : MonoBehaviour
 {
-    [Header("Configuración")]
-    [SerializeField] private int gridWidth = 10;
-    [SerializeField] private int gridHeight = 10;
+    [Header("Configuraciï¿½n")]
+    [SerializeField] private int gridWidthHeight = 10;
+    private int gridWidth = 10;
+    private int gridHeight = 10;
     [SerializeField] private GameObject letterPrefab;
-    [SerializeField] private Transform gridContainer;
+    [SerializeField] private GridLayoutGroup gridContainer;
+    private Transform gridContainerTransform;
     [SerializeField] private Color selectionColor = Color.yellow;
     [SerializeField] private Color correctColor = Color.green;
     [SerializeField] private List<WordToFind> wordsToFind = new List<WordToFind>();
-    [SerializeField] private Transform wordListContainer;
+    // [SerializeField] private Transform wordListContainer;
     [SerializeField] private GameObject wordItemPrefab;
 
     [Header("Referencias de UI")]
     [SerializeField] private TextMeshProUGUI gameStateText;
 
-    // Matriz para almacenar las letras en la cuadrícula
+    // Matriz para almacenar las letras en la cuadrï¿½cula
     private LetraP[,] letterGrid;
 
-    // Para el manejo de la selección
+    // Para el manejo de la selecciï¿½n
     private bool isSelecting = false;
     private LetraP firstSelectedLetter;
     private LetraP lastSelectedLetter;
     private List<LetraP> currentSelection = new List<LetraP>();
-    private Vector2 selectionDirection = Vector2.zero; // Dirección de la selección actual
-
+    private Vector2 selectionDirection = Vector2.zero; // Direcciï¿½n de la selecciï¿½n actual
+    public List<string> listWordsFound = new List<string>();
     // Para el manejo de palabras encontradas
     private int wordsFound = 0;
     Niveles niveles = new Niveles();
-    public PlayerController playerController;
-    void Start()
+    // public PlayerController playerController;
+    private void Start()
     {
-        playerController = GameObject.FindObjectOfType<PlayerController>();
-        if (playerController != null)
+        gridHeight = gridWidthHeight;
+        gridWidth = gridWidthHeight;
+        gridContainer.constraintCount = gridWidthHeight;
+        gridContainerTransform = gridContainer.transform;
+
+        StartCoroutine(WaitPlayerController());
+    }
+    private IEnumerator WaitPlayerController()
+    {
+        // Espera hasta que PlayerController.instance y levelSelected y opciones estï¿½n disponibles
+        while (PlayerController.instance == null ||
+               PlayerController.instance.levelSelected == null ||
+               PlayerController.instance.levelSelected.opciones == null ||
+               PlayerController.instance.levelSelected.opciones.Count == 0)
         {
-            niveles = playerController.levelSelected;
+            yield return null;
+        }
+        Play();
+    }
+    void Play()
+    {
+        if (PlayerController.instance != null)
+        {
+            niveles = PlayerController.instance.levelSelected;
             List<WordToFind> wordsToFind_ = new List<WordToFind>();
             foreach (Opciones item in niveles.opciones)
             {
@@ -64,17 +86,17 @@ public class WordSearchGame : MonoBehaviour
 
     private void InitializeGame()
     {
-        // Crear la cuadrícula
+        // Crear la cuadrï¿½cula
         CreateGrid();
 
-        // Colocar palabras en la cuadrícula
+        // Colocar palabras en la cuadrï¿½cula
         PlaceWordsInGrid();
 
-        // Rellenar espacios vacíos con letras aleatorias
+        // Rellenar espacios vacï¿½os con letras aleatorias
         FillEmptySpacesWithRandomLetters();
 
         // Mostrar lista de palabras por encontrar
-        DisplayWordList();
+        // DisplayWordList();
 
         // Actualizar el estado del juego
         UpdateGameState();
@@ -93,7 +115,7 @@ public class WordSearchGame : MonoBehaviour
             for (int x = 0; x < gridWidth; x++)
             {
                 Vector3 position = new Vector3(startX + x * cellSize, startY - y * cellSize, 0);
-                GameObject letterObj = Instantiate(letterPrefab, position, Quaternion.identity, gridContainer);
+                GameObject letterObj = Instantiate(letterPrefab, position, Quaternion.identity, gridContainerTransform);
 
                 LetraP letterScript = letterObj.GetComponent<LetraP>();
                 letterScript.Initialize(x, y, ' ', this);
@@ -114,14 +136,14 @@ public class WordSearchGame : MonoBehaviour
 
             while (!placed && maxAttempts > 0)
             {
-                // Elegir una dirección aleatoria
+                // Elegir una direcciï¿½n aleatoria
                 WordDirection direction = (WordDirection)UnityEngine.Random.Range(0, 4);
 
-                // Obtener posición inicial adecuada según la dirección
+                // Obtener posiciï¿½n inicial adecuada segï¿½n la direcciï¿½n
                 int startX, startY;
                 GetValidStartPosition(word.Length, direction, out startX, out startY);
 
-                // Verificar si podemos colocar la palabra en esta posición y dirección
+                // Verificar si podemos colocar la palabra en esta posiciï¿½n y direcciï¿½n
                 if (CanPlaceWord(word, startX, startY, direction))
                 {
                     PlaceWord(word, startX, startY, direction);
@@ -190,14 +212,14 @@ public class WordSearchGame : MonoBehaviour
             int x = startX + i * dx;
             int y = startY + i * dy;
 
-            // Verificar límites de la cuadrícula
+            // Verificar lï¿½mites de la cuadrï¿½cula
             if (x < 0 || x >= gridWidth || y < 0 || y >= gridHeight)
                 return false;
 
             // Verificar si la celda ya tiene una letra
             char currentLetter = letterGrid[x, y].GetLetter();
 
-            // Si la celda está vacía o tiene la misma letra, podemos usarla
+            // Si la celda estï¿½ vacï¿½a o tiene la misma letra, podemos usarla
             if (currentLetter != ' ' && currentLetter != word[i])
                 return false;
         }
@@ -221,7 +243,7 @@ public class WordSearchGame : MonoBehaviour
             wordLetters.Add(letterGrid[x, y]);
         }
 
-        // Registrar las letras que forman la palabra para poderlas verificar después
+        // Registrar las letras que forman la palabra para poderlas verificar despuï¿½s
         for (int i = 0; i < wordLetters.Count; i++)
         {
             wordLetters[i].AddToWord(word, direction);
@@ -278,32 +300,32 @@ public class WordSearchGame : MonoBehaviour
         }
     }
 
-    private void DisplayWordList()
-    {
-        foreach (Transform child in wordListContainer)
-        {
-            Destroy(child.gameObject);
-        }
+    // private void DisplayWordList()
+    // {
+    //     foreach (Transform child in wordListContainer)
+    //     {
+    //         Destroy(child.gameObject);
+    //     }
 
-        foreach (WordToFind word in wordsToFind)
-        {
-            GameObject wordItem = Instantiate(wordItemPrefab, wordListContainer);
-            TextMeshProUGUI textComponent = wordItem.GetComponent<TextMeshProUGUI>();
+    //     foreach (WordToFind word in wordsToFind)
+    //     {
+    //         GameObject wordItem = Instantiate(wordItemPrefab, wordListContainer);
+    //         TextMeshProUGUI textComponent = wordItem.GetComponent<TextMeshProUGUI>();
 
-            if (textComponent != null)
-            {
-                textComponent.text = word.word;
+    //         if (textComponent != null)
+    //         {
+    //             textComponent.text = word.word;
 
-                if (word.found)
-                {
-                    textComponent.fontStyle = FontStyles.Strikethrough;
-                    textComponent.color = correctColor;
-                }
-            }
-        }
-    }
+    //             if (word.found)
+    //             {
+    //                 textComponent.fontStyle = FontStyles.Strikethrough;
+    //                 textComponent.color = correctColor;
+    //             }
+    //         }
+    //     }
+    // }
 
-    // Método para iniciar la selección
+    // Mï¿½todo para iniciar la selecciï¿½n
     public void StartSelection(LetraP letter)
     {
         isSelecting = true;
@@ -312,15 +334,15 @@ public class WordSearchGame : MonoBehaviour
         currentSelection.Clear();
         currentSelection.Add(letter);
         letter.SetHighlight(selectionColor);
-        selectionDirection = Vector2.zero; // Resetear la dirección
+        selectionDirection = Vector2.zero; // Resetear la direcciï¿½n
     }
 
-    // Método para continuar la selección mientras se arrastra
+    // Mï¿½todo para continuar la selecciï¿½n mientras se arrastra
     public void ContinueSelection(LetraP letter)
     {
         if (!isSelecting || letter == lastSelectedLetter) return;
 
-        // Si es la segunda letra seleccionada, establecer la dirección
+        // Si es la segunda letra seleccionada, establecer la direcciï¿½n
         if (currentSelection.Count == 1)
         {
             selectionDirection = new Vector2(
@@ -328,29 +350,29 @@ public class WordSearchGame : MonoBehaviour
                 letter.GetY() - firstSelectedLetter.GetY()
             );
 
-            // Normalizar la dirección
+            // Normalizar la direcciï¿½n
             if (selectionDirection.x != 0) selectionDirection.x = selectionDirection.x / Mathf.Abs(selectionDirection.x);
             if (selectionDirection.y != 0) selectionDirection.y = selectionDirection.y / Mathf.Abs(selectionDirection.y);
         }
 
-        // Verificar si la letra está en la dirección correcta
+        // Verificar si la letra estï¿½ en la direcciï¿½n correcta
         Vector2 currentDirection = new Vector2(
             letter.GetX() - lastSelectedLetter.GetX(),
             letter.GetY() - lastSelectedLetter.GetY()
         );
 
-        // Normalizar la dirección actual
+        // Normalizar la direcciï¿½n actual
         if (currentDirection.x != 0) currentDirection.x = currentDirection.x / Mathf.Abs(currentDirection.x);
         if (currentDirection.y != 0) currentDirection.y = currentDirection.y / Mathf.Abs(currentDirection.y);
 
-        // Verificar si mantiene la dirección y es adyacente
+        // Verificar si mantiene la direcciï¿½n y es adyacente
         if (currentDirection == selectionDirection)
         {
-            // Si la letra ya está en la selección, eliminar letras hasta esa posición
+            // Si la letra ya estï¿½ en la selecciï¿½n, eliminar letras hasta esa posiciï¿½n
             int existingIndex = currentSelection.IndexOf(letter);
             if (existingIndex >= 0)
             {
-                // Desmarcar las letras que ya no están seleccionadas
+                // Desmarcar las letras que ya no estï¿½n seleccionadas
                 for (int i = currentSelection.Count - 1; i > existingIndex; i--)
                 {
                     if (!currentSelection[i].IsFound())
@@ -363,7 +385,7 @@ public class WordSearchGame : MonoBehaviour
                 return;
             }
 
-            // Verificar que la letra sea adyacente en línea recta
+            // Verificar que la letra sea adyacente en lï¿½nea recta
             bool isAdjacent = TryFillGapInSelection(letter);
 
             if (isAdjacent)
@@ -378,7 +400,7 @@ public class WordSearchGame : MonoBehaviour
         }
     }
 
-    // Método para llenar el espacio entre la última letra seleccionada y la actual
+    // Mï¿½todo para llenar el espacio entre la ï¿½ltima letra seleccionada y la actual
     private bool TryFillGapInSelection(LetraP targetLetter)
     {
         int dx = (int)selectionDirection.x;
@@ -390,17 +412,17 @@ public class WordSearchGame : MonoBehaviour
         int currentX = lastSelectedLetter.GetX();
         int currentY = lastSelectedLetter.GetY();
 
-        // Verificar que la letra objetivo esté en la misma línea de dirección
+        // Verificar que la letra objetivo estï¿½ en la misma lï¿½nea de direcciï¿½n
         while (steps < maxSteps)
         {
             currentX += dx;
             currentY += dy;
             steps++;
 
-            // Si llegamos a la letra objetivo, es válida
+            // Si llegamos a la letra objetivo, es vï¿½lida
             if (currentX == targetLetter.GetX() && currentY == targetLetter.GetY())
             {
-                // Rellenar las letras intermedias si hay algún salto
+                // Rellenar las letras intermedias si hay algï¿½n salto
                 if (steps > 1)
                 {
                     int fillX = lastSelectedLetter.GetX();
@@ -411,7 +433,7 @@ public class WordSearchGame : MonoBehaviour
                         fillX += dx;
                         fillY += dy;
 
-                        // Verificar límites
+                        // Verificar lï¿½mites
                         if (fillX >= 0 && fillX < gridWidth && fillY >= 0 && fillY < gridHeight)
                         {
                             LetraP fillLetter = letterGrid[fillX, fillY];
@@ -426,7 +448,7 @@ public class WordSearchGame : MonoBehaviour
                 return true;
             }
 
-            // Si nos salimos de los límites, no es válida
+            // Si nos salimos de los lï¿½mites, no es vï¿½lida
             if (currentX < 0 || currentX >= gridWidth || currentY < 0 || currentY >= gridHeight)
             {
                 return false;
@@ -436,7 +458,7 @@ public class WordSearchGame : MonoBehaviour
         return false;
     }
 
-    // Método para finalizar la selección
+    // Mï¿½todo para finalizar la selecciï¿½n
     public void EndSelection()
     {
         if (!isSelecting) return;
@@ -458,10 +480,12 @@ public class WordSearchGame : MonoBehaviour
 
             // Actualizar UI
             UpdateGameState();
+            AudioControllerCoIn.instance.PlayCorrectSound();
+            listWordsFound.Add(selectedWord.ToUpper());
         }
         else
         {
-            // Borrar la selección
+            // Borrar la selecciï¿½n
             foreach (LetraP letter in currentSelection)
             {
                 if (!letter.IsFound())
@@ -469,6 +493,7 @@ public class WordSearchGame : MonoBehaviour
                     letter.ClearHighlight();
                 }
             }
+            AudioControllerCoIn.instance.PlayIncorrectSound();
         }
 
         currentSelection.Clear();
@@ -487,7 +512,7 @@ public class WordSearchGame : MonoBehaviour
 
     private bool CheckIfWordIsFound(string selectedWord)
     {
-        // Verificar si la palabra está en la lista de palabras a encontrar
+        // Verificar si la palabra estï¿½ en la lista de palabras a encontrar
         foreach (WordToFind wordToFind in wordsToFind)
         {
             string normalWord = wordToFind.word.ToUpper();
@@ -502,7 +527,7 @@ public class WordSearchGame : MonoBehaviour
                 return true;
             }
 
-            // También verificar la palabra al revés
+            // Tambiï¿½n verificar la palabra al revï¿½s
             string reversedSelectedWord = new string(selectedWord.ToCharArray().Reverse().ToArray());
             if (normalWord == reversedSelectedWord)
             {
@@ -521,12 +546,12 @@ public class WordSearchGame : MonoBehaviour
     private void UpdateGameState()
     {
         // Actualizar la lista de palabras
-        DisplayWordList();
+        // DisplayWordList();
 
         // Verificar si el juego ha terminado
         if (wordsFound >= wordsToFind.Count)
         {
-            gameStateText.text = "¡Felicidades! Has encontrado todas las palabras.";
+            gameStateText.text = "ï¿½Felicidades! Has encontrado todas las palabras.";
         }
         else
         {
@@ -534,7 +559,7 @@ public class WordSearchGame : MonoBehaviour
         }
     }
 
-    // Método para obtener una letra en una posición específica (usado por el raycasting)
+    // Mï¿½todo para obtener una letra en una posiciï¿½n especï¿½fica (usado por el raycasting)
     public LetraP GetLetterAt(int x, int y)
     {
         if (x >= 0 && x < gridWidth && y >= 0 && y < gridHeight)

@@ -222,7 +222,6 @@ public class RandomWordGenerator : MonoBehaviour
     {
         if (concatenatedString?.Length == selectedWord?.Length)
         {
-            Debug.Log("misma longitud");
             if (concatenatedString == selectedWord)
             {
                 Debug.Log("Iguales");

@@ -28,11 +28,11 @@ public class PlayerController : MonoBehaviour
     [Header("PlayerController")]
     [SerializeField] private string gameName = "";
     [SerializeField] private string categoryName = "";
-    [SerializeField] private string levelName = "";
+    [SerializeField] private string levelName = ""; //levelselected
     [SerializeField] private int level = 0;
     [SerializeField] private string urlJSON = "JSONFiles/dataFinal";
     List<DataGame> dataGame;
-    [Header("Menú de Juegos")]
+    [Header("Menï¿½ de Juegos")]
     [SerializeField] private GameMenuOption gameMenuOption = GameMenuOption.Ninguno;
     private GameMenuOption lastGameMenuOption = GameMenuOption.Ninguno;
 
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         if (gameSelected != null)
             Debug.Log("Category: " + gameSelected.juego);
         else
-            Debug.LogWarning("No se seleccionó ninguna categoría.");
+            Debug.LogWarning("No se seleccionï¿½ ninguna categorï¿½a.");
     */
     }
     public void SetCurrentOption(int op) { 
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     {
         if (levelSelected == null || levelSelected.opciones == null || this.currentOption < 0 || this.currentOption >= levelSelected.opciones.Count)
         {
-            Debug.LogError("Nivel o opciones no están inicializados o posición fuera de rango.");
+            Debug.LogError("Nivel o opciones no estï¿½n inicializados o posiciï¿½n fuera de rango.");
             Debug.LogError($"Nivel: {levelSelected?.nivel}, Opciones: {levelSelected?.opciones?.Count}, CurrentOption: {this.currentOption}");
             return null;
         }
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
     {
         if (categorySelected == null)
         {
-            Debug.LogError("categoria no está inicializado.");
+            Debug.LogError("categoria no estï¿½ inicializado.");
             gameSelected = null;
             return;
         }
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
         if (levelSelected == null)
         {
-            Debug.LogWarning($"No se encontró el juego '{gameName}' en dataGame.");
+            Debug.LogWarning($"No se encontrï¿½ el juego '{gameName}' en dataGame.");
         }
         else
         {
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
     {
         if (gameSelected == null)
         {
-            Debug.LogError("gameSelected no está inicializado.");
+            Debug.LogError("gameSelected no estï¿½ inicializado.");
             categorySelected = null;
             return;
         }
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
         if (gameSelected == null)
         {
-            Debug.LogWarning($"No se encontró la categoría '{catName_}' en dataGame.");
+            Debug.LogWarning($"No se encontrï¿½ la categorï¿½a '{catName_}' en dataGame.");
         }
         else
         {
@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No se encontró el archivo JSON en Resources: " + rutaArchivoResources);
+            Debug.LogError("No se encontrï¿½ el archivo JSON en Resources: " + rutaArchivoResources);
             dataGame = null;
         }
     }
@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
     {
         if (dataGame == null)
         {
-            Debug.LogError("dataGame no está inicializado.");
+            Debug.LogError("dataGame no estï¿½ inicializado.");
             gameSelected = null;
             return;
         }
@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
 
         if (gameSelected == null)
         {
-            Debug.LogWarning($"No se encontró el juego '{gameName}' en dataGame.");
+            Debug.LogWarning($"No se encontrï¿½ el juego '{gameName}' en dataGame.");
         }
         else
         {
@@ -220,8 +220,8 @@ public class PlayerController : MonoBehaviour
     public void SetPupiletras()
     {
         SetGameName("pupiletras");
-        SetCategory("oficios");
-        SelectionLevel("1");
+        SetCategory("emociones");
+        SelectionLevel("3");
 
     }
     public void SetConectar()
@@ -241,7 +241,7 @@ public class PlayerController : MonoBehaviour
     public void SetMemoria()
     {
         SetGameName("memoria");
-        SetCategory("números");
+        SetCategory("nï¿½meros");
         SelectionLevel("2");
 
     }

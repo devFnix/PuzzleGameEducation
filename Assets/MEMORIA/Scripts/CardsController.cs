@@ -37,7 +37,10 @@ public class CardsController : MonoBehaviour
         {
             yield return null;
         }
-        Play();
+        if (PlayerController.instance != null)
+        {
+            Play();
+        }
     }
     public void Play()
     {

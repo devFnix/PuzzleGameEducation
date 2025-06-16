@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\ShowCategories.cs" />
     <Compile Include="Assets\CONECTAR\Letter.cs" />
     <Compile Include="Assets\MENU\CardOption.cs" />
+    <Compile Include="Assets\PUPILETRAS\OptionsPanelController.cs" />
     <Compile Include="Assets\PUPILETRAS\Scripts\WordSearchGame.cs" />
     <Compile Include="Assets\CONECTAR\CreateAristas.cs" />
     <Compile Include="Assets\Scripts\Auth.cs" />
@@ -73,13 +74,16 @@
     <Compile Include="Assets\Scripts\PanelAnimationManager.cs" />
     <Compile Include="Assets\CRUCIGRAMA\CrosswordManager.cs" />
     <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\RamdomWordCruci.cs" />
+    <Compile Include="Assets\PUPILETRAS\HelpMenuPupiletras.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\CONECTAR\RandomWordGenerator.cs" />
     <Compile Include="Assets\Scripts\LevelItem.cs" />
     <Compile Include="Assets\Scripts\JuegoSeleccionado.cs" />
     <Compile Include="Assets\LOGIN\UserData.cs" />
     <Compile Include="Assets\LOGIN\Login.cs" />
+    <Compile Include="Assets\PUPILETRAS\OptionItemPrefab.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SoundsCorrectIncorrect\AudioControllerCoIn.cs" />
     <Compile Include="Assets\Scripts\Usuario.cs" />
     <Compile Include="Assets\CONECTAR\HelpConectar.cs" />
     <Compile Include="Assets\LOGIN\SessionData.cs" />
@@ -108,7 +112,6 @@
     <Compile Include="Assets\MEMORIA\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\UsuarioManager.cs" />
     <Compile Include="Assets\Scripts\ClicButton.cs" />
-    <Compile Include="Assets\Scripts\SoundsCorrectIncorrect\AudioControllerCoIn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

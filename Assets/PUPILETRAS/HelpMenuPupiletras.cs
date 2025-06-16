@@ -2,12 +2,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HelpMenuMemoria : MonoBehaviour
+public class HelpMenuPupiletras : MonoBehaviour
 {
     [Header("Referencias UI")]
     public Image image;
     [SerializeField] private GameObject helpPanel;
-    [SerializeField] private Button openHelpButton;
+    // [SerializeField] private Button openHelpButton;
     [SerializeField] private Button playSoundButton;
     [SerializeField] private Button closeButton;
     [SerializeField] private TextMeshProUGUI description;
@@ -25,8 +25,8 @@ public class HelpMenuMemoria : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
 
         // Asigna los listeners
-        if (openHelpButton != null)
-            openHelpButton.onClick.AddListener(OpenHelpPanel);
+        // if (openHelpButton != null)
+            // openHelpButton.onClick.AddListener(OpenHelpPanel);
 
         if (playSoundButton != null)
             playSoundButton.onClick.AddListener(PlayOptionSound);
@@ -36,14 +36,14 @@ public class HelpMenuMemoria : MonoBehaviour
         PlayOptionSound();
     }
 
-    private void OpenHelpPanel()
+    public void OpenHelpPanel()
     {
         if (helpPanel != null)
             helpPanel.SetActive(true);
         PlayOptionSound();
     }
 
-    private void CloseHelpPanel()
+    public void CloseHelpPanel()
     {
         if (helpPanel != null)
             helpPanel.SetActive(false);
@@ -67,7 +67,7 @@ public class HelpMenuMemoria : MonoBehaviour
             Debug.LogWarning("No se encontr� la opci�n actual.");
             return;
         }
-        Debug.Log(option.sonido);
+        // Debug.Log(option.sonido);
         description.text = option.descripcion_quechua;
         string nameSound = option.sonido.Replace(".mp3", "");
         string nameImage = option.imagen.Replace(".png", "");
