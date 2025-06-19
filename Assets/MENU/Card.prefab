@@ -223,8 +223,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 81ac9c3cfef0d714e9ed43ae2fbadab4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -245,8 +245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d43c62a4f11d9f4f888f6ef13136277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySprite: {fileID: 21300000, guid: 52625fd523ab5554d8adb8cff4f46c04, type: 3}
-  title: Conectar
+  optionImage: {fileID: 8062857902535225101}
+  optionTitle: {fileID: 8062857904079584189}
+  mySprite: {fileID: 0}
+  title: 
 --- !u!114 &-1819053987433954146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8062857902634044139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8062857902634044136}
+        m_TargetAssemblyTypeName: CardOption, Assembly-CSharp
+        m_MethodName: SelectedGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Formando palabras
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8062857904079584187
 GameObject:
   m_ObjectHideFlags: 0

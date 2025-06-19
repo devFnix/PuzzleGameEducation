@@ -35,10 +35,10 @@ public class RandomWordGenerator : MonoBehaviour
         }
         Play();
     }
-    
+
     public void Play()
     {
-       
+
         if (PlayerController.instance != null)
         {
             niveles = PlayerController.instance.levelSelected;
@@ -110,18 +110,19 @@ public class RandomWordGenerator : MonoBehaviour
             concatenatedText.text = concatenatedString;
         }
     }
- public int getCurrentPosition(string word){
-    int index = 0;
-    foreach (Opciones item in niveles.opciones)
+    public int getCurrentPosition(string word)
     {
-        if (item.opciones == word)
+        int index = 0;
+        foreach (Opciones item in niveles.opciones)
         {
-            return index;
+            if (item.opciones == word)
+            {
+                return index;
+            }
+            index++;
         }
-        index++;
+        return -1;
     }
-    return -1;
- }
 
     void GenerateButtons()
     {
@@ -225,7 +226,8 @@ public class RandomWordGenerator : MonoBehaviour
             if (concatenatedString == selectedWord)
             {
                 Debug.Log("Iguales");
-                words.Remove(selectedWord);
+                if (selectedWord.Length != 0)
+                    words.Remove(selectedWord);
                 AudioControllerCoIn.instance.PlayCorrectSound();
                 if (words.Count > 0)
                 {

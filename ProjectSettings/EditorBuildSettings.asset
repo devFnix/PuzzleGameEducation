@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/memoria.unity
     guid: 62b829ecccf56c24f9515f0160cce313
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/pupiletras.unity
     guid: fb3da05d309d11e48b9dc60a8ce64316
   - enabled: 1

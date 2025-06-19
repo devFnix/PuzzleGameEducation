@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int level = 0;
     [SerializeField] private string urlJSON = "JSONFiles/dataFinal";
     List<DataGame> dataGame;
-    [Header("Men� de Juegos")]
+    [Header("Menú de Juegos")]
     [SerializeField] private GameMenuOption gameMenuOption = GameMenuOption.Ninguno;
     private GameMenuOption lastGameMenuOption = GameMenuOption.Ninguno;
 
@@ -49,24 +49,80 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+
+    private void OnDestroy()
+    {
+        // Desuscribirse del evento al destruir el objeto
+        if (instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Verificar si la escena cargada es "Scenes/2.SceneJuego" (ajusta el nombre según tu escena)
+        if (scene.name == "Scenes/2.SceneJuego" || scene.name == "Scenes/2.SceneJuego" || scene.name == "Scenes/2.SceneJuego")
+        {
+            ResetAllVariables();
+        }
+    }
+
+    /// <summary>
+    /// Reinicia todas las variables a su estado inicial
+    /// </summary>
+    public void ResetAllVariables()
+    {
+        // Reiniciar objetos de datos
+        // gameSelected = new DataGame();
+        categorySelected = new Categoria();
+        levelSelected = new Niveles();
+        
+        // Reiniciar variables primitivas
+        currentOption = 0;
+        gameName = "";
+        categoryName = "";
+        levelName = "";
+        level = 0;
+        
+        // Reiniciar enum
+        gameMenuOption = GameMenuOption.Ninguno;
+        lastGameMenuOption = GameMenuOption.Ninguno;
+        
+        // Reiniciar estado
+        isInitialized = false;
+        
+        // Opcional: Recargar datos JSON si es necesario
+        if(dataGame == null)
+        {
+            CargarDatosJson(urlJSON);
+        }
+        
+        Debug.Log("PlayerController: Todas las variables han sido reiniciadas");
+
+    }
+
+    /// <summary>
+    /// Método público para reiniciar manualmente desde otros scripts
+    /// </summary>
+    public void ManualReset()
+    {
+        ResetAllVariables();
+    }
+
+   
     void Start()
     {
         CargarDatosJson(urlJSON);
-        //SetPupiletras();
-        //SetConectar();
-        //SetCrucigrama();
-        //SetMemoria();
 
-
-        /*SetGameName(gameName);
-        SelectionGame(gameName);
-        if (gameSelected != null)
-            Debug.Log("Category: " + gameSelected.juego);
-        else
-            Debug.LogWarning("No se seleccion� ninguna categor�a.");
-    */
     }
-    public void SetCurrentOption(int op) { 
+    public void loadDataGame()
+    {
+        CargarDatosJson(urlJSON);
+    }
+    public void SetCurrentOption(int op)
+    {
         this.currentOption = op;
     }
     public int GetCurrentOption()
@@ -77,7 +133,7 @@ public class PlayerController : MonoBehaviour
     {
         if (levelSelected == null || levelSelected.opciones == null || this.currentOption < 0 || this.currentOption >= levelSelected.opciones.Count)
         {
-            Debug.LogError("Nivel o opciones no est�n inicializados o posici�n fuera de rango.");
+           Debug.LogError("Nivel o opciones no están inicializados o posición fuera de rango.");
             Debug.LogError($"Nivel: {levelSelected?.nivel}, Opciones: {levelSelected?.opciones?.Count}, CurrentOption: {this.currentOption}");
             return null;
         }
@@ -95,8 +151,8 @@ public class PlayerController : MonoBehaviour
     {
         if (categorySelected == null)
         {
-            Debug.LogError("categoria no est� inicializado.");
-            gameSelected = null;
+           Debug.LogError("categoria no está inicializado.");
+             gameSelected = null;
             return;
         }
 
@@ -114,7 +170,9 @@ public class PlayerController : MonoBehaviour
     }
     public void SetGameName(string gameNombre)
     {
+        CargarDatosJson(urlJSON);
         this.gameName = GetNameReal(gameNombre);
+        Debug.LogWarning($"SetGameName: {gameNombre} - {this.gameName}");
         SelectionGame(this.gameName);
         CargarEscenaConDelay(sceneCategory);
     }
@@ -122,7 +180,7 @@ public class PlayerController : MonoBehaviour
     {
         if (gameSelected == null)
         {
-            Debug.LogError("gameSelected no est� inicializado.");
+             Debug.LogError("gameSelected no está inicializado.");
             categorySelected = null;
             return;
         }
@@ -131,8 +189,8 @@ public class PlayerController : MonoBehaviour
 
         if (gameSelected == null)
         {
-            Debug.LogWarning($"No se encontr� la categor�a '{catName_}' en dataGame.");
-        }
+          Debug.LogWarning($"No se encontró la categoría '{catName_}' en dataGame.");
+       }
         else
         {
             this.categoryName = catName_;
@@ -158,9 +216,10 @@ public class PlayerController : MonoBehaviour
     }
     public void SelectionGame(string gameName)
     {
+     
         if (dataGame == null)
         {
-            Debug.LogError("dataGame no est� inicializado.");
+            Debug.LogError("dataGame no está inicializado.");
             gameSelected = null;
             return;
         }
@@ -241,7 +300,7 @@ public class PlayerController : MonoBehaviour
     public void SetMemoria()
     {
         SetGameName("memoria");
-        SetCategory("n�meros");
+        SetCategory("números");
         SelectionLevel("2");
 
     }
