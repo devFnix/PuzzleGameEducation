@@ -152,7 +152,7 @@ public class RamdomWordCruci : MonoBehaviour
         string letter = clickedButton.GetComponent<LetterCruci>().texto;
         visitButton.Add(clickedButton); // Agregar el bot�n a la lista de visitados
 
-        Debug.Log($"Button clicked: {buttonIndex}, {letter}");
+        // Debug.Log($"Button clicked: {buttonIndex}, {letter}");
         HandleButtonClick(buttonIndex, letter);
         TryDrawLine(); // Intentar dibujar una l�nea si hay al menos 2 botones visitados
     }
@@ -195,10 +195,10 @@ public class RamdomWordCruci : MonoBehaviour
     {
         if (concatenatedString?.Length == selectedWord?.Length)
         {
-            Debug.Log("misma longitud");
+            // Debug.Log("misma longitud");
             if (concatenatedString == selectedWord)
             {
-                Debug.Log("Iguales");
+                // Debug.Log("Iguales");
                 words.Remove(selectedWord);
 
                 // if (words.Count > 0)

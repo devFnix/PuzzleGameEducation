@@ -3,16 +3,45 @@ using UnityEngine.UI;
 
 public class CellView : MonoBehaviour
 {
+    public string letter = ""; // Almacena la letra de la celda
     public Text letterText;
     public Image background; // Arrastra aquí la imagen de fondo de la celda
-
+    public int position = -1;
+    public bool isVisible = false; // Indica si la celda es visible o no
+    public bool isInteractive = false; // Indica si la celda es interactiva o no
+    CrosswordManager crosswordManager;
+    Button button;
+    void Start()
+    {
+        button = GetComponent<Button>();
+        button.interactable = isInteractive; // Configura la interactividad del botón
+        if (isInteractive) isVisible = true;
+        button.onClick.AddListener(() =>
+        {
+            if (crosswordManager != null)
+            {
+                crosswordManager.SelectCellOption(position);
+            }
+            else
+            {
+                Debug.LogError("ERROR: crosswordManager no está asignado en CellView.", this.gameObject);
+            }
+        });
+    }
+    public void SetCrossWM(CrosswordManager crosswordManager)
+    {
+        this.crosswordManager = crosswordManager;
+    }
     public void SetLetter(char letter)
     {
         if (letterText != null)
         {
+            this.letter = letter.ToString();
             letterText.text = letter.ToString();
-            letterText.enabled = true;
-            Debug.Log($"Texto '{letter}' asignado a la UI en {gameObject.name}");
+            letterText.enabled = isVisible;
+            if (letter >= '0' && letter <= '9') // Verifica si el carácter es un dígito
+                position = int.Parse(letter.ToString()); // Asigna la posición basada en el dígito de la letra
+            // Debug.Log($"Texto '{letter}' asignado a la UI en {gameObject.name}");
         }
         else
         {
@@ -35,4 +64,9 @@ public class CellView : MonoBehaviour
             background.color = tempColor;
         }
     }
-} 
+    void Update()
+    {
+        if (isInteractive) letterText.enabled = true;
+        if(isVisible)  letterText.enabled = true;
+    }
+}

@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
 
     private void OnDestroy()
     {
@@ -78,27 +78,27 @@ public class PlayerController : MonoBehaviour
         // gameSelected = new DataGame();
         categorySelected = new Categoria();
         levelSelected = new Niveles();
-        
+
         // Reiniciar variables primitivas
         currentOption = 0;
         gameName = "";
         categoryName = "";
         levelName = "";
         level = 0;
-        
+
         // Reiniciar enum
         gameMenuOption = GameMenuOption.Ninguno;
         lastGameMenuOption = GameMenuOption.Ninguno;
-        
+
         // Reiniciar estado
         isInitialized = false;
-        
+
         // Opcional: Recargar datos JSON si es necesario
-        if(dataGame == null)
+        if (dataGame == null)
         {
             CargarDatosJson(urlJSON);
         }
-        
+
         Debug.Log("PlayerController: Todas las variables han sido reiniciadas");
 
     }
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         ResetAllVariables();
     }
 
-   
+
     void Start()
     {
         CargarDatosJson(urlJSON);
@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
     {
         if (levelSelected == null || levelSelected.opciones == null || this.currentOption < 0 || this.currentOption >= levelSelected.opciones.Count)
         {
-           Debug.LogError("Nivel o opciones no están inicializados o posición fuera de rango.");
+            Debug.LogError("Nivel o opciones no están inicializados o posición fuera de rango.");
             Debug.LogError($"Nivel: {levelSelected?.nivel}, Opciones: {levelSelected?.opciones?.Count}, CurrentOption: {this.currentOption}");
             return null;
         }
@@ -143,6 +143,10 @@ public class PlayerController : MonoBehaviour
     {
         return levelSelected.opciones.Find(x => x.opciones == nameOption);
     }
+    public Opciones GetOptionPosition(int position)
+    {
+        return levelSelected.opciones[position];
+    }
     public void SetLevel(int level)
     {
         this.level = level;
@@ -151,8 +155,8 @@ public class PlayerController : MonoBehaviour
     {
         if (categorySelected == null)
         {
-           Debug.LogError("categoria no está inicializado.");
-             gameSelected = null;
+            Debug.LogError("categoria no está inicializado.");
+            gameSelected = null;
             return;
         }
 
@@ -180,7 +184,7 @@ public class PlayerController : MonoBehaviour
     {
         if (gameSelected == null)
         {
-             Debug.LogError("gameSelected no está inicializado.");
+            Debug.LogError("gameSelected no está inicializado.");
             categorySelected = null;
             return;
         }
@@ -189,8 +193,8 @@ public class PlayerController : MonoBehaviour
 
         if (gameSelected == null)
         {
-          Debug.LogWarning($"No se encontró la categoría '{catName_}' en dataGame.");
-       }
+            Debug.LogWarning($"No se encontró la categoría '{catName_}' en dataGame.");
+        }
         else
         {
             this.categoryName = catName_;
@@ -216,7 +220,7 @@ public class PlayerController : MonoBehaviour
     }
     public void SelectionGame(string gameName)
     {
-     
+
         if (dataGame == null)
         {
             Debug.LogError("dataGame no está inicializado.");
