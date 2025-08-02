@@ -71,7 +71,7 @@ public class CardsController : MonoBehaviour
             }
             if (loadedSprite_ == null)
             {
-                Debug.LogWarning("No se encontr� la imagen: " + "images/" + procesar + "_b.png");
+                Debug.LogWarning("No se encontr� la imagen: " + rutaB +".png");
                 continue;
             }
             else

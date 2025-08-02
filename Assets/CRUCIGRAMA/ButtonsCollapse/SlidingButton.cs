@@ -4,7 +4,6 @@ using PrimeTween;
 
 public class SlidingButton : MonoBehaviour
 {
-    [Header("Arrastra aquí el botón que quieres usar")]
     [SerializeField] private Button toggleButton;
 
     [Header("Arrastra aquí el panel que quieres mostrar/ocultar")]
@@ -22,7 +21,8 @@ public class SlidingButton : MonoBehaviour
     private Vector2 shownPos;
     private bool isPanelActive = false;
     private Sequence currentSequence;
-
+    private Opciones optionCurrent;
+    [SerializeField] private RamdomWordCruci ramdomWordCruci;
     void Awake()
     {
         if (toggleButton == null)
@@ -91,7 +91,12 @@ public class SlidingButton : MonoBehaviour
         }
         isPanelActive = !isPanelActive;
     }
-
+    public void OpenPanel(Opciones option)
+    {
+        optionCurrent = option;
+        ramdomWordCruci.InsertOption(option);
+        TogglePanel();
+    }
     void OnDestroy()
     {
         if (currentSequence.isAlive)

@@ -8,11 +8,12 @@ using UnityEngine.UI;
 public class RamdomWordCruci : MonoBehaviour
 {
     [SerializeField]
-    public RectTransform panelLetras;
+    public GameObject panelLetrasGame;
+    RectTransform panelLetras;
     public Button buttonPrefab;
     public Button confirmButton;
     public string selectedWord;
-    private List<string> words;// = { "Wasi","Punku","Wayk�una wasi","Hisp�ana wasi","Pu�una wasi","Tiyana wasi"};
+    private string  wordShow;// = { "Wasi","Punku","Wayk�una wasi","Hisp�ana wasi","Pu�una wasi","Tiyana wasi"};
     public List<Button> listaButtons = new List<Button>();
     public string concatenatedString = "";
     public Text concatenatedText;
@@ -21,18 +22,17 @@ public class RamdomWordCruci : MonoBehaviour
     Niveles niveles = new Niveles();
     void Start()
     {
-        List<string> wordsList = new List<string>();
-        // wordsList.Add("maria");
-        // wordsList.Add("casa");
-        wordsList.Add("computadoras todos");
-        words = wordsList;
+        panelLetras = panelLetrasGame.GetComponent<RectTransform>();
         cruciAristas = FindObjectOfType<CruciAristas>();
+
         //confirmButton = GameObject.Find("ButtonPLAY")?.GetComponent<Button>();
         //concatenatedText = GameObject.Find("TextConcat")?.GetComponent<Text>();
         if (concatenatedText != null)
         {
             concatenatedText.text = concatenatedString;
-        }else{
+        }
+        else
+        {
             concatenatedText = GameObject.Find("TextConcat")?.GetComponent<Text>();
         }
         // if (confirmButton != null)
@@ -40,6 +40,22 @@ public class RamdomWordCruci : MonoBehaviour
         //     confirmButton.onClick.AddListener(OnConfirm);
         // }
         GenerateButtons();
+    }
+    public void InsertOption(Opciones option)
+    {
+        Debug.Log("hola"+ option.opciones);
+        wordShow=""; // Limpiar la lista de palabras antes de agregar una nueva
+        ClearAll();
+        if (option != null)
+        {
+            string word = option.opciones;
+            string description = option.descripcion_quechua;
+            string imagenName = option.imagen;
+            string sonidoName = option.sonido;
+            wordShow = word;
+            GenerateButtons();
+
+        }
     }
     private void OnConfirm()
     {
@@ -70,12 +86,17 @@ public class RamdomWordCruci : MonoBehaviour
         {
             cruciAristas.ClearLines();
         }
+        foreach (Transform child in panelLetras)
+        {
+            DestroyImmediate(child.gameObject);
+        }
+        visitButton.Clear(); // Limpiar la lista de botones visitados
     }
 
     void GenerateButtons()
     {
-        int index = Random.Range(0, words.Count);
-        selectedWord = words[index];
+        int index = 0;
+        selectedWord = wordShow;
         selectedWord = new string(selectedWord.ToCharArray().OrderBy(x => Random.value).ToArray());
         // Vector2[] positions = new Vector2[selectedWord.Length];
         // char[] letters = new char[selectedWord.Length];
@@ -199,7 +220,7 @@ public class RamdomWordCruci : MonoBehaviour
             if (concatenatedString == selectedWord)
             {
                 // Debug.Log("Iguales");
-                words.Remove(selectedWord);
+                // words.Remove(selectedWord);
 
                 // if (words.Count > 0)
                 // {

@@ -235,6 +235,7 @@ MonoBehaviour:
   panelToToggle: {fileID: 1769958144}
   animDuration: 0.4
   animEase: 9
+  ramdomWordCruci: {fileID: 1909911958}
 --- !u!4 &81373509
 Transform:
   m_ObjectHideFlags: 0
@@ -544,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8cc0b2ca615084ab497104d595026c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidthHeight: 10
+  gridWidthHeight: 12
   cellPrefab: {fileID: 6152980029812713393, guid: 48963554aa8d71141ae58a994366b6da, type: 3}
   gridParent: {fileID: 912021605}
 --- !u!4 &822733307
@@ -598,7 +599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 221.1258, y: 0}
+  m_AnchoredPosition: {x: -48, y: 0}
   m_SizeDelta: {x: -442.2517, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &912021606
@@ -662,7 +663,7 @@ MonoBehaviour:
   m_CellSize: {x: 80, y: 80}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
-  m_ConstraintCount: 10
+  m_ConstraintCount: 12
 --- !u!1 &1244711290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8235294}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1689,7 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4b3b2d4fd8a814faf8615bd768e293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelLetras: {fileID: 1270915065}
+  panelLetrasGame: {fileID: 1270915064}
   buttonPrefab: {fileID: 5313055131468311007, guid: f0837019c336ae84492dd3767b22974f, type: 3}
   confirmButton: {fileID: 0}
   selectedWord: 

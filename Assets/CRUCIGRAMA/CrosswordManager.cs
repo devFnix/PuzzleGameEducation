@@ -17,7 +17,8 @@ public class CrosswordManager : MonoBehaviour
     private CrosswordGrid crosswordGrid;
     private List<WordPlacement> wordPlacements;
     private CrosswordGenerator generator;
-GameObject[][] lista;
+    SlidingButton slidingButton;
+    GameObject[][] lista;
     private void Awake()
     {
         // Inicializa la lista de celdas
@@ -29,6 +30,7 @@ GameObject[][] lista;
     }
     void Start()
     {
+        slidingButton = FindObjectOfType<SlidingButton>();
         rows = gridWidthHeight;
         cols = gridWidthHeight;
         generator = new CrosswordGenerator();
@@ -59,26 +61,33 @@ GameObject[][] lista;
             // }
 
             var wordsAndClues = new List<System.Tuple<string, string>>
-        {
-            // new System.Tuple<string, string>("CASA", "Lugar para vivir"),
-            // new System.Tuple<string, string>("SOL", "Estrella del sistema solar"),
-            // new System.Tuple<string, string>("LUNA", "Satélite de la Tierra"),
-            // new System.Tuple<string, string>("PROGRAMACION", "Arte de escribir código."),
-            // new System.Tuple<string, string>("ALGORITMO", "Secuencia de pasos para resolver un problema."),
-            // new System.Tuple<string, string>("COMPILADOR", "Traduce código fuente a código máquina."),
-            // new System.Tuple<string, string>("VARIABLES", "Espacios de memoria para almacenar datos."),
-            // new System.Tuple<string, string>("FUNCION", "Bloque de código reutilizable."),
-            // new System.Tuple<string, string>("POLIMORFISMO", "Capacidad de un objeto de tomar muchas formas."),
-            new System.Tuple<string, string>("1CLASE", "1"),
-            new System.Tuple<string, string>("2OBJETO", "2"),
-            new System.Tuple<string, string>("3HERENCIA", "3"),
-            new System.Tuple<string, string>("4DEPURA", "4"),
-            new System.Tuple<string, string>("5BUCLE", "5"),
-            new System.Tuple<string, string>("6ARREGLO", "6"),
-            new System.Tuple<string, string>("7PUNTERO", "7"),
-            // new System.Tuple<string, string>("BIBLIOTECA", "Conjunto de funciones y clases predefinidas."),
-            // new System.Tuple<string, string>("RECURSION", "Función que se llama a sí misma.")
-        };
+            {
+                // new System.Tuple<string, string>("CASA", "Lugar para vivir"),
+                // new System.Tuple<string, string>("SOL", "Estrella del sistema solar"),
+                // new System.Tuple<string, string>("LUNA", "Satélite de la Tierra"),
+                // new System.Tuple<string, string>("PROGRAMACION", "Arte de escribir código."),
+                // new System.Tuple<string, string>("ALGORITMO", "Secuencia de pasos para resolver un problema."),
+                // new System.Tuple<string, string>("COMPILADOR", "Traduce código fuente a código máquina."),
+                // new System.Tuple<string, string>("VARIABLES", "Espacios de memoria para almacenar datos."),
+                // new System.Tuple<string, string>("FUNCION", "Bloque de código reutilizable."),
+                // new System.Tuple<string, string>("POLIMORFISMO", "Capacidad de un objeto de tomar muchas formas."),
+                // new System.Tuple<string, string>("1CLASE", "1"),
+                // new System.Tuple<string, string>("2OBJETO", "2"),
+                // new System.Tuple<string, string>("3HERENCIA", "3"),
+                // new System.Tuple<string, string>("4DEPURA", "4"),
+                // new System.Tuple<string, string>("5BUCLE", "5"),
+                // new System.Tuple<string, string>("6ARREGLO", "6"),
+                // new System.Tuple<string, string>("7PUNTERO", "7"),
+                // new System.Tuple<string, string>("BIBLIOTECA", "Conjunto de funciones y clases predefinidas."),
+                // new System.Tuple<string, string>("RECURSION", "Función que se llama a sí misma.")
+            };
+            for (int i = 0; i < levelSelected.opciones.Count; i++)
+            {
+                Opciones opcion = levelSelected.opciones[i];
+                wordsAndClues.Add(new System.Tuple<string, string>(i.ToString() + opcion.opciones, (i).ToString()));
+            }
+
+
             wordPlacements = generator.GenerateCrossword(wordsAndClues, crosswordGrid);
             foreach (WordPlacement w in wordPlacements)
             {
@@ -125,14 +134,18 @@ GameObject[][] lista;
     }
     public void SelectCellOption(int option)
     {
+        Opciones optionS = PlayerController.instance.GetOptionPosition(option);
+        this.OpenPanel(optionS);
+
         Debug.Log($"Opción seleccionada: {option}");
-        WordPlacement optionSelect = wordPlacements.FirstOrDefault(w => w.Clue == option.ToString() );
+        WordPlacement optionSelect = wordPlacements.FirstOrDefault(w => w.Clue == option.ToString());
         if (optionSelect != null)
         {
             int row = optionSelect.Row;
             int col = optionSelect.Col;
             bool isHorizontal = optionSelect.IsHorizontal;
-            if(isHorizontal)
+
+            if (isHorizontal)
             {
                 for (int i = 0; i < optionSelect.Word.Length; i++)
                 {
@@ -152,10 +165,23 @@ GameObject[][] lista;
                     //cellView.SetLetter(optionSelect.Word[i]);
                 }
             }
-          }  else
+        }
+        else
         {
             Debug.LogWarning($"No se encontró una palabra con la opción: {option}");
         }
         //activamos el ingreso de letras
+    }
+    void OpenPanel(Opciones op)
+    {
+        if (slidingButton == null)
+        {
+            slidingButton = FindObjectOfType<SlidingButton>();
+            slidingButton.OpenPanel(op);
+        }
+        else
+        {
+            slidingButton.OpenPanel(op);
+        }
     }
 }

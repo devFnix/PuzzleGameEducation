@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
 
         if (levelSelected == null)
         {
-            Debug.LogWarning($"No se encontr� el juego '{gameName}' en dataGame.");
+            Debug.LogWarning($"No se encontró el juego '{gameName}' en dataGame.");
         }
         else
         {
@@ -182,6 +182,7 @@ public class PlayerController : MonoBehaviour
     }
     public void SetCategory(string catName_)
     {
+        Debug.Log($"Mi categoria: {catName_} - Total categorias: {gameSelected?.categorias?.Count}");
         if (gameSelected == null)
         {
             Debug.LogError("gameSelected no está inicializado.");
@@ -214,7 +215,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No se encontr� el archivo JSON en Resources: " + rutaArchivoResources);
+            Debug.LogError("No se encontró el archivo JSON en Resources: " + rutaArchivoResources);
             dataGame = null;
         }
     }
@@ -232,7 +233,7 @@ public class PlayerController : MonoBehaviour
 
         if (gameSelected == null)
         {
-            Debug.LogWarning($"No se encontr� el juego '{gameName}' en dataGame.");
+            Debug.LogWarning($"No se encontró el juego '{gameName}' en dataGame.");
         }
         else
         {
@@ -271,6 +272,7 @@ public class PlayerController : MonoBehaviour
 
     public string GetNameReal(string name)
     {
+        Debug.Log($" el nombre {name}");
         switch (name)
         {
             case "conectar":
