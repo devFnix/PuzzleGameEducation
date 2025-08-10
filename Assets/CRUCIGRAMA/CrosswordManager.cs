@@ -64,22 +64,7 @@ public class CrosswordManager : MonoBehaviour
             {
                 // new System.Tuple<string, string>("CASA", "Lugar para vivir"),
                 // new System.Tuple<string, string>("SOL", "Estrella del sistema solar"),
-                // new System.Tuple<string, string>("LUNA", "Satélite de la Tierra"),
-                // new System.Tuple<string, string>("PROGRAMACION", "Arte de escribir código."),
-                // new System.Tuple<string, string>("ALGORITMO", "Secuencia de pasos para resolver un problema."),
-                // new System.Tuple<string, string>("COMPILADOR", "Traduce código fuente a código máquina."),
-                // new System.Tuple<string, string>("VARIABLES", "Espacios de memoria para almacenar datos."),
-                // new System.Tuple<string, string>("FUNCION", "Bloque de código reutilizable."),
-                // new System.Tuple<string, string>("POLIMORFISMO", "Capacidad de un objeto de tomar muchas formas."),
-                // new System.Tuple<string, string>("1CLASE", "1"),
-                // new System.Tuple<string, string>("2OBJETO", "2"),
-                // new System.Tuple<string, string>("3HERENCIA", "3"),
-                // new System.Tuple<string, string>("4DEPURA", "4"),
-                // new System.Tuple<string, string>("5BUCLE", "5"),
-                // new System.Tuple<string, string>("6ARREGLO", "6"),
-                // new System.Tuple<string, string>("7PUNTERO", "7"),
-                // new System.Tuple<string, string>("BIBLIOTECA", "Conjunto de funciones y clases predefinidas."),
-                // new System.Tuple<string, string>("RECURSION", "Función que se llama a sí misma.")
+                
             };
             for (int i = 0; i < levelSelected.opciones.Count; i++)
             {
@@ -135,7 +120,7 @@ public class CrosswordManager : MonoBehaviour
     public void SelectCellOption(int option)
     {
         Opciones optionS = PlayerController.instance.GetOptionPosition(option);
-        this.OpenPanel(optionS);
+        this.OpenPanel(optionS, option);
 
         Debug.Log($"Opción seleccionada: {option}");
         WordPlacement optionSelect = wordPlacements.FirstOrDefault(w => w.Clue == option.ToString());
@@ -144,14 +129,14 @@ public class CrosswordManager : MonoBehaviour
             int row = optionSelect.Row;
             int col = optionSelect.Col;
             bool isHorizontal = optionSelect.IsHorizontal;
-
+            CellView cellViewTmp = null;
             if (isHorizontal)
             {
                 for (int i = 0; i < optionSelect.Word.Length; i++)
                 {
-                    CellView cellView = lista[row][col + i].GetComponent<CellView>();
-                    cellView.isInteractive = false;
-                    cellView.isVisible = true;
+                    cellViewTmp = lista[row][col + i].GetComponent<CellView>();
+                    //cellView.isInteractive = false;
+                    //cellView.isVisible = true;//cambiar
                     //cellView.SetLetter(optionSelect.Word[i]);
                 }
             }
@@ -159,12 +144,13 @@ public class CrosswordManager : MonoBehaviour
             {
                 for (int i = 0; i < optionSelect.Word.Length; i++)
                 {
-                    CellView cellView = lista[row + i][col].GetComponent<CellView>();
-                    cellView.isInteractive = false;
-                    cellView.isVisible = true;
+                    cellViewTmp = lista[row + i][col].GetComponent<CellView>();
+                    //cellView.isInteractive = false;
+                    //cellView.isVisible = true;//cambiar
                     //cellView.SetLetter(optionSelect.Word[i]);
                 }
             }
+            cellViewTmp.isInteractive = EsSoloDigitos(cellViewTmp?.letter);
         }
         else
         {
@@ -172,16 +158,64 @@ public class CrosswordManager : MonoBehaviour
         }
         //activamos el ingreso de letras
     }
-    void OpenPanel(Opciones op)
+    public void ShowRespuesta(int option) {
+        Opciones optionS = PlayerController.instance.GetOptionPosition(option);
+        // this.OpenPanel(optionS, option);
+        Debug.Log($"Opción seleccionada: {option}");
+        WordPlacement optionSelect = wordPlacements.FirstOrDefault(w => w.Clue == option.ToString());
+        if (optionSelect != null)
+        {
+            int row = optionSelect.Row;
+            int col = optionSelect.Col;
+            bool isHorizontal = optionSelect.IsHorizontal;
+            CellView cellViewTmp = null;
+            if (isHorizontal)
+            {
+                for (int i = 0; i < optionSelect.Word.Length; i++)
+                {
+                    cellViewTmp = lista[row][col + i].GetComponent<CellView>();
+                    //cellView.isInteractive = false;
+                    cellViewTmp.isVisible = true;//cambiar
+                    //cellView.SetLetter(optionSelect.Word[i]);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < optionSelect.Word.Length; i++)
+                {
+                    cellViewTmp = lista[row + i][col].GetComponent<CellView>();
+                    //cellView.isInteractive = false;
+                    cellViewTmp.isVisible = true;//cambiar
+                    //cellView.SetLetter(optionSelect.Word[i]);
+                }
+            }
+        }
+
+        slidingButton.ClosePanel();
+    }
+    public static bool EsSoloDigitos(string texto)
+    {
+        if (string.IsNullOrEmpty(texto))
+            return false;
+
+        foreach (char c in texto)
+        {
+            if (!char.IsDigit(c))
+                return false;
+        }
+
+        return true;
+    }
+    void OpenPanel(Opciones op,int position)
     {
         if (slidingButton == null)
         {
             slidingButton = FindObjectOfType<SlidingButton>();
-            slidingButton.OpenPanel(op);
+            slidingButton.OpenPanel(op,position);
         }
         else
         {
-            slidingButton.OpenPanel(op);
+            slidingButton.OpenPanel(op,position);
         }
     }
 }

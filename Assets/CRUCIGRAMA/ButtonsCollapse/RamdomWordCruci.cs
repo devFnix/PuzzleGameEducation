@@ -13,7 +13,7 @@ public class RamdomWordCruci : MonoBehaviour
     public Button buttonPrefab;
     public Button confirmButton;
     public string selectedWord;
-    private string  wordShow;// = { "Wasi","Punku","Wayk�una wasi","Hisp�ana wasi","Pu�una wasi","Tiyana wasi"};
+    private string wordShow;// = { "Wasi","Punku","Wayk�una wasi","Hisp�ana wasi","Pu�una wasi","Tiyana wasi"};
     public List<Button> listaButtons = new List<Button>();
     public string concatenatedString = "";
     public Text concatenatedText;
@@ -43,9 +43,10 @@ public class RamdomWordCruci : MonoBehaviour
     }
     public void InsertOption(Opciones option)
     {
-        Debug.Log("hola"+ option.opciones);
-        wordShow=""; // Limpiar la lista de palabras antes de agregar una nueva
+        Debug.Log("hola" + option.opciones);
+        wordShow = ""; // Limpiar la lista de palabras antes de agregar una nueva
         ClearAll();
+        ClearAristas();
         if (option != null)
         {
             string word = option.opciones;
@@ -79,16 +80,26 @@ public class RamdomWordCruci : MonoBehaviour
             concatenatedText.text = concatenatedString;
         }
     }
-    void ClearAll()
+    public void ClearAll()
     {
         concatenatedString = "";
         if (cruciAristas != null)
         {
             cruciAristas.ClearLines();
         }
+        // CORRECCIÓN 1: Destruir botones específicos de la lista primero
+        foreach (Button button in listaButtons)
+        {
+            if (button != null)
+            {
+                Destroy(button.gameObject); // Cambiar DestroyImmediate por Destroy
+            }
+        }
+        listaButtons.Clear(); // CORRECCIÓN 2: Limpiar la lista después de destruir
+
         foreach (Transform child in panelLetras)
         {
-            DestroyImmediate(child.gameObject);
+            Destroy(child.gameObject);
         }
         visitButton.Clear(); // Limpiar la lista de botones visitados
     }
@@ -97,50 +108,55 @@ public class RamdomWordCruci : MonoBehaviour
     {
         int index = 0;
         selectedWord = wordShow;
-        selectedWord = new string(selectedWord.ToCharArray().OrderBy(x => Random.value).ToArray());
-        // Vector2[] positions = new Vector2[selectedWord.Length];
-        // char[] letters = new char[selectedWord.Length];
-
-        // for (int i = 0; i < selectedWord.Length; i++)
-        // {
-        //     char letter = selectedWord[i];
-        //     letters[i] = letter;
-
-        //     // Generar posiciones aleatorias dentro del panel
-        //     RectTransform panelRect = panelLetras.GetComponent<RectTransform>();
-        //     float randomX = Random.Range(panelRect.rect.xMin, panelRect.rect.xMax);
-        //     float randomY = Random.Range(panelRect.rect.yMin, panelRect.rect.yMax);
-
-        //     positions[i] = new Vector2(randomX, randomY);
-        // }
-
-        // GenerateButtonsOnScreen(letters, positions);
-        // 1. Obtener el centro y el radio del panel
-        Vector2[] positions = new Vector2[selectedWord.Length];
-        char[] letters = new char[selectedWord.Length];
-        RectTransform panelRect = panelLetras.GetComponent<RectTransform>();
-        Vector2 center = panelRect.rect.center;
-        // Usamos la dimensión más pequeña (alto o ancho) para que el círculo siempre quepa
-        float radius = Mathf.Min(panelRect.rect.width, panelRect.rect.height) * 0.45f; // 45% del tamaño para dejar un margen
-
-        // 2. Calcular el ángulo entre cada letra
-        int cantidadDeLetras = selectedWord.Length;
-        float anguloPorLetra = 360f / cantidadDeLetras;
-
-        // 3. Recorrer cada letra para calcular su posición
-        for (int i = 0; i < cantidadDeLetras; i++)
+        if (selectedWord?.Length > 0)
         {
-            char letter = selectedWord[i];
-            letters[i] = letter;
-            float anguloActual = (i * anguloPorLetra) - 90f;
-            float anguloEnRadianes = anguloActual * Mathf.Deg2Rad;
+            Debug.Log($"Palabra seleccionada {selectedWord}");
+            string wordShuffle = new string(selectedWord.ToCharArray().OrderBy(x => Random.value).ToArray());
+            // Vector2[] positions = new Vector2[selectedWord.Length];
+            // char[] letters = new char[selectedWord.Length];
 
-            // 4. Calcular las coordenadas (x, y) en el círculo
-            float x = center.x + radius * Mathf.Cos(anguloEnRadianes);
-            float y = center.y + radius * Mathf.Sin(anguloEnRadianes);
-            positions[i] = new Vector2(x, y);
+            // for (int i = 0; i < selectedWord.Length; i++)
+            // {
+            //     char letter = selectedWord[i];
+            //     letters[i] = letter;
+
+            //     // Generar posiciones aleatorias dentro del panel
+            //     RectTransform panelRect = panelLetras.GetComponent<RectTransform>();
+            //     float randomX = Random.Range(panelRect.rect.xMin, panelRect.rect.xMax);
+            //     float randomY = Random.Range(panelRect.rect.yMin, panelRect.rect.yMax);
+
+            //     positions[i] = new Vector2(randomX, randomY);
+            // }
+
+            // GenerateButtonsOnScreen(letters, positions);
+            // 1. Obtener el centro y el radio del panel
+            Vector2[] positions = new Vector2[wordShuffle.Length];
+            char[] letters = new char[wordShuffle.Length];
+            RectTransform panelRect = panelLetras.GetComponent<RectTransform>();
+            Vector2 center = panelRect.rect.center;
+            // Usamos la dimensión más pequeña (alto o ancho) para que el círculo siempre quepa
+            float radius = Mathf.Min(panelRect.rect.width, panelRect.rect.height) * 0.45f; // 45% del tamaño para dejar un margen
+
+            // 2. Calcular el ángulo entre cada letra
+            int cantidadDeLetras = wordShuffle.Length;
+            float anguloPorLetra = 360f / cantidadDeLetras;
+
+            // 3. Recorrer cada letra para calcular su posición
+            for (int i = 0; i < cantidadDeLetras; i++)
+            {
+                char letter = wordShuffle[i];
+                letters[i] = letter;
+                float anguloActual = (i * anguloPorLetra) - 90f;
+                float anguloEnRadianes = anguloActual * Mathf.Deg2Rad;
+
+                // 4. Calcular las coordenadas (x, y) en el círculo
+                float x = center.x + radius * Mathf.Cos(anguloEnRadianes);
+                float y = center.y + radius * Mathf.Sin(anguloEnRadianes);
+                positions[i] = new Vector2(x, y);
+            }
+            GenerateButtonsOnScreen(letters, positions);
         }
-        GenerateButtonsOnScreen(letters, positions);
+
     }
 
     void GenerateButtonsOnScreen(char[] letters, Vector2[] positions)
@@ -214,12 +230,18 @@ public class RamdomWordCruci : MonoBehaviour
     }
     private void Update()
     {
-        if (concatenatedString?.Length == selectedWord?.Length)
+        if (concatenatedString?.Length == selectedWord?.Length && selectedWord?.Length > 0)
         {
             // Debug.Log("misma longitud");
             if (concatenatedString == selectedWord)
             {
-                // Debug.Log("Iguales");
+                Debug.Log("Iguales");
+                //CrosswordManager crosswordManager = FindObjectOfType<CrosswordManager>();
+                int pos = PlayerController.instance.GetCurrentOption();
+                AudioControllerCoIn.instance.PlayCorrectSound();
+                //delay de 1 segundo
+                StartCoroutine(ShowRespuestaWithDelay(pos));
+                //crosswordManager.ShowRespuesta(pos);
                 // words.Remove(selectedWord);
 
                 // if (words.Count > 0)
@@ -232,6 +254,7 @@ public class RamdomWordCruci : MonoBehaviour
                 //     // Aqu� puedes agregar c�digo para manejar cuando se completan todas las palabras
                 //     // Por ejemplo, cargar otra escena o mostrar un mensaje de victoria
                 // }
+                selectedWord = "";
             }
             else
             {
@@ -239,5 +262,13 @@ public class RamdomWordCruci : MonoBehaviour
                 ClearAristas();
             }
         }
+    }
+    private IEnumerator ShowRespuestaWithDelay(int pos)
+    {
+        // Espera a que termine el sonido de AudioControllerCoIn.instance.PlayCorrectSound()
+        // Si PlayCorrectSound() no es asíncrono, simplemente espera 1 segundo
+        yield return new WaitForSeconds(2f);
+        CrosswordManager crosswordManager = FindObjectOfType<CrosswordManager>();
+        crosswordManager.ShowRespuesta(pos);
     }
 }

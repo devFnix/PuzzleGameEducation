@@ -147,6 +147,22 @@ public class PlayerController : MonoBehaviour
     {
         return levelSelected.opciones[position];
     }
+    public int GetPositionOption(Opciones opc) {
+        string nameOption = opc.opciones;
+        if (levelSelected == null || levelSelected.opciones == null)
+        {
+            Debug.LogError("Nivel o opciones no están inicializados.");
+            return -1;
+        }
+        for (int i = 0; i < levelSelected.opciones.Count; i++)
+        {
+            if (levelSelected.opciones[i].opciones == nameOption)
+            {
+                return i;
+            }
+        }
+        return 0;
+    }
     public void SetLevel(int level)
     {
         this.level = level;
@@ -192,9 +208,9 @@ public class PlayerController : MonoBehaviour
 
         categorySelected = gameSelected?.categorias.Find(x => x.categoria == catName_);
 
-        if (gameSelected == null)
+        if (categorySelected == null)
         {
-            Debug.LogWarning($"No se encontró la categoría '{catName_}' en dataGame.");
+            Debug.LogError($"No se encontró la categoría '{catName_}' en el juego '{gameSelected.juego}'.");
         }
         else
         {

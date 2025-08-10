@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\CruciAristas.cs" />
     <Compile Include="Assets\Scripts\GoToScene.cs" />
+    <Compile Include="Assets\ActiveGameobject.cs" />
     <Compile Include="Assets\CRUCIGRAMA\CrosswordGenerator.cs" />
     <Compile Include="Assets\Scripts\ShowCategories.cs" />
     <Compile Include="Assets\CONECTAR\Letter.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\Scripts\OptionPhoto.cs" />
     <Compile Include="Assets\LOGIN\PasswordToggle.cs" />
     <Compile Include="Assets\CRUCIGRAMA\WordPlacement.cs" />
+    <Compile Include="Assets\Scripts\HelpMenuCrucigrama.cs" />
     <Compile Include="Assets\CRUCIGRAMA\CrosswordGrid.cs" />
     <Compile Include="Assets\LOGIN\LoginManager.cs" />
     <Compile Include="Assets\LOGIN\UserMunanky.cs" />

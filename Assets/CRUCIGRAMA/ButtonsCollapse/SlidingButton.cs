@@ -23,6 +23,7 @@ public class SlidingButton : MonoBehaviour
     private Sequence currentSequence;
     private Opciones optionCurrent;
     [SerializeField] private RamdomWordCruci ramdomWordCruci;
+    [SerializeField] public HelpMenuCrucigrama helpMenuCrucigrama;
     void Awake()
     {
         if (toggleButton == null)
@@ -40,6 +41,8 @@ public class SlidingButton : MonoBehaviour
 
         // Asegúrate de que el panel tenga CanvasGroup para animar el fade
         panelCanvasGroup = panelToToggle.GetComponent<CanvasGroup>();
+        if (!!helpMenuCrucigrama)
+            helpMenuCrucigrama = FindObjectOfType<HelpMenuCrucigrama>();
         if (panelCanvasGroup == null)
             panelCanvasGroup = panelToToggle.AddComponent<CanvasGroup>();
 
@@ -63,8 +66,16 @@ public class SlidingButton : MonoBehaviour
         isPanelActive = false;
 
         toggleButton.onClick.AddListener(TogglePanel);
-    }
+        if (!panelToToggle.activeInHierarchy)
+            panelToToggle.SetActive(true);
 
+        // Now start your tween
+        //PrimeTween.Tween(...);
+    }
+    private void Start()
+    {
+            panelToToggle?.SetActive(false);
+    }
     void TogglePanel()
     {
         if (currentSequence.isAlive)
@@ -72,6 +83,7 @@ public class SlidingButton : MonoBehaviour
 
         if (!isPanelActive)
         {
+            helpMenuCrucigrama.OpenHelpPanel();
             panelToToggle.SetActive(true);
             // Animar entrada: fade, scale y slide desde la izquierda
             panelRect.localScale = Vector3.one * 0.9f;
@@ -83,6 +95,7 @@ public class SlidingButton : MonoBehaviour
         else
         {
             // Animar salida: fade, scale y slide a la izquierda
+            helpMenuCrucigrama.CloseHelpPanel();
             currentSequence = Sequence.Create()
                 .Group(Tween.UIAnchoredPosition(panelRect, hiddenPos, animDuration, animEase))
                 .Group(Tween.Alpha(panelCanvasGroup, 0f, animDuration, animEase))
@@ -91,11 +104,16 @@ public class SlidingButton : MonoBehaviour
         }
         isPanelActive = !isPanelActive;
     }
-    public void OpenPanel(Opciones option)
+    public void OpenPanel(Opciones option, int position)
     {
+        ramdomWordCruci.ClearAll();
         optionCurrent = option;
         ramdomWordCruci.InsertOption(option);
+        PlayerController.instance.SetCurrentOption(position);
         TogglePanel();
+    }
+    public void ClosePanel() { 
+        helpMenuCrucigrama.CloseHelpPanel();
     }
     void OnDestroy()
     {

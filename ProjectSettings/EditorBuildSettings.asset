@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/formando palabras.unity
     guid: 2abda2b235f3baf49b770a1242e7933e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/crucigrama.unity
     guid: bdcef524d62072347a16cf6729b7405b
   m_configObjects:

@@ -6,6 +6,9 @@ public class CellView : MonoBehaviour
     public string letter = ""; // Almacena la letra de la celda
     public Text letterText;
     public Image background; // Arrastra aquí la imagen de fondo de la celda
+    public Sprite backgroundNumber; // Arrastra aquí la imagen de fondo de la celda
+    public Sprite backgroundLetter; // Arrastra aquí la imagen de fondo de la celda
+
     public int position = -1;
     public bool isVisible = false; // Indica si la celda es visible o no
     public bool isInteractive = false; // Indica si la celda es interactiva o no
@@ -58,15 +61,28 @@ public class CellView : MonoBehaviour
         }
         if (background != null)
         {
+            
             // Opcional: haz que el fondo de las celdas vacías sea semi-transparente
             var tempColor = background.color;
             tempColor.a = 0f;
             background.color = tempColor;
+            
         }
     }
     void Update()
     {
-        if (isInteractive) letterText.enabled = true;
-        if(isVisible)  letterText.enabled = true;
+        if (isInteractive)
+        {
+            background.sprite = backgroundNumber; // Cambia el fondo a número si es interactivo
+            letterText.enabled = true;
+        }
+        else { 
+            background.sprite = backgroundLetter; // Cambia el fondo a letra si no es interactivo
+        }
+        if (isVisible)
+        {
+
+            letterText.enabled = true;
+        }
     }
 }

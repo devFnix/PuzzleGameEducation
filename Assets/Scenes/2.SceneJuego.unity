@@ -169,14 +169,14 @@ PrefabInstance:
     - target: {fileID: 8062857902535225101, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: b4f2e6d51682c4248a28c7f54cfd31c2, type: 3}
     - target: {fileID: 8062857902634044134, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_Name
       value: Card (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044134, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044136, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: title
@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -212,15 +212,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 280
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -252,11 +252,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 851.0703
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -140
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8062857902634044137, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -278,6 +278,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 81ac9c3cfef0d714e9ed43ae2fbadab4, type: 3}
+    - target: {fileID: 8062857904079584189, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
+      propertyPath: m_text
+      value: Crucigrama
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b843948884b1d074582fb7df94bfa14b, type: 3}
 --- !u!1001 &103992360
