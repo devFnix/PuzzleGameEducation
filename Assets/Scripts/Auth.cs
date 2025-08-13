@@ -120,6 +120,7 @@ public class Auth : MonoBehaviour
         else
         {
             Debug.LogWarning("Usuario o contraseña incorrectos.");
+            ModalMessage.Instance.Show("Usuario o contraseña incorrectos.", "error");
         }
     }
 }

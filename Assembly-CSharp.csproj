@@ -113,6 +113,7 @@
     <Compile Include="Assets\MEMORIA\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\UsuarioManager.cs" />
     <Compile Include="Assets\Scripts\ClicButton.cs" />
+    <Compile Include="Assets\Scripts\ModalMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

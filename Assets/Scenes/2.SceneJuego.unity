@@ -1739,6 +1739,10 @@ PrefabInstance:
       value: PrefabPlayerController
       objectReference: {fileID: 0}
     - target: {fileID: 9188950036581902878, guid: 798b20a99adffc14a9db781745b52ccb, type: 3}
+      propertyPath: isInitialized
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188950036581902878, guid: 798b20a99adffc14a9db781745b52ccb, type: 3}
       propertyPath: gameMenuOption
       value: 0
       objectReference: {fileID: 0}
