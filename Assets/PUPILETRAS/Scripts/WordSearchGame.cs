@@ -80,6 +80,7 @@ public class WordSearchGame : MonoBehaviour
                 wordsToFind_.Add(w);
             }
             wordsToFind = wordsToFind_;
+            ScoreGame.Instance?.ChangeScoreTotal(wordsToFind.Count);
             InitializeGame();
         }
     }
@@ -471,6 +472,7 @@ public class WordSearchGame : MonoBehaviour
 
         if (wordFound)
         {
+            ScoreGame.Instance.AddScore(1);
             // Mantener el resaltado en las letras con el color correcto
             foreach (LetraP letter in currentSelection)
             {

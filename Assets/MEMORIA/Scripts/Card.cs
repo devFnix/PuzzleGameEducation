@@ -44,7 +44,8 @@ public class Card : MonoBehaviour
 
     public void Hide()
     {
-        Tween.Rotation(transform, new Vector3(0f, 0f, 0f), 0.2f);
+        //Tween.Rotation(transform, new Vector3(0f, 0f, 0f), 0.2f);
+        Tween.Rotation(transform, new Vector3(0f, 0f, 0f), 2f);
         Tween.Delay(0.1f, () =>
         {
             iconImage.sprite = hiddenIconSprite;

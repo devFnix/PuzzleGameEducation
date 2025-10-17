@@ -54,7 +54,7 @@ public class CardsController : MonoBehaviour
             string procesar = item.imagen.Replace(".png", "");
             //string rutaA = "images/" + procesar + "_a";
             string rutaA = "images/empty_memoria";
-              // Nota: Resources.Load no necesita extensi�n
+            // Nota: Resources.Load no necesita extensi�n
 
 
             //string rutaA = "images/empty_memoria";
@@ -71,7 +71,7 @@ public class CardsController : MonoBehaviour
             }
             if (loadedSprite_ == null)
             {
-                Debug.LogWarning("No se encontr� la imagen: " + rutaB +".png");
+                Debug.LogWarning("No se encontr� la imagen: " + rutaB + ".png");
                 continue;
             }
             else
@@ -95,7 +95,7 @@ public class CardsController : MonoBehaviour
         PrepareCards();
         CreateCards();
     }
-   
+
     private void PrepareCards()
     {
         cardDataList = new List<CardData>();
@@ -146,6 +146,11 @@ public class CardsController : MonoBehaviour
             card.texto = cardDataList[i].texto;
             card.cardsController = this;
         }
+        if (cardDataList.Count > 0)
+        {
+            int options = (int)Math.Floor(cardDataList.Count / 2.0f);
+            ScoreGame.Instance?.ChangeScoreTotal(options);
+        }
     }
 
     public void SetSelected(Card card)
@@ -186,6 +191,7 @@ public class CardsController : MonoBehaviour
                 .Chain(PrimeTween.Tween.Scale(gridTransform, Vector3.one * 1.2f, 0.2f, ease: PrimeTween.Ease.OutBack))
                 .Chain(PrimeTween.Tween.Scale(gridTransform, Vector3.one, 0.1f));
             }
+            ScoreGame.Instance.AddScore(1);
         }
         else
         {
@@ -204,5 +210,5 @@ public class CardData
 {
     public Sprite sprite;
     public string matchId;
-    public string texto {get; set;}
+    public string texto { get; set; }
 }

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 19335051}
   m_Layer: 5
   m_Name: Nivel 1
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +218,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 55516126}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press20Bounce
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 19335050}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &19335052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +243,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: 1
+--- !u!114 &55516126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2605257405062220536, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+  m_PrefabInstance: {fileID: 644467811}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c826acdc5ab91488687d91980b42a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &150110111
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,15 +314,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nivel 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281019501
+  m_fontColor: {r: 0.42745098, g: 0.17254902, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -535,6 +558,14 @@ PrefabInstance:
       value: PrefabPlayerController
       objectReference: {fileID: 0}
     - target: {fileID: 9188950036581902878, guid: 798b20a99adffc14a9db781745b52ccb, type: 3}
+      propertyPath: isInitialized
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188950036581902878, guid: 798b20a99adffc14a9db781745b52ccb, type: 3}
+      propertyPath: gameMenuOption
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188950036581902878, guid: 798b20a99adffc14a9db781745b52ccb, type: 3}
       propertyPath: activateLoadScenes
       value: 1
       objectReference: {fileID: 0}
@@ -657,6 +688,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583957516}
   m_CullTransparentMesh: 1
+--- !u!1001 &644467811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 513.5271
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 309.53326
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6719008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220537, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605257405062220539, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
+      propertyPath: m_Name
+      value: ButtoneffectPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2326bd5cc73e7ea4fa75a501eb0026bb, type: 3}
 --- !u!1 &673097293
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,8 +981,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -669.5, y: 302}
-  m_SizeDelta: {x: 247, y: 104}
+  m_AnchoredPosition: {x: -387.07562, y: 302}
+  m_SizeDelta: {x: 811.8486, y: 104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935174952
 MonoBehaviour:
@@ -916,7 +1004,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: be63db022b99d674489f32baca82f6ad, type: 3}
+  m_Texture: {fileID: 2800000, guid: f5208ca71d8515f44a468cd48fb466a9, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1064,15 +1152,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nivel 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281019501
+  m_fontColor: {r: 0.42745098, g: 0.17254902, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1225,7 +1313,7 @@ GameObject:
   - component: {fileID: 1356345220}
   m_Layer: 5
   m_Name: Nivel 2
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1308,6 +1396,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 55516126}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press20Bounce
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1356345219}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356345221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,7 +1434,7 @@ GameObject:
   - component: {fileID: 1479967137}
   m_Layer: 5
   m_Name: Nivel 3
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1412,6 +1512,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 55516126}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press20Bounce
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1479967136}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1558,7 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7584905, g: 0.7584905, b: 0.7584905, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1905,15 +2017,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nivel 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281019501
+  m_fontColor: {r: 0.42745098, g: 0.17254902, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1993,7 +2105,7 @@ GameObject:
   - component: {fileID: 2024824802}
   m_Layer: 5
   m_Name: Nivel 4
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2071,6 +2183,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 55516126}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press20Bounce
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2024824801}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2226,15 +2350,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nivel 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281019501
+  m_fontColor: {r: 0.42745098, g: 0.17254902, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2429,15 +2553,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nivel 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281019501
+  m_fontColor: {r: 0.42745098, g: 0.17254902, b: 0.16862746, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2517,7 +2641,7 @@ GameObject:
   - component: {fileID: 2106944985}
   m_Layer: 5
   m_Name: Nivel 5
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2595,6 +2719,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 55516126}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press20Bounce
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2106944984}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

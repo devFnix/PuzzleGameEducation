@@ -5,6 +5,8 @@ using UnityEngine;
 public class Categoria
 {
     public string categoria { get; set; }
+    public string categoria_name { get; set; }
+    public string imagen { get; set; }
     public List<Niveles> niveles { get; set; }
 }
 

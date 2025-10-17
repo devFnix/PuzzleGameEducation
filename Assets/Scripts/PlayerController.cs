@@ -267,8 +267,9 @@ public class PlayerController : MonoBehaviour
     {
         return level;
     }
-    public List<string> GetListaCategories()
+    public List<Categoria> GetListaCategories()
     {
+        /*
         List<string> categories = new List<string>();
         if (gameSelected != null)
         {
@@ -277,13 +278,8 @@ public class PlayerController : MonoBehaviour
                 categories.Add(category.categoria);
             }
         }
-        /*
-        categories.Add("Regresar 1");
-        categories.Add("Regresar 2");
-        categories.Add("Regresar 3");
-        categories.Add("Regresar 4");
-        */
-        return categories;
+        return categories;*/
+        return gameSelected.categorias;
     }
 
     public string GetNameReal(string name)

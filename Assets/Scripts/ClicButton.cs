@@ -24,7 +24,7 @@ public class ClicButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (CompareTag("ButtonSound"))
+        if (CompareTag("ButtonSound")|| CompareTag("Node"))
         {
             audioSource.Play();
             Tween.Scale(transform, Vector3.one * 1.5f, 0.1f)

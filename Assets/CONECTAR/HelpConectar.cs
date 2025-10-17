@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HelpConectar : MonoBehaviour
 {
     [Header("Referencias UI")]
-    public Image image;
+    public RawImage image;
     [SerializeField] private GameObject helpPanel;
     [SerializeField] private Button openHelpButton;
     [SerializeField] private Button playSoundButton;
@@ -70,7 +70,17 @@ public class HelpConectar : MonoBehaviour
         Debug.Log(option.sonido);
         description.text = option.descripcion_quechua;
         string nameImage = option.imagen.Replace(".png", "");
-        image.sprite = Resources.Load<Sprite>("images/" + nameImage);
+        // Load the sprite and assign its texture to the RawImage
+        Sprite sprite = Resources.Load<Sprite>("images/" + nameImage);
+        if (sprite != null)
+        {
+            image.texture = sprite.texture;
+            image.SetNativeSize();
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró la imagen en: Resources/images/" + nameImage);
+        }
         string nameSound = option.sonido.Replace(".mp3", "");
         // El campo 'sonido' debe contener el nombre del archivo de sonido (sin extensi�n)
         string soundPath = "todos/descripcion_" + nameSound;

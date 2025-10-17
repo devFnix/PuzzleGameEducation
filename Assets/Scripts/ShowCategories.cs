@@ -22,12 +22,16 @@ public class ShowCategories : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        List<string> categorias = playerController.GetListaCategories();
-        foreach (string cat in categorias)
+        List<Categoria> categorias = playerController.GetListaCategories();
+        foreach (Categoria cat in categorias)
         {
             GameObject go = Instantiate(categoryPrefab, container);
             CategoryItem item = go.GetComponent<CategoryItem>();
-            item.SetCategory(cat);
+            string procesar = cat.imagen.Replace(".png", "");
+            //string rutaA = "images/empty_memoria";
+            string ruta = "images/" + procesar;
+            Sprite loadedSprite = Resources.Load<Sprite>(ruta);
+            item.SetCategory(cat.categoria,cat.categoria_name, loadedSprite);
         }
     }
   

@@ -123,7 +123,53 @@ public class RandomWordGenerator : MonoBehaviour
         }
         return -1;
     }
+    
+    void GenerateButtons()
+    {
+        int index = Random.Range(0, words.Count);
+        selectedWord = words[index];
+        int currentPosition = getCurrentPosition(selectedWord);
+        PlayerController.instance.SetCurrentOption(currentPosition);
 
+        Vector2[] positions = new Vector2[selectedWord.Length];
+        char[] letters = new char[selectedWord.Length];
+
+        RectTransform panelRect = panelLetras.GetComponent<RectTransform>();
+        float minDistance = 80f; // Distancia mínima entre botones
+
+        for (int i = 0; i < selectedWord.Length; i++)
+        {
+            char letter = selectedWord[i];
+            letters[i] = letter;
+
+            Vector2 newPos;
+            bool validPosition;
+
+            // Repetir hasta encontrar una posición válida
+            do
+            {
+                float randomX = Random.Range(panelRect.rect.xMin, panelRect.rect.xMax);
+                float randomY = Random.Range(panelRect.rect.yMin, panelRect.rect.yMax);
+                newPos = new Vector2(randomX, randomY);
+
+                validPosition = true;
+                for (int j = 0; j < i; j++)
+                {
+                    if (Vector2.Distance(newPos, positions[j]) < minDistance)
+                    {
+                        validPosition = false;
+                        break;
+                    }
+                }
+            }
+            while (!validPosition);
+
+            positions[i] = newPos;
+        }
+
+        GenerateButtonsOnScreen(letters, positions);
+    }
+    /*
     void GenerateButtons()
     {
         int index = Random.Range(0, words.Count);
@@ -149,6 +195,7 @@ public class RandomWordGenerator : MonoBehaviour
 
         GenerateButtonsOnScreen(letters, positions);
     }
+    */
 
     void GenerateButtonsOnScreen(char[] letters, Vector2[] positions)
     {
@@ -221,7 +268,7 @@ public class RandomWordGenerator : MonoBehaviour
     }
     private void Update()
     {
-        if (concatenatedString?.Length == selectedWord?.Length)
+        if (concatenatedString?.Length == selectedWord?.Length && selectedWord?.Length > 0)
         {
             if (concatenatedString == selectedWord)
             {

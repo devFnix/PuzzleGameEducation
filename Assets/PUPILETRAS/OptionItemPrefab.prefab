@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 1350028805862422394}
   m_Layer: 5
   m_Name: Button Info
-  m_TagString: Untagged
+  m_TagString: ButtonSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5572952010001881462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8595035290658650307}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press12ScaleUpAndBack
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2258578682039887091}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1987010178351246284
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4423951397257549958}
   - component: {fileID: 1307532390422531397}
+  - component: {fileID: 8595035290658650307}
   m_Layer: 5
   m_Name: OptionItemPrefab
   m_TagString: Untagged
@@ -387,3 +400,16 @@ MonoBehaviour:
   optionImage: {fileID: 746187329708864899}
   buttonInfo: {fileID: 1350028805862422394}
   optionText: {fileID: 1138602986}
+  nameItem: 
+--- !u!114 &8595035290658650307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814635201933808656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c826acdc5ab91488687d91980b42a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

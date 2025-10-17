@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 5375530625118296253}
   - component: {fileID: 5313055131468311007}
   - component: {fileID: -6042497019739614967}
+  - component: {fileID: 4350407636591828020}
   m_Layer: 0
   m_Name: Letter
   m_TagString: Node
@@ -202,7 +203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5375530625118296253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4350407636591828020}
+        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
+        m_MethodName: Press12ScaleUpAndBack
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6225804481782407006}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-6042497019739614967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +230,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: -1
   texto: 
+--- !u!114 &4350407636591828020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5417355448853185423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c826acdc5ab91488687d91980b42a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HelpMenuPupiletras : MonoBehaviour
 {
     [Header("Referencias UI")]
-    public Image image;
+    public RawImage image;
     [SerializeField] private GameObject helpPanel;
     // [SerializeField] private Button openHelpButton;
     [SerializeField] private Button playSoundButton;
@@ -56,23 +56,35 @@ public class HelpMenuPupiletras : MonoBehaviour
     {
         if (PlayerController.instance == null)
         {
-            Debug.LogWarning("PlayerController.instance no est� disponible.");
+            Debug.LogWarning("PlayerController.instance no está disponible.");
             return;
         }
 
-        // Obt�n la opci�n actual (ajusta el nombre si tu m�todo es diferente)
+        // Obtén la opción actual (ajusta el nombre si tu método es diferente)
         Opciones option = PlayerController.instance.GetPositionOption();
         if (option == null)
         {
-            Debug.LogWarning("No se encontr� la opci�n actual.");
+            Debug.LogWarning("No se encontró la opción actual.");
             return;
         }
-        // Debug.Log(option.sonido);
+
         description.text = option.descripcion_quechua;
         string nameSound = option.sonido.Replace(".mp3", "");
         string nameImage = option.imagen.Replace(".png", "");
-        image.sprite = Resources.Load<Sprite>("images/" + nameImage);
-        // El campo 'sonido' debe contener el nombre del archivo de sonido (sin extensi�n)
+
+        // Load the sprite and assign its texture to the RawImage
+        Sprite sprite = Resources.Load<Sprite>("images/" + nameImage);
+        if (sprite != null)
+        {
+            image.texture = sprite.texture;
+            image.SetNativeSize();
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró la imagen en: Resources/images/" + nameImage);
+        }
+
+        // El campo 'sonido' debe contener el nombre del archivo de sonido (sin extensión)
         string soundPath = "todos/descripcion_" + nameSound;
         AudioClip clip = Resources.Load<AudioClip>(soundPath);
 
@@ -83,7 +95,7 @@ public class HelpMenuPupiletras : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontr� el sonido en: Resources/" + soundPath);
+            Debug.LogWarning("No se encontró el sonido en: Resources/" + soundPath);
         }
     }
 }

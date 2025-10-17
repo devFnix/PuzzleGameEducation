@@ -64,7 +64,9 @@
     <Compile Include="Assets\CRUCIGRAMA\CrosswordGenerator.cs" />
     <Compile Include="Assets\Scripts\ShowCategories.cs" />
     <Compile Include="Assets\CONECTAR\Letter.cs" />
+    <Compile Include="Assets\Scripts\ModalMessage.cs" />
     <Compile Include="Assets\MENU\CardOption.cs" />
+    <Compile Include="Assets\EpicVictoryEffects\Scripts\vfxController.cs" />
     <Compile Include="Assets\PUPILETRAS\OptionsPanelController.cs" />
     <Compile Include="Assets\PUPILETRAS\Scripts\WordSearchGame.cs" />
     <Compile Include="Assets\CONECTAR\CreateAristas.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\RamdomWordCruci.cs" />
     <Compile Include="Assets\PUPILETRAS\HelpMenuPupiletras.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\ShowResultados.cs" />
     <Compile Include="Assets\CONECTAR\RandomWordGenerator.cs" />
     <Compile Include="Assets\Scripts\LevelItem.cs" />
     <Compile Include="Assets\Scripts\JuegoSeleccionado.cs" />
@@ -87,6 +90,8 @@
     <Compile Include="Assets\Scripts\Usuario.cs" />
     <Compile Include="Assets\CONECTAR\HelpConectar.cs" />
     <Compile Include="Assets\LOGIN\SessionData.cs" />
+    <Compile Include="Assets\Scripts\ScoreGame.cs" />
+    <Compile Include="Assets\MON Studios LLC\ButtonEffects_MONS\ButtonEffects.cs" />
     <Compile Include="Assets\Scripts\CategoryItem.cs" />
     <Compile Include="Assets\Scripts\DataGame.cs" />
     <Compile Include="Assets\CRUCIGRAMA\CellView.cs" />
@@ -104,6 +109,7 @@
     <Compile Include="Assets\Scripts\HelpMenuCrucigrama.cs" />
     <Compile Include="Assets\CRUCIGRAMA\CrosswordGrid.cs" />
     <Compile Include="Assets\LOGIN\LoginManager.cs" />
+    <Compile Include="Assets\EpicVictoryEffects\Scripts\starFxController.cs" />
     <Compile Include="Assets\LOGIN\UserMunanky.cs" />
     <Compile Include="Assets\Scripts\MusicApp.cs" />
     <Compile Include="Assets\LOGIN\ManagerLogin.cs" />
@@ -113,7 +119,7 @@
     <Compile Include="Assets\MEMORIA\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\UsuarioManager.cs" />
     <Compile Include="Assets\Scripts\ClicButton.cs" />
-    <Compile Include="Assets\Scripts\ModalMessage.cs" />
+    <Compile Include="Assets\MON Studios LLC\ButtonEffects_MONS\README.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -124,6 +130,7 @@
     <None Include="Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\CRUCIGRAMA\Program.txt" />
+    <None Include="Assets\EpicVictoryEffects\Readme.txt" />
     <None Include="Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\Plugins\Newtonsoft.Json.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -133,6 +140,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\MON Studios LLC\ButtonEffects_MONS\ButtonEffectsDocumentation.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\link.xml" />

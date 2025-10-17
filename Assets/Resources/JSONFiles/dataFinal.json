@@ -1,2239 +1,1144 @@
 [
-
     {
-
         "juego": "crucigrama",
-
         "categorias": [
-
             {
-
+                "imagen": "dias_op.png",
+                "categoria_name": "P'unchawkuna",
                 "categoria": "días de la semana",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Killachay",
-
                                 "opciones_es": "lunes",
-
                                 "descripcion_quechua": "qallariy p’unchaw Yachay wasiman rina",
-
                                 "descripcion_es": "Primer día de ir a la escuela",
-
                                 "imagen": "k.png",
-
                                 "sonido": "lunes.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Antichay",
-
                                 "opciones_es": "martes",
-
                                 "descripcion_quechua": "Iskay kaq p’unchaw yachay wasiman rina",
-
                                 "descripcion_es": "Segundo día de ir a la escuela",
-
                                 "imagen": "a.png",
-
                                 "sonido": "martes.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qoyllurchay",
-
                                 "opciones_es": "miércoles",
-
                                 "descripcion_quechua": "Kimsa p'unchaw yachay wasiman rina",
-
                                 "descripcion_es": "Tercer día de ir a la escuela",
-
                                 "imagen": "q.png",
-
                                 "sonido": "miercoles.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Ch’askachay",
-
                                 "opciones_es": "jueves",
-
                                 "descripcion_quechua": "Tawa p'unchaw yachay wasiman rina",
-
                                 "descripcion_es": "Cuarto día de ir a la escuela",
-
                                 "imagen": "c.png",
-
                                 "sonido": "jueves.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Illapachay",
-
                                 "opciones_es": "viernes",
-
                                 "descripcion_quechua": "Pishqa p'unchaw yachay wasiman rina",
-
                                 "descripcion_es": "Quinto día de ir a la escuela",
-
                                 "imagen": "i.png",
-
                                 "sonido": "viernes.mp3"
-
                             },
-
                             {
-
                                 "opciones": "K’uychichay",
-
                                 "opciones_es": "sábado",
-
                                 "descripcion_quechua": "qallariy p’unchaw samana",
-
                                 "descripcion_es": "Primer día de descanso",
-
                                 "imagen": "k2.png",
-
                                 "sonido": "sabado.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Intichay",
-
                                 "opciones_es": "domingo",
-
                                 "descripcion_quechua": "Iskay kaq p’unchaw samana",
-
                                 "descripcion_es": "Segundo día de descanso",
-
                                 "imagen": "i2.png",
-
                                 "sonido": "domingo.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "adjetivos_op.png",
+                "categoria_name": "Simi Willakuykuna",
                 "categoria": "adjetivos",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Allinmi",
-
                                 "opciones_es": "bueno",
-
                                 "descripcion_quechua": "Kay sipasqa",
-
                                 "descripcion_es": "Esta niña es",
-
                                 "imagen": "bueno.png",
-
                                 "sonido": "bueno.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Mana allinchu",
-
                                 "opciones_es": "malo",
-
                                 "descripcion_quechua": "Kay wawaqa",
-
                                 "descripcion_es": "Este niño es",
-
                                 "imagen": "malo.png",
-
                                 "sonido": "malo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "llinphuymi",
-
                                 "opciones_es": "limpio",
-
                                 "descripcion_quechua": "Kay tablaqa........kashan",
-
                                 "descripcion_es": "Esta mesa está",
-
                                 "imagen": "limpio.png",
-
                                 "sonido": "limpio.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qhellen",
-
                                 "opciones_es": "sucio",
-
                                 "descripcion_quechua": "Kay mikhunaqa.......kashan",
-
                                 "descripcion_es": "Este plato está",
-
                                 "imagen": "sucio.png",
-
                                 "sonido": "sucio.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Sumaqmi",
-
                                 "opciones_es": "rico",
-
                                 "descripcion_quechua": "kay mikhunaqa",
-
                                 "descripcion_es": "Esta comida es",
-
                                 "imagen": "lindo.png",
-
                                 "sonido": "rico.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Millaymi",
-
                                 "opciones_es": "feo",
-
                                 "descripcion_quechua": "kay huk'uchaqa",
-
                                 "descripcion_es": "Esta rata es",
-
                                 "imagen": "feo.png",
-
                                 "sonido": "feo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Hatunmi",
-
                                 "opciones_es": "grande",
-
                                 "descripcion_quechua": "Kay qhelqaqa",
-
                                 "descripcion_es": "Este libro es",
-
                                 "imagen": "grande.png",
-
                                 "sonido": "grande.mp3"
-
                             },
-
                             {
-
                                 "opciones": "huch'uymi",
-
                                 "opciones_es": "pequeño",
-
                                 "descripcion_quechua": "Kay cuadernoqa",
-
                                 "descripcion_es": "Este cuaderno es",
-
                                 "imagen": "pequeño.png",
-
                                 "sonido": "pequeo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Rakhun",
-
                                 "opciones_es": "grueso",
-
                                 "descripcion_quechua": "Kay llimp’iqa",
-
                                 "descripcion_es": "Este color es",
-
                                 "imagen": "grueso.png",
-
                                 "sonido": "grueso.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Llañun",
-
                                 "opciones_es": "delgado",
-
                                 "descripcion_quechua": "Kay qhelqanaqa",
-
                                 "descripcion_es": "Este lapiz es",
-
                                 "imagen": "delgado.png",
-
                                 "sonido": "delgado.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "elementos_op.png",
+                "categoria_name": "Naturapa Ruranakuna",
                 "categoria": "elementos de la naturaleza",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "K’anchay",
-
                                 "opciones_es": "luz",
-
                                 "descripcion_quechua": "Tutaq t'iqrayñin",
-
                                 "descripcion_es": "Lo contrario de oscuridad",
-
                                 "imagen": "luz.png",
-
                                 "sonido": "luz.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Mayuman",
-
                                 "opciones_es": "al río",
-
                                 "descripcion_quechua": "Paraptin maymanmi para rin",
-
                                 "descripcion_es": "Cuando llueve a donde va la lluvia",
-
                                 "imagen": "rio.png",
-
                                 "sonido": "rio.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Inti",
-
                                 "opciones_es": "sol",
-
                                 "descripcion_quechua": "Hanaq pachapi nishuta k’ancharin",
-
                                 "descripcion_es": "Brilla mucho en el cielo",
-
                                 "imagen": "sol.png",
-
                                 "sonido": "sol.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Killa",
-
                                 "opciones_es": "luna",
-
                                 "descripcion_quechua": "Tutalla lluqsini, muyutaq kani",
-
                                 "descripcion_es": "Solo salgo en las noches y soy redonda",
-
                                 "imagen": "luna.png",
-
                                 "sonido": "luna.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Sach'a",
-
                                 "opciones_es": "árbol",
-
                                 "descripcion_quechua": "Hatunta wiñani llanthutataq quni",
-
                                 "descripcion_es": "Crezco grande y doy sombra",
-
                                 "imagen": "arbol.png",
-
                                 "sonido": "arbol.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wayra",
-
                                 "opciones_es": "viento",
-
                                 "descripcion_quechua": "Imakunatapas altunta phawachini",
-
                                 "descripcion_es": "Hago volar las cosas",
-
                                 "imagen": "viento.png",
-
                                 "sonido": "viento.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Phuyu",
-
                                 "opciones_es": "nube",
-
                                 "descripcion_quechua": "Hanaq pachapi kani yuraqtaqmi kani",
-
                                 "descripcion_es": "Estoy en el cielo y soy blanco",
-
                                 "imagen": "nube.png",
-
                                 "sonido": "nube.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Orqowan",
-
                                 "opciones_es": "cerro",
-
                                 "descripcion_quechua": "Yachay wasiqa ..........muyurisqam kashan",
-
                                 "descripcion_es": "La escuela esta rodeada de",
-
                                 "imagen": "cerro.png",
-
                                 "sonido": "cerro.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qocha",
-
                                 "opciones_es": "lago",
-
                                 "descripcion_quechua": "Yakuta qunaypaqmi huñukuni",
-
                                 "descripcion_es": "Me acumulo para darte agua",
-
                                 "imagen": "lago.png",
-
                                 "sonido": "lago.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             }
-
         ]
-
     },
-
     {
-
         "juego": "pupiletras",
-
         "categorias": [
-
             {
-
+                "imagen": "oficios_op.png",
+                "categoria_name": "Ruwakuna",
                 "categoria": "oficios",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "amachaq",
-
                                 "opciones_es": "Abogado",
-
                                 "descripcion_quechua": "Runakunaq llakiyninkunata allchaysista yanapan, hinallataq yachankun imaynatan llakiykunata allinchakun chayta, chaymantapas yachankun kay derechos nisqakuna hark'ayta.",
-
                                 "descripcion_es": "Ayuda a las personas con problemas legales y saben cómo resolver casos y proteger los derechos de las personas.",
-
                                 "imagen": "abogado.png",
-
                                 "sonido": "abogado.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Michiq",
-
                                 "opciones_es": "Pastor",
-
                                 "descripcion_quechua": "Kay runaqa uywakunata qhawaspa michin.",
-
                                 "descripcion_es": "Es una persona que cuida y guía a las ovejas",
-
                                 "imagen": "pastor.png",
-
                                 "sonido": "pastor.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Siraq",
-
                                 "opciones_es": "Sastre",
-
                                 "descripcion_quechua": "Kay runaqa p'achakunata ruwan, hinallataq sirampas.",
-
                                 "descripcion_es": "Es una persona que crea y arregla ropa",
-
                                 "imagen": "sastre.png",
-
                                 "sonido": "sastre.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Takiq",
-
                                 "opciones_es": "Cantante",
-
                                 "descripcion_quechua": "Kay runaqa kunkanwanmi takikunata takin",
-
                                 "descripcion_es": "Es una persona que utiliza su voz para interpretar canciones",
-
                                 "imagen": "cantante.png",
-
                                 "sonido": "cantante.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "2",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Yachachiq",
-
                                 "opciones_es": "Profesor – a",
-
                                 "descripcion_quechua": "Kay runaqa yachaqkunamanmi imaymana yachaykunata yachachin.",
-
                                 "descripcion_es": "Es una persona que enseña a otros y comparte conocimientos.",
-
                                 "imagen": "profesor.png",
-
                                 "sonido": "profesor.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "3",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Hanpikamayuq",
-
                                 "opciones_es": "Médico",
-
                                 "descripcion_quechua": "Kay yachaysapa runaqa unqoq runkunata hampin.",
-
                                 "descripcion_es": "Es una persona que se dedica a cuidar la salud de las personas.",
-
                                 "imagen": "medico.png",
-
                                 "sonido": "medico.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Kirukamayuq",
-
                                 "opciones_es": "Dentista",
-
                                 "descripcion_quechua": "Kay yachaysapa runaqa kirukunata hampin.",
-
                                 "descripcion_es": "Es una persona que se dedica a cuida los dientes.",
-
                                 "imagen": "dentista.png",
-
                                 "sonido": "dentista.mp3"
-
                             },
-
                             {
-
                                 "opciones": "qara q'ompu hayt’aq",
-
                                 "opciones_es": "Futbolista",
-
                                 "descripcion_quechua": "kay yachaysapa runaqa qaraq'omputa hayt'an",
-
                                 "descripcion_es": "Es una persona que juega al fútbol de manera profesional o como pasatiempo.",
-
                                 "imagen": "futbolista.png",
-
                                 "sonido": "futbolista.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qhelqaq",
-
                                 "opciones_es": "Escritor",
-
                                 "descripcion_quechua": "Kay runaqa imaymana willakuykunatan willanampaq qhelqan",
-
                                 "descripcion_es": "Es una persona creativa que utiliza las palabras para contar historias y expresar ideas.",
-
                                 "imagen": "escritor.png",
-
                                 "sonido": "escritor.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "emociones_op.png",
+                "categoria_name": "Sonqokuna",
                 "categoria": "emociones",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Kusisqa",
-
                                 "opciones_es": "Alegre. feliz, contenta",
-
                                 "descripcion_quechua": "Kusisqa tarikuqtiyki",
-
                                 "descripcion_es": "Es cuando te sientes feliz y contento.",
-
                                 "imagen": "alegre.png",
-
                                 "sonido": "alegre.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Phiñakusqa",
-
                                 "opciones_es": "Molesto, fastidiado",
-
                                 "descripcion_quechua": "Phiñasqa, llakisqa takikuqtiyki",
-
                                 "descripcion_es": "Es cuando te sientes frustrado, irritado o enfadado",
-
                                 "imagen": "enojado.png",
-
                                 "sonido": "enojado.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Unqusqa",
-
                                 "opciones_es": "Enfermo",
-
                                 "descripcion_quechua": "Mana allin tarikuqtiyki, hinallataq llapan cuerpuyki nanaqtin",
-
                                 "descripcion_es": "Es cuando no te sientes bien y tienes síntomas incómodos en tu cuerpo.",
-
                                 "imagen": "enfermo.png",
-
                                 "sonido": "enfermo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "sayk'usqa",
-
                                 "opciones_es": "Cansado",
-
                                 "descripcion_quechua": "Sayk'usqalla tarikuqtiyki, mana imatapas ruwayta munankichu, chaymantapas puñuyllatan munayki.",
-
                                 "descripcion_es": "Es cuando sientes que tienes poca energía y necesitas descansar.",
-
                                 "imagen": "cansado.png",
-
                                 "sonido": "cansado.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "2",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Llakikusqa",
-
                                 "opciones_es": "Preocupado",
-
                                 "descripcion_quechua": "llakisqa tarikuqtiyki mana imatapas ruwayta atispa.",
-
                                 "descripcion_es": "Es cuando sientes inquietud por algo que te preocupa.",
-
                                 "imagen": "preocupado.png",
-
                                 "sonido": "preocupado.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "3",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Utikayasqa",
-
                                 "opciones_es": "Sorprendido",
-
                                 "descripcion_quechua": "mancharisqa tarikuqtiyki huk sumaq imatapas rikuqtiyki",
-
                                 "descripcion_es": "Es cuando te sientes asombrado o impresionado por algo inesperado o increíble.",
-
                                 "imagen": "sorprendido.png",
-
                                 "sonido": "sorprendido.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Mancharisqa",
-
                                 "opciones_es": "Asustado",
-
                                 "descripcion_quechua": "manchasqa, llakisqa tarikuqtiyku",
-
                                 "descripcion_es": "Es cuando sientes miedo",
-
                                 "imagen": "asustado.png",
-
                                 "sonido": "asustado.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Phiñanasqa",
-
                                 "opciones_es": "Aburrido",
-
                                 "descripcion_quechua": "mana imatapas ruwanayasuqtiyki",
-
                                 "descripcion_es": "Es cuando te sientes sin interés o entretenimiento.",
-
                                 "imagen": "aburrido.png",
-
                                 "sonido": "aburrido.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "oficios_op.png",
+                "categoria_name": "Ayllu",
                 "categoria": "comunidad",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "tukuyrikuq",
-
                                 "opciones_es": "Policia",
-
                                 "descripcion_quechua": "kay runaqa allinta aylluta hark'an, hinallataq allinta conflictos nisqakunata amachan.",
-
                                 "descripcion_es": "Es una persona encargada de proteger y mantener el orden en la comunidad.",
-
                                 "imagen": "policia.png",
-
                                 "sonido": "policia.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Hanpiq",
-
                                 "opciones_es": "Curandero",
-
                                 "descripcion_quechua": "Kay runaqa imaymana hampikunawan runakunata onqoyninkunata khaliachin.",
-
                                 "descripcion_es": "Es una persona que utiliza métodos tradicionales para sanar y cuidar la salud de las personas.",
-
                                 "imagen": "curandero.png",
-
                                 "sonido": "curandero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Yupaq",
-
                                 "opciones_es": "Contador",
-
                                 "descripcion_quechua": "Kay runaqa qolqeq yupayninta apan, hinallataq imaymana qolqemanta llan'aykunata ruwan.",
-
                                 "descripcion_es": "Es una persona que se encarga de llevar registros financieros y realizar tareas relacionadas con el manejo del dinero.",
-
                                 "imagen": "contador.png",
-
                                 "sonido": "contador.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "2",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Challwaq",
-
                                 "opciones_es": "Pescador – a",
-
                                 "descripcion_quechua": "Kay runaqa challwata hap'in, hinallataq mayupi tiyaq imaymana uywakunatapas.",
-
                                 "descripcion_es": "Es una persona que se dedica a pescar peces y otros animales acuáticos.",
-
                                 "imagen": "pescador.png",
-
                                 "sonido": "pescador.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Llinphiq",
-
                                 "opciones_es": "Pintor",
-
                                 "descripcion_quechua": "Kay runaqa imaymana llimp'ikunawan munay qelqakunata qallarichin.",
-
                                 "descripcion_es": "Es una persona creativa que utiliza colores y pinceles para crear obras de arte.",
-
                                 "imagen": "pintor.png",
-
                                 "sonido": "pintor.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Llakisqa",
-
                                 "opciones_es": "Triste",
-
                                 "descripcion_quechua": "Llakisqa kaqtiyki, hinallataq waqanayaqtiyki",
-
                                 "descripcion_es": "Es cuando te sientes con ganas de llorar.",
-
                                 "imagen": "triste.png",
-
                                 "sonido": "triste.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Ayllu",
-
                                 "opciones_es": "familia o comunidad",
-
                                 "descripcion_quechua": "Ashkha runakuna, qawarinakuspa, hinallataq munanayakuspa tiyanku.",
-
                                 "descripcion_es": "Es un grupo de personas que se quieren y se cuidan mutuamente.",
-
                                 "imagen": "familia.png",
-
                                 "sonido": "familia.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Umalliq",
-
                                 "opciones_es": "Presidente",
-
                                 "descripcion_quechua": "Kay yachaysapa runaqa hatun suyunchistan umallin.",
-
                                 "descripcion_es": "Es una persona que tiene un papel importante en el gobierno de un país.",
-
                                 "imagen": "presidente.png",
-
                                 "sonido": "presidente.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "3",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Wayk’uq",
-
                                 "opciones_es": "Cocinero",
-
                                 "descripcion_quechua": "Kay yachaysapa runaqa mishk'i mikhunakunata wayk'un",
-
                                 "descripcion_es": "Es una persona que prepara comida deliciosa y creativa",
-
                                 "imagen": "cocinero.png",
-
                                 "sonido": "cocinero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "T’anta ruwaq",
-
                                 "opciones_es": "Panadero",
-
                                 "descripcion_quechua": "kay runaqa t'antata ruwan",
-
                                 "descripcion_es": "Es una persona que se dedica a hacer pan.",
-
                                 "imagen": "panadero.png",
-
                                 "sonido": "panadero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Chaqra llank'aq",
-
                                 "opciones_es": "Agricultor",
-
                                 "descripcion_quechua": "kay runaqa ayllupi chaqrata ruwan",
-
                                 "descripcion_es": "Es una persona que se dedica a cultivar y cuidar la tierra para obtener alimentos.",
-
                                 "imagen": "agricultor.png",
-
                                 "sonido": "agricultor.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             }
-
         ]
-
     },
-
     {
-
         "juego": "formando palabras",
-
         "categorias": [
-
             {
-
+                "imagen": "casa_op.png",
+                "categoria_name": "Wasi Imaymana",
                 "categoria": "cosas de la casa",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Wasipi",
-
                                 "opciones_es": "Casa",
-
                                 "descripcion_quechua": "¿Maypitaq aylluykiwan tiyanki?",
-
                                 "descripcion_es": "Donde vives con tu familia",
-
                                 "imagen": "casa.png",
-
                                 "sonido": "casa.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Punku",
-
                                 "opciones_es": "Puerta",
-
                                 "descripcion_quechua": "wasipi hatun t'oqo, kayñinta lloqsiyta haykuyta atinki",
-
                                 "descripcion_es": "Hueco en la pared permite entrar y salir",
-
                                 "imagen": "puerta.png",
-
                                 "sonido": "puerta.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wayk’una wasipi",
-
                                 "opciones_es": "Cocina",
-
                                 "descripcion_quechua": "kay wasipiqa sumaq mikhunakunata wayk'unki",
-
                                 "descripcion_es": "Lugar donde preparas alimentos",
-
                                 "imagen": "cocina.png",
-
                                 "sonido": "cocina.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Hisp’ana wasipi",
-
                                 "opciones_es": "Baño",
-
                                 "descripcion_quechua": "Kay wasipi maqchikunki hinallataq hishp'ankipas",
-
                                 "descripcion_es": "Lugar de tu casa donde te bañas y orinas",
-
                                 "imagen": "baño.png",
-
                                 "sonido": "bao.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Puñuna wasi",
-
                                 "opciones_es": "Dormitorio",
-
                                 "descripcion_quechua": "Maypichus puñunayki tarikun chaypi",
-
                                 "descripcion_es": "Lugar donde pones tu camita",
-
                                 "imagen": "dormitorio.png",
-
                                 "sonido": "dormitorio.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Tiyana wasi",
-
                                 "opciones_es": "Sala",
-
                                 "descripcion_quechua": "kay wasipin khumpaykikunata chashkinki",
-
                                 "descripcion_es": "Lugar de tu casa donde recibes amigos",
-
                                 "imagen": "sala.png",
-
                                 "sonido": "sala.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Mikhuy waqaychana wasi",
-
                                 "opciones_es": "Almacen",
-
                                 "descripcion_quechua": "kay wasipin mikhuykunata alchanki",
-
                                 "descripcion_es": "Lugar donde guardas cosas del chacra",
-
                                 "imagen": "almacen.png",
-
                                 "sonido": "almacen.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Llank’ana wasi",
-
                                 "opciones_es": "Oficina",
-
                                 "descripcion_quechua": "kay wasipin imaymana llank'ana qelqakunata ruwakun",
-
                                 "descripcion_es": "Lugar de tu casa donde haces tareas",
-
                                 "imagen": "oficina.png",
-
                                 "sonido": "oficina.mp3"
-
                             },
-
                             {
-
                                 "opciones": "T’aqsana wasi",
-
                                 "opciones_es": "Lavanderia",
-
                                 "descripcion_quechua": "kay wasipin p'achaykita t'aqsakunki",
-
                                 "descripcion_es": "Lugar de tu casa donde lavas tu ropa",
-
                                 "imagen": "lavanderia.png",
-
                                 "sonido": "lavanderia.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wasi t’oqo",
-
                                 "opciones_es": "Ventana",
-
                                 "descripcion_quechua": "kay wasi t'oqomanta inti lloqsimusqanta qhawanki",
-
                                 "descripcion_es": "Hueco en la pared que puede ver el sol.",
-
                                 "imagen": "ventana.png",
-
                                 "sonido": "ventana.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "cocina_op.png",
+                "categoria_name": "Wayk'una Imaymana",
                 "categoria": "cosas de la cocina",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Manka",
-
                                 "opciones_es": "Olla",
-
                                 "descripcion_quechua": "mikhuna wayk’unapaq p'uku",
-
                                 "descripcion_es": "vasija para cocinar alimentos",
-
                                 "imagen": "olla.png",
-
                                 "sonido": "olla.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Kuchuna",
-
                                 "opciones_es": "Cuchillo",
-
                                 "descripcion_quechua": "aycha kuchunapaq utencilio nisqa",
-
                                 "descripcion_es": "utencilio para cortar carne",
-
                                 "imagen": "cuchillo.png",
-
                                 "sonido": "cuchillo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qeropi",
-
                                 "opciones_es": "vaso",
-
                                 "descripcion_quechua": "Imapin yakuta upyanki?",
-
                                 "descripcion_es": "que usas para tomar agua",
-
                                 "imagen": "vaso.png",
-
                                 "sonido": "vaso.mp3"
-
                             },
-
                             {
-
                                 "opciones": "trinchiwan",
-
                                 "opciones_es": "Tenedor",
-
                                 "descripcion_quechua": "Imawanmi aychata t'oqpinki?",
-
                                 "descripcion_es": "que usas para pinchar la carne",
-
                                 "imagen": "tenedor.png",
-
                                 "sonido": "tenedor.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wishllawanmi",
-
                                 "opciones_es": "Cuchara",
-
                                 "descripcion_quechua": "imawanmi calduta uqyanki?",
-
                                 "descripcion_es": "que usas para tomar sopa",
-
                                 "imagen": "cuchara.png",
-
                                 "sonido": "cuchara.mp3"
-
                             },
-
                             {
-
                                 "opciones": "P’ukupi",
-
                                 "opciones_es": "Plato",
-
                                 "descripcion_quechua": "imapin mikhunaykita qaranki?",
-
                                 "descripcion_es": "en que sirves tus alimentos",
-
                                 "imagen": "plato.png",
-
                                 "sonido": "plato.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Maranpi",
-
                                 "opciones_es": "Batan",
-
                                 "descripcion_quechua": "maypin uchuta kutanki?",
-
                                 "descripcion_es": "que usas para hacer tu aji",
-
                                 "imagen": "batan.png",
-
                                 "sonido": "batan.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Q’onchapi",
-
                                 "opciones_es": "Fogón",
-
                                 "descripcion_quechua": "maypin wayk'unki?",
-
                                 "descripcion_es": "donde cocinas",
-
                                 "imagen": "fogon.png",
-
                                 "sonido": "fogon.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Suysunawan",
-
                                 "opciones_es": "colador",
-
                                 "descripcion_quechua": "imawanmi quinuata unumanta suysunki",
-
                                 "descripcion_es": "que usas para separar el agua de la quinua",
-
                                 "imagen": "colador.png",
-
                                 "sonido": "colador.mp3"
-
                             },
-
                             {
-
                                 "opciones": "theqtichina mankapi",
-
                                 "opciones_es": "sarten",
-
                                 "descripcion_quechua": "imapin aychata theqtichinki?",
-
                                 "descripcion_es": "que usas para freir tus carnes",
-
                                 "imagen": "sarten.png",
-
                                 "sonido": "sarten.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "estaciones_op.png",
+                "categoria_name": "Wata Pacha",
                 "categoria": "estaciones del Año",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Chiri mit’a",
-
                                 "opciones_es": "Invierno",
-
                                 "descripcion_quechua": "Ancha chiri kaqtin",
-
                                 "descripcion_es": "Cuando hace mucho frio",
-
                                 "imagen": "invierno.png",
-
                                 "sonido": "invierno.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Ruphay mit’a",
-
                                 "opciones_es": "Verano",
-
                                 "descripcion_quechua": "anchata ruphaqtin",
-
                                 "descripcion_es": "Cuando hace calor",
-
                                 "imagen": "verano.png",
-
                                 "sonido": "verano.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Paukar waray mit'a",
-
                                 "opciones_es": "Primavera",
-
                                 "descripcion_quechua": "t’ikakuna lluqsimuqtin",
-
                                 "descripcion_es": "cuando salen las flores",
-
                                 "imagen": "primavera.png",
-
                                 "sonido": "primavera.mp3"
-
                             },
-
                             {
-
                                 "opciones": "ch'akiy mit’a",
-
                                 "opciones_es": "Otoño",
-
                                 "descripcion_quechua": "sachakunamanta raphinkuna urmayuqtin",
-
                                 "descripcion_es": "cuando se caen las hojas de los arboles",
-
                                 "imagen": "otoño.png",
-
                                 "sonido": "otoo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Ruphay",
-
                                 "opciones_es": "Calor",
-
                                 "descripcion_quechua": "q’uñi wasiman haykhuntiyki",
-
                                 "descripcion_es": "cuando entras a un cuarto caliente",
-
                                 "imagen": "calor.png",
-
                                 "sonido": "calor.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Paray mit’a",
-
                                 "opciones_es": "Estación lluviosa",
-
                                 "descripcion_quechua": "hanaq pachamanta yaku urmayamuqtin",
-
                                 "descripcion_es": "cuando cae agua del cielo",
-
                                 "imagen": "lluvioso.png",
-
                                 "sonido": "lluvioso.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Phuyu",
-
                                 "opciones_es": "Nublado",
-
                                 "descripcion_quechua": "hanaq pachapi phuyukuna kaqtin",
-
                                 "descripcion_es": "cuando hay nubes en el cielo",
-
                                 "imagen": "nublado.png",
-
                                 "sonido": "nublado.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wayra",
-
                                 "opciones_es": "Viento",
-
                                 "descripcion_quechua": "ashkha wayra kaqtin",
-
                                 "descripcion_es": "cuando hace mucho aire",
-
                                 "imagen": "viento2.png",
-
                                 "sonido": "viento2.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Chiri",
-
                                 "opciones_es": "Frio",
-
                                 "descripcion_quechua": "nishuta chirisuqtiyki",
-
                                 "descripcion_es": "cuando sientes helado",
-
                                 "imagen": "frio.png",
-
                                 "sonido": "frio.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             }
-
         ]
-
     },
-
     {
-
         "juego": "memoria",
-
         "categorias": [
-
             {
-
+                "imagen": "animales_op.png",
+                "categoria_name": "Uywakuna",
                 "categoria": "animales",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "michi",
-
                                 "opciones_es": "Gato",
-
                                 "descripcion_quechua": "michiq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del gato",
-
                                 "imagen": "gato.png",
-
                                 "sonido": "gato.mp3"
-
                             },
-
                             {
-
                                 "opciones": "alqo",
-
                                 "opciones_es": "Perro",
-
                                 "descripcion_quechua": "allqoq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del perro",
-
                                 "imagen": "perro.png",
-
                                 "sonido": "perro.mp3"
-
                             },
-
                             {
-
                                 "opciones": "chiwchi",
-
                                 "opciones_es": "Pollo",
-
                                 "descripcion_quechua": "chiwchiq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del pollito",
-
                                 "imagen": "pollo.png",
-
                                 "sonido": "pollo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Wallpa",
-
                                 "opciones_es": "Gallina",
-
                                 "descripcion_quechua": "wallpaq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja de la gallina",
-
                                 "imagen": "gallina.png",
-
                                 "sonido": "gallina.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Waka",
-
                                 "opciones_es": "Vaca",
-
                                 "descripcion_quechua": "wakaq masinkita mashkay",
-
                                 "descripcion_es": "Busca su pareja de la vaca",
-
                                 "imagen": "vaca.png",
-
                                 "sonido": "vaca.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Asnu",
-
                                 "opciones_es": "burro",
-
                                 "descripcion_quechua": "asnuq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del asno",
-
                                 "imagen": "asno.png",
-
                                 "sonido": "asno.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Atoq",
-
                                 "opciones_es": "Zorro",
-
                                 "descripcion_quechua": "atuqpa masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del zorro",
-
                                 "imagen": "zorro.png",
-
                                 "sonido": "zorro.mp3"
-
                             },
-
                             {
-
                                 "opciones": "kawallu",
-
                                 "opciones_es": "Caballo",
-
                                 "descripcion_quechua": "kawalloq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del caballo",
-
                                 "imagen": "caballo.png",
-
                                 "sonido": "caballo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Khuchi",
-
                                 "opciones_es": "Cerdo",
-
                                 "descripcion_quechua": "khuchiq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del cerdo",
-
                                 "imagen": "cerdo.png",
-
                                 "sonido": "cerdo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qowe",
-
                                 "opciones_es": "Conejo",
-
                                 "descripcion_quechua": "Qowiq masinta mashkay",
-
                                 "descripcion_es": "Busca su pareja del conejo",
-
                                 "imagen": "conejo.png",
-
                                 "sonido": "conejo.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "numeros_op.png",
+                "categoria_name": "Yupaykuna",
                 "categoria": "números",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Ch´usaq",
-
                                 "opciones_es": "Cero",
-
                                 "descripcion_quechua": "ch'usaqta tariy",
-
                                 "descripcion_es": "encuentra el cero",
-
                                 "imagen": "cero.png",
-
                                 "sonido": "cero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Huk",
-
                                 "opciones_es": "Uno",
-
                                 "descripcion_quechua": "hukta tariy",
-
                                 "descripcion_es": "encuentra el uno",
-
                                 "imagen": "uno.png",
-
                                 "sonido": "uno.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Iskay",
-
                                 "opciones_es": "Dos",
-
                                 "descripcion_quechua": "iskayta tariy",
-
                                 "descripcion_es": "encuentra el dos",
-
                                 "imagen": "dos.png",
-
                                 "sonido": "dos.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "2",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Kimsa",
-
                                 "opciones_es": "Tres",
-
                                 "descripcion_quechua": "kimsata tariy",
-
                                 "descripcion_es": "encuentra el tres",
-
                                 "imagen": "tres.png",
-
                                 "sonido": "tres.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Tawa",
-
                                 "opciones_es": "Cuatro",
-
                                 "descripcion_quechua": "tawata tariy",
-
                                 "descripcion_es": "encuentra el cuatro",
-
                                 "imagen": "cuatro.png",
-
                                 "sonido": "cuatro.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Pishqa",
-
                                 "opciones_es": "Cinco",
-
                                 "descripcion_quechua": "pishqata tariy",
-
                                 "descripcion_es": "encuentra el cinco",
-
                                 "imagen": "cinco.png",
-
                                 "sonido": "cinco.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Suqta",
-
                                 "opciones_es": "Seis",
-
                                 "descripcion_quechua": "soqtata tariy",
-
                                 "descripcion_es": "encuentra el seis",
-
                                 "imagen": "seis.png",
-
                                 "sonido": "seis.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "3",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Qanchis",
-
                                 "opciones_es": "Siete",
-
                                 "descripcion_quechua": "qanchista tariy",
-
                                 "descripcion_es": "encuentra el siete",
-
                                 "imagen": "siete.png",
-
                                 "sonido": "siete.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Pusaq",
-
                                 "opciones_es": "Ocho",
-
                                 "descripcion_quechua": "pusaqta tariy",
-
                                 "descripcion_es": "encuentra el ocho",
-
                                 "imagen": "ocho.png",
-
                                 "sonido": "ocho.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Isqun",
-
                                 "opciones_es": "Nueve",
-
                                 "descripcion_quechua": "esqunta tariy",
-
                                 "descripcion_es": "encuentra el nueve",
-
                                 "imagen": "nueve.png",
-
                                 "sonido": "nueve.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Chunka",
-
                                 "opciones_es": "Diez",
-
                                 "descripcion_quechua": "chunkata tariy",
-
                                 "descripcion_es": "encuentra el diez",
-
                                 "imagen": "diez.png",
-
                                 "sonido": "diez.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             },
-
             {
-
+                "imagen": "meses_op.png",
+                "categoria_name": "Killakuna",
                 "categoria": "meses del año",
-
                 "niveles": [
-
                     {
-
                         "nivel": "1",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Kamay Raymi killa",
-
                                 "opciones_es": "enero",
-
                                 "descripcion_quechua": "Watapi ñawpaq killaqa?",
-
                                 "descripcion_es": "El primer mes del año es?",
-
                                 "imagen": "enero.png",
-
                                 "sonido": "enero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Hatun Poqoy killapi",
-
                                 "opciones_es": "febrero",
-
                                 "descripcion_quechua": "¿Mayqin killapitaq pukllayta raymichanki?",
-
                                 "descripcion_es": "En que mes festejas los carnavales?",
-
                                 "imagen": "febrero.png",
-
                                 "sonido": "febrero.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Pawqar Waray killapi",
-
                                 "opciones_es": "marzo",
-
                                 "descripcion_quechua": "¿Hayk’aqmi yachaywasiykipi llank’ayta qallarinki?",
-
                                 "descripcion_es": "Cuándo inicias las labores en tu escuela?",
-
                                 "imagen": "marzo.png",
-
                                 "sonido": "marzo.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "2",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Ayriway killa",
-
                                 "opciones_es": "abril",
-
                                 "descripcion_quechua": "¿Ima killapin tawa kaq killa watapi?",
-
                                 "descripcion_es": "Cuál es el cuarto mes del año?",
-
                                 "imagen": "abril.png",
-
                                 "sonido": "abril.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Aymuray killapi",
-
                                 "opciones_es": "mayo",
-
                                 "descripcion_quechua": "¿Ima killapin mamakunaq p'unchawninta raymichaku?",
-
                                 "descripcion_es": "En qué mes se celebra el dia de la madre?",
-
                                 "imagen": "mayo.png",
-
                                 "sonido": "mayo.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Inti Raymi killapi",
-
                                 "opciones_es": "junio",
-
                                 "descripcion_quechua": "¿Ima killapin chuñuta ruwanki?",
-
                                 "descripcion_es": "En qué mes elaboras el chuño?",
-
                                 "imagen": "junio.png",
-
                                 "sonido": "junio.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Anta Situwa killapi",
-
                                 "opciones_es": "julio",
-
                                 "descripcion_quechua": "ima killapin fiestas patrias nisqata raymichakun?",
-
                                 "descripcion_es": "Las fiestas patrias se celebran en el mes de?",
-
                                 "imagen": "julio.png",
-
                                 "sonido": "julio.mp3"
-
                             }
-
                         ]
-
                     },
-
                     {
-
                         "nivel": "3",
-
                         "opciones": [
-
                             {
-
                                 "opciones": "Qhapaq Situwa killapi",
-
                                 "opciones_es": "agosto",
-
                                 "descripcion_quechua": "¿Ima killapin cometaykita phawachinki?",
-
                                 "descripcion_es": "En qué mes haces volar tu cometa?",
-
                                 "imagen": "agosto.png",
-
                                 "sonido": "agosto.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Unu Raymi killapi",
-
                                 "opciones_es": "setiembre",
-
                                 "descripcion_quechua": "¿Ima killapin paukar waray mit'a qallarin?",
-
                                 "descripcion_es": "En qué mes inicia la primavera?",
-
                                 "imagen": "setiembre.png",
-
                                 "sonido": "setiembre.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qoya Raymi killapi",
-
                                 "opciones_es": "octubre",
-
                                 "descripcion_quechua": "¿Ima killapin Señor de los Milagros nisqata raymichakun?",
-
                                 "descripcion_es": "En qué mes se celebra al Señor de los Milagros?",
-
                                 "imagen": "octubre.png",
-
                                 "sonido": "octubre.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Ayamarq’a killapi",
-
                                 "opciones_es": "noviembre",
-
                                 "descripcion_quechua": "¿Ima killapin Wañuqkunaq p’unchawninta raymichanku?",
-
                                 "descripcion_es": "En qué mes se festeja el dia de los muertos?",
-
                                 "imagen": "noviembre.png",
-
                                 "sonido": "noviembre.mp3"
-
                             },
-
                             {
-
                                 "opciones": "Qhapaq Raymi killapi",
-
                                 "opciones_es": "diciembre",
-
                                 "descripcion_quechua": "¿Ima killapin navidad nisqata raymichakun?",
-
                                 "descripcion_es": "En que mes celebras la navidad?",
-
                                 "imagen": "diciembre.png",
-
                                 "sonido": "diciembre.mp3"
-
                             }
-
                         ]
-
                     }
-
                 ]
-
             }
-
         ]
-
     }
-
 ]
