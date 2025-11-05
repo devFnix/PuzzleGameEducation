@@ -55,27 +55,27 @@
     <UnityVersion>2021.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Baggage.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Road.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\InputController.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SwipeTutorial.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SlidingDoor.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\HighlightedElementController.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\JumpAnimation.cs" />
     <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\TypewriterAnimatorExample.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\DirectionalLightController.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Demo.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SqueezeAnimation.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\HighlightableElement.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Headlights.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Wheels.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Door.cs" />
-    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\CameraProjectionMatrixAnimation.cs" />
     <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Animatable.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\JumpAnimation.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\DirectionalLightController.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SwipeTutorial.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Door.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Road.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\HighlightedElementController.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Baggage.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SlidingDoor.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\SqueezeAnimation.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Demo.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Headlights.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\HighlightableElement.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\InputController.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\Wheels.cs" />
     <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Plugins\PrimeTween\Demo\Scripts\CameraProjectionMatrixAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\PrimeTween\Demo\Scripts\PrimeTween.Demo.asmdef" />
@@ -409,20 +409,16 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.45f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.5.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.5.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="UnityEditor.UWP.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.45f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.5.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\Plugins\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
@@ -437,12 +433,20 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.5.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\WanzyeeStudio\ThirdParty\SaladLab\Json.Net.Unity3D\Plugins\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.5.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
