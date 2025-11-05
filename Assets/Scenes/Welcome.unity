@@ -886,7 +886,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 136406936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cfac6e4093d21b45a0440679a634fc3, type: 3}
+  m_Script: {fileID: 11500000, guid: 91ec21bbc8d43c14e856496e9f3cf0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &136406938
@@ -6467,7 +6467,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 924638593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37f8d1faed1a91e43aae4f81a6a32358, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &959597280
@@ -13876,9 +13876,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915719750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03c9623bb5f06f04d8923b0d6398911b, type: 3}
+  m_Script: {fileID: 11500000, guid: e6a15018e1b6fc945bea976f034852fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currtentStep: 0
+  Login: {fileID: 1076209109}
+  Info: {fileID: 1188226517}
+  Steps: []
+  NextButton: {fileID: 2036228500}
+  PreviousButton: {fileID: 1893065081}
+  AceptarButton: {fileID: 1232709940}
+  AddUserButton: {fileID: 623681306}
+  InfoButton: {fileID: 1687787879}
+  index: 0
 --- !u!4 &1915719752
 Transform:
   m_ObjectHideFlags: 0
@@ -13903,9 +13913,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915719750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64f7a4178c4ee3943aa14dcaa61a74a4, type: 3}
+  m_Script: {fileID: 11500000, guid: a2c50a5fcf03dd047bb4f9cf84cdcd1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneAuth: 
+  nombreInput: {fileID: 0}
+  apellidoInput: {fileID: 0}
+  usernameInput: {fileID: 0}
+  passwordInput: {fileID: 0}
+  loginUsernameInput: {fileID: 0}
+  loginPasswordInput: {fileID: 0}
 --- !u!1 &1929451665
 GameObject:
   m_ObjectHideFlags: 0
