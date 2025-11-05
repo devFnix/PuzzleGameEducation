@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 266235356330948013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b0e4bfb9f13e54e96818822e6aa72c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a0097b01b58c5141bef8813b83f6234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 3913649258329405739}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81ac9c3cfef0d714e9ed43ae2fbadab4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fad4060e81be9d488dcabb490e2be2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -300,8 +300,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52a3bdee3fe734145b1a5a11ac3df903, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 52a3bdee3fe734145b1a5a11ac3df903, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
