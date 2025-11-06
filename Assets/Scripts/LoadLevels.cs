@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class LoadLevels : MonoBehaviour
 {
-    public PlayerController playerController;
+    //public PlayerController playerController;
     public List<GameObject> Levels;
     // Start is called before the first frame update
     void Start()
     {
         DisabledAll();
-        playerController = GameObject.FindObjectOfType<PlayerController>();
+        //playerController = GameObject.FindObjectOfType<PlayerController>();
         LoadLevesEnabled();
     }
     void DisabledAll()
@@ -32,18 +32,21 @@ public class LoadLevels : MonoBehaviour
     }
     public void LoadLevesEnabled()
     {
-        if (playerController != null)
+        //if (playerController != null)
+        if(PlayerController.instance !=null)
         {
-            int level = playerController.GetLevel();
+            //int level = playerController.GetLevel();
+            int level = PlayerController.instance.GetLevel();
             EnabledRange(level);
         }
     }
     // Update is called once per frame
     void Update()
     {
-        if (playerController == null)
+        //if (playerController == null)
+        if(PlayerController.instance == null)
         {
-            playerController = GameObject.FindObjectOfType<PlayerController>();
+            //playerController = GameObject.FindObjectOfType<PlayerController>();
             LoadLevesEnabled();
         }
     }
