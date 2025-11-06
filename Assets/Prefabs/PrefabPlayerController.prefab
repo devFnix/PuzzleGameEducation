@@ -41,14 +41,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 9188950036581902877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4a11131fdec4924da35e5961ff3079a, type: 3}
+  m_Script: {fileID: 11500000, guid: 363143f5c5bfac649a9146e90ff346cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneCategory: 3.SceneCategoria
-  sceneLevel: 4.SceneNiveles
-  sceneGame: 2.SceneJuego
+  currentOption: 0
+  sceneCategory: 
+  sceneLevel: 
+  sceneGame: 
   sceneJuegoSeleccionado: 
-  gameName: 
-  categoryName: 
+  gameName: jUan
+  categoryName: crucigrama
+  levelName: 
   level: 0
   urlJSON: JSONFiles/dataFinal
+  gameMenuOption: 0
+  isInitialized: 0
