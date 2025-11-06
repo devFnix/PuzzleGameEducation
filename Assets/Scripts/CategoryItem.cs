@@ -23,6 +23,7 @@ public class CategoryItem : MonoBehaviour
     public void selectedCategory()
     {
         Debug.Log("Categoría clickeada: " + categoryName);
-        showCategories.playerController.SetCategory(categoryName);
+        //showCategories.playerController.SetCategory(categoryName);
+        PlayerController.instance.SetCategory(categoryName.ToLower());
     }
 }

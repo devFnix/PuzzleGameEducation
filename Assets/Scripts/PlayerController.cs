@@ -15,8 +15,8 @@ public enum GameMenuOption
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
-    DataGame gameSelected = new();
-    Categoria categorySelected = new();
+    public DataGame gameSelected = new();
+    public Categoria categorySelected = new();
     public Niveles levelSelected = new();
     [SerializeField] int currentOption = 0;
     [Header("Escenas")]

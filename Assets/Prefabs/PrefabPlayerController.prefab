@@ -45,12 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentOption: 0
-  sceneCategory: 
-  sceneLevel: 
+  sceneCategory: 3.SceneCategoria
+  sceneLevel: 4.SceneNiveles
   sceneGame: 
   sceneJuegoSeleccionado: 
-  gameName: jUan
-  categoryName: crucigrama
+  gameName: 
+  categoryName: 
   levelName: 
   level: 0
   urlJSON: JSONFiles/dataFinal

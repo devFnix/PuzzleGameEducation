@@ -87,9 +87,8 @@ GameObject:
   m_Component:
   - component: {fileID: 533605740052565718}
   - component: {fileID: 4751663464919529686}
-  - component: {fileID: 2395469819338683194}
-  - component: {fileID: 8858284817038774795}
-  - component: {fileID: 3502146062511169294}
+  - component: {fileID: 2057796097050584208}
+  - component: {fileID: 2611646050280370072}
   m_Layer: 5
   m_Name: PrefabItemCategoria
   m_TagString: ButtonSound
@@ -127,23 +126,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3590283017823248518}
   m_CullTransparentMesh: 1
---- !u!114 &2395469819338683194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3590283017823248518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934061ff77049e54c9d84574aaff192d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  categoryName: 
-  showCategories: {fileID: 0}
-  textName: {fileID: 3603851098158097651}
-  ImagenSprite: {fileID: 4352520417677024714}
---- !u!114 &8858284817038774795
+--- !u!114 &2057796097050584208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,7 +170,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2395469819338683194}
+      - m_Target: {fileID: 2611646050280370072}
         m_TargetAssemblyTypeName: CategoryItem, Assembly-CSharp
         m_MethodName: selectedCategory
         m_Mode: 1
@@ -199,19 +182,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3502146062511169294}
-        m_TargetAssemblyTypeName: MONStudiosLLC.ButtonEffects.ButtonEffects, Assembly-CSharp
-        m_MethodName: Press20Bounce
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 533605740052565718}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3502146062511169294
+--- !u!114 &2611646050280370072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,9 +191,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3590283017823248518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2c826acdc5ab91488687d91980b42a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 540af2885222c8e4998615e4635e8ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  categoryName: 
+  showCategories: {fileID: 0}
+  textName: {fileID: 3603851098158097651}
+  ImagenSprite: {fileID: 4352520417677024714}
 --- !u!1 &7250839136892690381
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,8 +266,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
-  m_sharedMaterial: {fileID: -2620054150331016857, guid: 917db765ea95c494cb6d9b90941e949c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
