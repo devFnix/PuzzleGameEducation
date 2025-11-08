@@ -168,14 +168,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6152980029812713393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cdf338de2be0f24aab075096125a3ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 252701ea5983201418dbfb8c198e82f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   letter: 
   letterText: {fileID: 6152980029030066303}
   background: {fileID: 6152980029812713394}
-  backgroundNumber: {fileID: 21300000, guid: fbbef95f7a4aad547812afa24baebd7a, type: 3}
-  backgroundLetter: {fileID: 21300000, guid: b5008f6711979c344a6da1569d37f625, type: 3}
+  backgroundNumber: {fileID: 21300000, guid: 6a53d029cb8579b4a9d726f3def64576, type: 3}
+  backgroundLetter: {fileID: 21300000, guid: 7fad4060e81be9d488dcabb490e2be2c, type: 3}
   position: -1
   isVisible: 0
   isInteractive: 0

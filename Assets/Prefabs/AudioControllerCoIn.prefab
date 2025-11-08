@@ -41,11 +41,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6226181268797015054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fe5d0007be92634684eb2f980e84149, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f3f29752ec21004baadb17a2e2540d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   correctAudioSource: {fileID: 0}
   incorrectAudioSource: {fileID: 0}
-  correctSound: {fileID: 0}
-  incorrectSound: {fileID: 0}
-  volume: 0.452
+  correctSound: {fileID: 8300000, guid: 7e8e0369a56efbf44bead4c836f8d8a1, type: 3}
+  incorrectSound: {fileID: 8300000, guid: e2eb8740209a50142bfd59c90b6e5715, type: 3}
+  volume: 1

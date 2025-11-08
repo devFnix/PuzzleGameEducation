@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,3241 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: derecha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef70a19e88babe546bc89199a50e166b
+      internalID: 46382842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5789f3c60acc7b8488ef92afe49b4ea8
+      internalID: 925078367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f86484c35eb454785dd35645d98a39
+      internalID: -1492980692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafb4cd878d6e30499262ae8036401fe
+      internalID: -133522428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_4
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7495a0d7d4fa9b7449d70fc77331308f
+      internalID: 1656260213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_5
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d41703b10af6446afe159c05bd33b5
+      internalID: -979617535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_6
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 7560
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22de50d4caaf94984d04ae29d7b3bd
+      internalID: 1631278053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7b308d201714469a946d65544425d
+      internalID: 1280861354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd06dc271652414880a938da3e3618d
+      internalID: -1771925497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e85d10ca6bb6742bfdac9fb18da2ed
+      internalID: 211146307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b56cc996f9e544cbc562afa7f94bd1
+      internalID: -672012115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5ac620083229f4aa0493a7861afa52
+      internalID: -472112902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_12
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acccc1415beffd488f814736099eae2
+      internalID: -382673731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_13
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 7200
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b520b718c3b60469f460e5e542634c
+      internalID: -529385559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9d8783b17dea54fb795964ab166ced
+      internalID: 541078810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba946b9ed124ce419b687b48e1ee44e
+      internalID: -120969264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5190f04ff937dcb428cc146dcd24b8a2
+      internalID: 1965445496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_17
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd56d7565e5fe4ebd20b784d7b3031
+      internalID: -1582697451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_18
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9744617d29fac9e4396ff0fcef4edcc7
+      internalID: 443904262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4421b66d7feea4d8d684558387c42d
+      internalID: 87879837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_20
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 6840
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570c7de6ef1e2e34ba40625e159477b2
+      internalID: 268372761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daa0c86654a2da4fb95a953e59af2b1
+      internalID: 1850842403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3085e02236cdc848a91ef06dc307e08
+      internalID: -995964421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_23
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c360095215df50c4099d4010e7eb7e6c
+      internalID: -1302270101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_24
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c41961d2c4a604186863d519351731
+      internalID: 2139836358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_25
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad398afaf9c8ee44c853c1a9e4829b78
+      internalID: 1376970543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_26
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3f2fe0eb29ca140aa5bfa099e791ac
+      internalID: -374251465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_27
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 6480
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb1f4994e9c85249a642e94c22ba9e8
+      internalID: -292627320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326aa514dab11ae4aa2652b0ac3f7c43
+      internalID: 15602018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df27ec58d14279438365ee75abf8998
+      internalID: 1571582726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_30
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78627d19e9ebfce49997c0d9e6714033
+      internalID: 819451734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_31
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15baef9b5dcd154e8bf2be72f83b2d1
+      internalID: 1380535552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_32
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301c49199f29dd34e9bd2f3e15ff5c8b
+      internalID: 24981545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8452ef2f159a841bf16fbceab62b0e
+      internalID: 1777307564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_34
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 6120
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f679426eed2ede4ba8d29157f29e86e
+      internalID: 429149103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e3cd328931ef64fbf763be904aa849
+      internalID: -987826011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_36
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d247b13d3f7204188b88abb3368d22
+      internalID: -1375924283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_37
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c88d03b5f61ff48a0d14fa4327607d
+      internalID: 1196349594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_38
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82425ef13b6fe954282c1cad5412eab0
+      internalID: -261395044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_39
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096ab3061dcde694b8ec772c8aa7f727
+      internalID: 352502886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_40
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed6ca1f0ac0b254d9c20568332ec686
+      internalID: 338274793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_41
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 5760
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140374e99dff5844da83f1358ba04ff2
+      internalID: -245133651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb54003ce596a84eb08260a0414434f
+      internalID: -114968521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_43
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24cd356bbb994a48a80d092334c04b3
+      internalID: -170914588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5665bc432f06294478320195113d691e
+      internalID: -559000479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_45
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42058e18ae898544bb710b238a861ba
+      internalID: 1116363840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_46
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f99c8ade6dc394abc078b4d50218a3
+      internalID: 1217053174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_47
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4318e0a46864e734990fa93bf2f71866
+      internalID: 1758544488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_48
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 5400
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5819772b548e7064d82f01444b560ef9
+      internalID: -1403038639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f293b3fd13b5b9a4f9583cf726d19291
+      internalID: 1217985875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_50
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28ce2b6d7262b84e9dda1e109ff7e65
+      internalID: -1482950104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_51
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603c900caa1b53b48acea52ba5058820
+      internalID: -1195448490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_52
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aea394513f1d043bfe706b8cc79877
+      internalID: -835473983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_53
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0537a6d421c44fa4799c4be649a103cc
+      internalID: -918669507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_54
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acda4d82e6f2e646b450bd489d3022c
+      internalID: 1180505710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_55
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 5040
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0646c9b1c65234abef6668de961ca6
+      internalID: 407863518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ba708c0b597284aa67194dfda400d0
+      internalID: -1446378433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_57
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba970a3f79860b43b2774cee6f6fc51
+      internalID: -688914106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_58
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d82e5638bf8154fb4935edc19a8005
+      internalID: 1697766954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_59
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac98cab2f984b2440ac095b130d53ef9
+      internalID: -1409625146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_60
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066183b646fa24f48a6f0a587a80902c
+      internalID: 1236880075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_61
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d66bbee55dcaa546967f9795d373b76
+      internalID: 707177253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_62
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 4680
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee81ba1169382384dab281d305f7d291
+      internalID: -1812999271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07513bf164ed1b146ab2f582a5dfaef2
+      internalID: 1558065570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_64
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df1936bfd20e094caca12535672a622
+      internalID: -2107317540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_65
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f389e85e1534034688b7b9e06d23fad
+      internalID: -903195475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_66
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381269573434df44ba50b3a40e3eb44f
+      internalID: 1976785107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_67
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cad39191d80bbd48aca4d90c3f1c605
+      internalID: -2085763228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_68
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921ca412573d3c3458827fe72187944d
+      internalID: 1233340723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_69
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 4320
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb592908a0179547b53c7c45ad54d68
+      internalID: 2064541267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9549bd6af6d99b94b9563cc9360b799c
+      internalID: -919218106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_71
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9d5be7917e60f47aa5b8ee21bd5dae
+      internalID: 1499886731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_72
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dfe37891e3fd14b9d2b4e10e8744cb
+      internalID: -1292135176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_73
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ccd66a477877e4baf7cf3c9211b962
+      internalID: 372020707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_74
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec125a53252ede478fc074a4c9ee35f
+      internalID: -1908735196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_75
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2755676e0cfce5749afea33b5fb3a124
+      internalID: -1042014374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_76
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3960
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891cc307d9d027648a2dcf5f247dbc0d
+      internalID: -1372759817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbefeae3a7557b4478daf5064be1d8c9
+      internalID: 64443572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_78
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b443bee4ae107448038d6a84ec5649
+      internalID: 26638005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_79
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e1e8acb78043b4db297909a11fc0d8
+      internalID: 13367136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_80
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911e6c2f972c18d49ae59a262be42de2
+      internalID: -407440941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_81
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaabf53c92f39a0419d437ed33ade908
+      internalID: -325981003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_82
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb4edcfd965d6841a757b090e5d6e0a
+      internalID: -2024276952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_83
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3600
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dfec5c5bb0edb4c8869520b4c854a6
+      internalID: -828565490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbe0a7b4294c57499e49aea11934297
+      internalID: 1194311139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_85
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ce83a8699ecaf4f8622cc9e40522ad
+      internalID: -633692265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_86
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b1e8a19fdb0a4c8c12f4de34ff323
+      internalID: 272952711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_87
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d76a10cead5a2945927da96d2a43f6e
+      internalID: 2106644023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_88
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ffa6618927784488457b41882f004
+      internalID: 1208899076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_89
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3b50f7daa28e14ebbc37b85da875f1
+      internalID: 2042628995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_90
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3240
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224494748361b30458933d5e56714300
+      internalID: -1408198282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b090c5c19391c224599a27a54de09668
+      internalID: -257668229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_92
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f41dc9d3191d6438dbe26918cee788
+      internalID: -346821382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_93
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946df1efd661c0f43bc63b5541901af0
+      internalID: 990457563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_94
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e64e87bee28244c84e1e2e17134d30
+      internalID: 259325461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_95
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3ee648afb9c6d468f8d7678121d6bc
+      internalID: -1527517654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_96
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857dc0ae5238dce438f7af697bbe5d22
+      internalID: 1169111237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_97
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2880
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85f77df24e0882479c89fe2d0d32b2a
+      internalID: 1163486059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282c07d908610ce4f9a0126b7c6da041
+      internalID: -390946258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_99
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c26e603d4dcfd4abcdca39f3a8d158
+      internalID: 845001929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_100
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0dc6189c09ccc41aa0bc0ab66d4faa
+      internalID: 396675329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_101
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677e1005e3bca674b8572dea91d453da
+      internalID: 742410070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_102
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc94770c35552841a724628a971d94f
+      internalID: -2127302869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_103
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967289a3ebba5194285f06ae2cfa23f4
+      internalID: -448370485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_104
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2520
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3fac923d4691144afebbc14b518d9a
+      internalID: -938980171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d5447d4708d5241b8066133f3051fc
+      internalID: 311092500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_106
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0deae2850f453e042bfa6a5260c17c9b
+      internalID: 1762872876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_107
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97666e57140abc45ad8e3a85f33b6b5
+      internalID: -1491643172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_108
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80baccebe546144facb42ecee9b7e82
+      internalID: -1661440747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_109
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d81d93f53fc8a4ba6e0ae138652a81
+      internalID: 23238458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_110
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21bf857021fe7f4fa2c8fdd3741febf
+      internalID: -2077111570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_111
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2160
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ed662d39c1d0743a1b6b0b50db42f4
+      internalID: 877892663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388e98a5b2bfffa49b329b0048d35701
+      internalID: 1430316005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_113
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4840cb8f7c4eace4e8a15bf41c596423
+      internalID: 1870620996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_114
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7f146509a90cd418151ce74a8e4f07
+      internalID: 1767933332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_115
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b949a553be235b94792880ab77bd5aef
+      internalID: 883313632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_116
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f3138117e88564ca7b9797d7a283cf
+      internalID: -941642810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_117
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1f3ef67983fa94cabef6d5855b2b4d
+      internalID: 213526670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_118
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1800
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8327d9f1512604fa41889bf5aef9d6
+      internalID: 229369599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ab65e587fa90049a807bab3f747c2f
+      internalID: -1376010765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_120
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbce09e52fc5a942aa2e95a22e45931
+      internalID: 1144944920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_121
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161bba54b91d824468d6bb6e2727e37e
+      internalID: 1580466410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_122
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617e8885339ad304f891b3bcb74bc0cd
+      internalID: -1006638859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_123
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25c6bd87c0f6be4fa77b3341a220309
+      internalID: 1087720346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_124
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f660289861009a42aaa67c27dac15c8
+      internalID: 397472748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_125
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1440
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9077c5188572e944eb6e29d89b0d1a1d
+      internalID: -31009614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9310d0ca2090b64a85184f30ec6ad31
+      internalID: -640436258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_127
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883fada024d846848bece7f4ca421294
+      internalID: 488676862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_128
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a538bdf7f0f4b441bd820e7a3885841
+      internalID: -455866784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_129
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a662a1927da04898c8165d99c2b44
+      internalID: -884128187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_130
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006f27e73d8dec94b9a615e8cb551471
+      internalID: 520718336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_131
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2ad6d701b70ef478a486dae9cf8688
+      internalID: -715453757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_132
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1080
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0222b3ddd5b07244da237f4104e9d297
+      internalID: -405597660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916902890abb06546b4e078c0365dd8f
+      internalID: -685620069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_134
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba87895fbd140c242ad226d874dc705f
+      internalID: -1170508983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_135
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0153ef44680aa4479ff69c5e5e0446e
+      internalID: -1483637445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_136
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5738ca4c6e3e104eb38a5d056533536
+      internalID: -411168186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_137
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd8894f867844348b9467a5ca703684
+      internalID: 1419911670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_138
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e19b02f48fdc0b4d8b217ad7cbcc90f
+      internalID: -1960389993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_139
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 720
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c68317bbfa3f145977aa366f844c04
+      internalID: -1290956617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b29e0b8c21f50b49bbae230b65f5293
+      internalID: -687520783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_141
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc03d17e1f9da149b28a0621a755e9c
+      internalID: -1479488599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_142
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674febaa3a62ac14e9498b2de9aa24ad
+      internalID: -1833713563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_143
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6404e3d48bb89459a93ba3a6a045e0
+      internalID: -1809053819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_144
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6e1068f039fb345b069fb95f989d68
+      internalID: 740562384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_145
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747d17153cadb144fbc42608dbc34f8c
+      internalID: 1349218214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_146
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93aa82130c40d9418405ef1c4004102
+      internalID: 1684864081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c2fdbcf38d9be47b1eb93005eaa226
+      internalID: 1060765542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_148
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f79be63d5d656143b77baa362f70e9e
+      internalID: -1483790929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_149
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81346c85223ecab4ba5d3238a0c383b3
+      internalID: 1209218095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_150
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9d605c735575048909e636614f4be7
+      internalID: 1566650703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_151
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffb733664fd9ac41a26d02667d1a52f
+      internalID: 682058392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_152
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18eb8bfcef9619f45b263aa6e20e55f9
+      internalID: 1309439188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: derecha_153
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243ed3fd731152a4180f6c9e98c391a7
+      internalID: -1892438175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +3360,161 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      derecha_0: 46382842
+      derecha_1: 925078367
+      derecha_10: -672012115
+      derecha_100: 396675329
+      derecha_101: 742410070
+      derecha_102: -2127302869
+      derecha_103: -448370485
+      derecha_104: -938980171
+      derecha_105: 311092500
+      derecha_106: 1762872876
+      derecha_107: -1491643172
+      derecha_108: -1661440747
+      derecha_109: 23238458
+      derecha_11: -472112902
+      derecha_110: -2077111570
+      derecha_111: 877892663
+      derecha_112: 1430316005
+      derecha_113: 1870620996
+      derecha_114: 1767933332
+      derecha_115: 883313632
+      derecha_116: -941642810
+      derecha_117: 213526670
+      derecha_118: 229369599
+      derecha_119: -1376010765
+      derecha_12: -382673731
+      derecha_120: 1144944920
+      derecha_121: 1580466410
+      derecha_122: -1006638859
+      derecha_123: 1087720346
+      derecha_124: 397472748
+      derecha_125: -31009614
+      derecha_126: -640436258
+      derecha_127: 488676862
+      derecha_128: -455866784
+      derecha_129: -884128187
+      derecha_13: -529385559
+      derecha_130: 520718336
+      derecha_131: -715453757
+      derecha_132: -405597660
+      derecha_133: -685620069
+      derecha_134: -1170508983
+      derecha_135: -1483637445
+      derecha_136: -411168186
+      derecha_137: 1419911670
+      derecha_138: -1960389993
+      derecha_139: -1290956617
+      derecha_14: 541078810
+      derecha_140: -687520783
+      derecha_141: -1479488599
+      derecha_142: -1833713563
+      derecha_143: -1809053819
+      derecha_144: 740562384
+      derecha_145: 1349218214
+      derecha_146: 1684864081
+      derecha_147: 1060765542
+      derecha_148: -1483790929
+      derecha_149: 1209218095
+      derecha_15: -120969264
+      derecha_150: 1566650703
+      derecha_151: 682058392
+      derecha_152: 1309439188
+      derecha_153: -1892438175
+      derecha_16: 1965445496
+      derecha_17: -1582697451
+      derecha_18: 443904262
+      derecha_19: 87879837
+      derecha_2: -1492980692
+      derecha_20: 268372761
+      derecha_21: 1850842403
+      derecha_22: -995964421
+      derecha_23: -1302270101
+      derecha_24: 2139836358
+      derecha_25: 1376970543
+      derecha_26: -374251465
+      derecha_27: -292627320
+      derecha_28: 15602018
+      derecha_29: 1571582726
+      derecha_3: -133522428
+      derecha_30: 819451734
+      derecha_31: 1380535552
+      derecha_32: 24981545
+      derecha_33: 1777307564
+      derecha_34: 429149103
+      derecha_35: -987826011
+      derecha_36: -1375924283
+      derecha_37: 1196349594
+      derecha_38: -261395044
+      derecha_39: 352502886
+      derecha_4: 1656260213
+      derecha_40: 338274793
+      derecha_41: -245133651
+      derecha_42: -114968521
+      derecha_43: -170914588
+      derecha_44: -559000479
+      derecha_45: 1116363840
+      derecha_46: 1217053174
+      derecha_47: 1758544488
+      derecha_48: -1403038639
+      derecha_49: 1217985875
+      derecha_5: -979617535
+      derecha_50: -1482950104
+      derecha_51: -1195448490
+      derecha_52: -835473983
+      derecha_53: -918669507
+      derecha_54: 1180505710
+      derecha_55: 407863518
+      derecha_56: -1446378433
+      derecha_57: -688914106
+      derecha_58: 1697766954
+      derecha_59: -1409625146
+      derecha_6: 1631278053
+      derecha_60: 1236880075
+      derecha_61: 707177253
+      derecha_62: -1812999271
+      derecha_63: 1558065570
+      derecha_64: -2107317540
+      derecha_65: -903195475
+      derecha_66: 1976785107
+      derecha_67: -2085763228
+      derecha_68: 1233340723
+      derecha_69: 2064541267
+      derecha_7: 1280861354
+      derecha_70: -919218106
+      derecha_71: 1499886731
+      derecha_72: -1292135176
+      derecha_73: 372020707
+      derecha_74: -1908735196
+      derecha_75: -1042014374
+      derecha_76: -1372759817
+      derecha_77: 64443572
+      derecha_78: 26638005
+      derecha_79: 13367136
+      derecha_8: -1771925497
+      derecha_80: -407440941
+      derecha_81: -325981003
+      derecha_82: -2024276952
+      derecha_83: -828565490
+      derecha_84: 1194311139
+      derecha_85: -633692265
+      derecha_86: 272952711
+      derecha_87: 2106644023
+      derecha_88: 1208899076
+      derecha_89: 2042628995
+      derecha_9: 211146307
+      derecha_90: -1408198282
+      derecha_91: -257668229
+      derecha_92: -346821382
+      derecha_93: 990457563
+      derecha_94: 259325461
+      derecha_95: -1527517654
+      derecha_96: 1169111237
+      derecha_97: 1163486059
+      derecha_98: -390946258
+      derecha_99: 845001929
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

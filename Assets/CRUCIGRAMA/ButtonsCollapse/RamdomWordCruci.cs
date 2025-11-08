@@ -11,7 +11,6 @@ public class RamdomWordCruci : MonoBehaviour
     public GameObject panelLetrasGame;
     RectTransform panelLetras;
     public Button buttonPrefab;
-    public Button confirmButton;
     public string selectedWord;
     private string wordShow;// = { "Wasi","Punku","Wayk�una wasi","Hisp�ana wasi","Pu�una wasi","Tiyana wasi"};
     public List<Button> listaButtons = new List<Button>();
@@ -35,10 +34,6 @@ public class RamdomWordCruci : MonoBehaviour
         {
             concatenatedText = GameObject.Find("TextConcat")?.GetComponent<Text>();
         }
-        // if (confirmButton != null)
-        // {
-        //     confirmButton.onClick.AddListener(OnConfirm);
-        // }
         GenerateButtons();
     }
     public void InsertOption(Opciones option)
