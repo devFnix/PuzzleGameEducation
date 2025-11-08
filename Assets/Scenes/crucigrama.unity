@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8237996291183327759, guid: 85ff625a67feaab4da5169350b12c8d0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8237996291183327759, guid: 85ff625a67feaab4da5169350b12c8d0, type: 3}
       propertyPath: m_AnchorMax.x
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda8e43b58cc1e34a930bc7ba9f8d821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidthHeight: 10
+  gridWidthHeight: 12
   cellPrefab: {fileID: 6152980029812713393, guid: e816b992f73e0e846a75f2b268fa7a44, type: 3}
   gridParent: {fileID: 912021605}
 --- !u!4 &822733307
