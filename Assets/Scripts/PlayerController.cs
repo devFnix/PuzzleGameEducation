@@ -1,6 +1,7 @@
+using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -147,7 +148,8 @@ public class PlayerController : MonoBehaviour
     {
         return levelSelected.opciones[position];
     }
-    public int GetPositionOption(Opciones opc) {
+    public int GetPositionOption(Opciones opc)
+    {
         string nameOption = opc.opciones;
         if (levelSelected == null || levelSelected.opciones == null)
         {
@@ -354,5 +356,12 @@ public class PlayerController : MonoBehaviour
                 SetMemoria();
                 break;
         }
+    }
+    public bool IsInvalid()
+    {
+        return instance == null ||
+               instance.levelSelected == null ||
+               instance.levelSelected.opciones == null ||
+               instance.levelSelected.opciones.Count == 0;
     }
 }

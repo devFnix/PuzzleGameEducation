@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class HelpMenuCrucigrama : MonoBehaviour
     [SerializeField] private TextMeshProUGUI description;
     private AudioSource audioSource;
 
-    void Awake()
+    void Play()
     {
         // Asegura que el panel est� oculto al inicio
         if (helpPanel != null)
@@ -35,7 +36,22 @@ public class HelpMenuCrucigrama : MonoBehaviour
             closeButton.onClick.AddListener(CloseHelpPanel);
         PlayOptionSound();
     }
-
+    private void Start()
+    {
+        StartCoroutine(WaitPlayerController());
+    }
+    private IEnumerator WaitPlayerController()
+    {
+        // Espera hasta que PlayerController.instance y levelSelected y opciones est�n disponibles
+        while (PlayerController.instance == null ||
+               PlayerController.instance.levelSelected == null ||
+               PlayerController.instance.levelSelected.opciones == null ||
+               PlayerController.instance.levelSelected.opciones.Count == 0)
+        {
+            yield return null;
+        }
+        Play();
+    }
     public void OpenHelpPanel()
     {
         if (helpPanel != null)
@@ -54,12 +70,7 @@ public class HelpMenuCrucigrama : MonoBehaviour
 
     private void PlayOptionSound()
     {
-        if (PlayerController.instance == null)
-        {
-            Debug.LogWarning("PlayerController.instance no est� disponible.");
-            return;
-        }
-
+        
         // Obt�n la opci�n actual (ajusta el nombre si tu m�todo es diferente)
         Opciones option = PlayerController.instance.GetPositionOption();
         if (option == null)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CrosswordManager : MonoBehaviour
 {
@@ -22,19 +23,10 @@ public class CrosswordManager : MonoBehaviour
     private void Awake()
     {
         // Inicializa la lista de celdas
-        lista = new GameObject[gridWidthHeight][];
-        for (int i = 0; i < gridWidthHeight; i++)
-        {
-            lista[i] = new GameObject[gridWidthHeight];
-        }
+        
     }
     void Start()
     {
-        slidingButton = FindObjectOfType<SlidingButton>();
-        rows = gridWidthHeight;
-        cols = gridWidthHeight;
-        generator = new CrosswordGenerator();
-        crosswordGrid = new CrosswordGrid(rows, cols);
         StartCoroutine(WaitPlayerController());
     }
     private IEnumerator WaitPlayerController()
@@ -47,6 +39,20 @@ public class CrosswordManager : MonoBehaviour
         {
             yield return null;
         }
+        Niveles levelSelected = PlayerController.instance.levelSelected;
+        int maxLongitud = levelSelected.opciones.Max(o => o.opciones.Length);
+        gridWidthHeight = maxLongitud +2;//+2 de el numero horizontal o vertical
+        gridParent.GetComponent<GridLayoutGroup>().constraintCount = gridWidthHeight;
+        lista = new GameObject[gridWidthHeight][];
+        for (int i = 0; i < gridWidthHeight; i++)
+        {
+            lista[i] = new GameObject[gridWidthHeight];
+        }
+        slidingButton = FindObjectOfType<SlidingButton>();
+        rows = gridWidthHeight;
+        cols = gridWidthHeight;
+        generator = new CrosswordGenerator();
+        crosswordGrid = new CrosswordGrid(rows, cols);
         Play();
     }
     void Play()
