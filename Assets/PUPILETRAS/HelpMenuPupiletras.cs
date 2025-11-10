@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class HelpMenuPupiletras : MonoBehaviour
     [SerializeField] private TextMeshProUGUI description;
     private AudioSource audioSource;
 
-    void Awake()
+    void Play()
     {
         // Asegura que el panel est� oculto al inicio
         if (helpPanel != null)
@@ -35,7 +36,19 @@ public class HelpMenuPupiletras : MonoBehaviour
             closeButton.onClick.AddListener(CloseHelpPanel);
         PlayOptionSound();
     }
-
+    private void Start()
+    {
+        StartCoroutine(WaitPlayerController());
+    }
+    private IEnumerator WaitPlayerController()
+    {
+        // Espera hasta que PlayerController.instance y levelSelected y opciones est�n disponibles
+        while (PlayerController.instance.IsInvalid())
+        {
+            yield return null;
+        }
+        Play();
+    }
     public void OpenHelpPanel()
     {
         if (helpPanel != null)
