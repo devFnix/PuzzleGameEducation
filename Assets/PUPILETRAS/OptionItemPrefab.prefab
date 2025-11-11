@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1258b4557e3b9de47940adcf6bc9df76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bff99d30f06c0864b86981c4e906e3a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -353,7 +353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4423951397257549958}
-  - component: {fileID: 1307532390422531397}
   - component: {fileID: 8595035290658650307}
   m_Layer: 5
   m_Name: OptionItemPrefab
@@ -385,22 +384,6 @@ RectTransform:
   m_AnchoredPosition: {x: 22.0873, y: 32.545803}
   m_SizeDelta: {x: 279.6714, y: 165.0916}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1307532390422531397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4814635201933808656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47257596528b4ac40bb25204b3bd647b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  optionImage: {fileID: 746187329708864899}
-  buttonInfo: {fileID: 1350028805862422394}
-  optionText: {fileID: 1138602986}
-  nameItem: 
 --- !u!114 &8595035290658650307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +393,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4814635201933808656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2c826acdc5ab91488687d91980b42a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 190cc3351322a444a894ebafb8731b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionImage: {fileID: 746187329708864899}
+  buttonInfo: {fileID: 1350028805862422394}
+  optionText: {fileID: 1138602986}
+  nameItem: 
