@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 79569869f4efecb4bbf39587ccb2a949, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58450f2a99fefc44991403f57c37c2eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: -7084709047407239984}
         m_TargetAssemblyTypeName: Card, Assembly-CSharp
         m_MethodName: OnCardClick
         m_Mode: 1
@@ -148,11 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d27ee54f9843940be083f21a0eb63e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 7887109146784092690}
   texto: 
-  textMeshProUGUI: {fileID: 0}
-  hiddenIconSprite: {fileID: 0}
-  iconSprite: {fileID: 0}
+  textMeshProUGUI: {fileID: 3704827480131527639}
+  hiddenIconSprite: {fileID: 21300000, guid: 58450f2a99fefc44991403f57c37c2eb, type: 3}
+  iconSprite: {fileID: 21300000, guid: 7e0f67eb6f80ec043ae506202fb9d1fd, type: 3}
   matchId: 
   isSelected: 0
   cardsController: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 043c75273c2b2a04a8eff3d1acbf267e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58450f2a99fefc44991403f57c37c2eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -300,8 +300,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 584ccf3ae399de348ad122456ce2424c, type: 2}
+  m_sharedMaterial: {fileID: -2620054150331016857, guid: 584ccf3ae399de348ad122456ce2424c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

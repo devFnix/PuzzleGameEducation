@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: title
       value: conectar
       objectReference: {fileID: 0}
+    - target: {fileID: 241173285686944632, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c1de974bfd8804478bc3314a0e798b5, type: 3}
     - target: {fileID: 8062857902535225101, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -245,6 +249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062857902634044139, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c1de974bfd8804478bc3314a0e798b5, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
       value: TINKUY
@@ -300,6 +308,10 @@ PrefabInstance:
       propertyPath: title
       value: pupiletras
       objectReference: {fileID: 0}
+    - target: {fileID: 241173285686944632, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f441e1212bcb35489ad87eb552a9a4c, type: 3}
     - target: {fileID: 8062857902535225101, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -392,6 +404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062857902634044139, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f441e1212bcb35489ad87eb552a9a4c, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
       value: PUPILETRAKUNA
@@ -740,6 +756,10 @@ PrefabInstance:
       propertyPath: title
       value: crucigrama
       objectReference: {fileID: 0}
+    - target: {fileID: 241173285686944632, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ece9a7eb433071c4db844d3512e69835, type: 3}
     - target: {fileID: 8062857902535225101, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -832,6 +852,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062857902634044139, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ece9a7eb433071c4db844d3512e69835, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
       value: KUSIGRAMANISQA
@@ -886,6 +910,10 @@ PrefabInstance:
       propertyPath: title
       value: memoria
       objectReference: {fileID: 0}
+    - target: {fileID: 241173285686944632, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8765754c28c897449dba08c018ce8e7, type: 3}
     - target: {fileID: 8062857902535225101, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -978,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062857902634044139, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8765754c28c897449dba08c018ce8e7, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
       value: YUYAY

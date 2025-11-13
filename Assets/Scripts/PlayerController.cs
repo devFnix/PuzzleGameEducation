@@ -337,23 +337,23 @@ public class PlayerController : MonoBehaviour
         switch (option)
         {
             case GameMenuOption.Ninguno:
-                isInitialized = false;
+                this.isInitialized = false;
                 break;
             case GameMenuOption.Pupiletras:
-                isInitialized = true;
-                SetPupiletras();
+                this.isInitialized = true;
+                this.SetPupiletras();
                 break;
             case GameMenuOption.Conectar:
-                isInitialized = true;
-                SetConectar();
+                this.isInitialized = true;
+                this.SetConectar();
                 break;
             case GameMenuOption.Crucigrama:
-                isInitialized = true;
-                SetCrucigrama();
+                this.isInitialized = true;
+                this.SetCrucigrama();
                 break;
             case GameMenuOption.Memoria:
-                isInitialized = true;
-                SetMemoria();
+                this.isInitialized = true;
+                this.SetMemoria();
                 break;
         }
     }
@@ -363,5 +363,11 @@ public class PlayerController : MonoBehaviour
                instance.levelSelected == null ||
                instance.levelSelected.opciones == null ||
                instance.levelSelected.opciones.Count == 0;
+    }
+    public void ResetLevel()
+    {
+        this.levelName = "";
+        this.levelSelected = null;
+        this.OnGameMenuOptionChanged(GameMenuOption.Ninguno);
     }
 }

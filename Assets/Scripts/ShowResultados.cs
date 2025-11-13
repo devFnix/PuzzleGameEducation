@@ -18,7 +18,9 @@ public class ShowResultados : MonoBehaviour
         StartCoroutine(LoadDataUser());
         Button.onClick.AddListener(() =>
         {
-            SceneLoader.Instance.LoadSceneWithFade("Scenes/2.SceneJuego");
+            PlayerController.instance.ResetLevel();
+            PlayerController.instance.isInitialized = false;
+            SceneLoader.Instance.LoadSceneWithFade("Scenes/4.SceneNiveles");
         });
     }
     private IEnumerator LoadDataUser()

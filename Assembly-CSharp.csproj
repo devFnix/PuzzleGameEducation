@@ -55,7 +55,7 @@
     <UnityVersion>2021.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\JuegoData.cs" />
@@ -90,7 +90,6 @@
     <Compile Include="Assets\Scripts\ShowResultados.cs" />
     <Compile Include="Assets\Scripts\JuegoSeleccionado.cs" />
     <Compile Include="Assets\ActiveGameobject.cs" />
-    <Compile Include="Assets\EpicVictoryEffects\Scripts\vfxController.cs" />
     <Compile Include="Assets\MON Studios LLC\ButtonEffects_MONS\ButtonEffects.cs" />
     <Compile Include="Assets\Scripts\ShowCategories.cs" />
     <Compile Include="Assets\Scripts\HelpMenuMemoria.cs" />
@@ -100,7 +99,6 @@
     <Compile Include="Assets\Scripts\Usuario.cs" />
     <Compile Include="Assets\LOGIN\LoginManager.cs" />
     <Compile Include="Assets\Scripts\OptionPhoto.cs" />
-    <Compile Include="Assets\EpicVictoryEffects\Scripts\starFxController.cs" />
     <Compile Include="Assets\Scripts\ScoreGame.cs" />
     <Compile Include="Assets\Scripts\HelpMenuCrucigrama.cs" />
     <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\SlidingButton.cs" />
@@ -120,6 +118,8 @@
     <Compile Include="Assets\CRUCIGRAMA\ButtonsCollapse\RamdomWordCruci.cs" />
     <Compile Include="Assets\Scripts\PanelAnimationManager.cs" />
     <Compile Include="Assets\Scripts\DataGame.cs" />
+    <Compile Include="Assets\EpicVictoryEffects\Scripts\starFxController.cs" />
+    <Compile Include="Assets\EpicVictoryEffects\Scripts\vfxController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
