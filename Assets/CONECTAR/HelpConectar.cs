@@ -80,8 +80,7 @@ public class HelpConectar : MonoBehaviour
             Debug.LogWarning("No se encontr� la opci�n actual.");
             return;
         }
-        Debug.Log(option.sonido);
-        description.text = option.descripcion_quechua;
+        description.text = $"{option.descripcion_quechua}\n{option.descripcion_es}";
         string nameImage = option.imagen.Replace(".png", "");
         // Load the sprite and assign its texture to the RawImage
         Sprite sprite = Resources.Load<Sprite>("images/" + nameImage);
