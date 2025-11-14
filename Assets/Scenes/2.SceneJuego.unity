@@ -410,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 7f441e1212bcb35489ad87eb552a9a4c, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
-      value: PUPILETRAKUNA
+      value: SIMIKUNA MASHKAY
       objectReference: {fileID: 0}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_fontAsset
@@ -1012,7 +1012,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d8765754c28c897449dba08c018ce8e7, type: 3}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_text
-      value: YUYAY
+      value: "HU\xD1UY"
       objectReference: {fileID: 0}
     - target: {fileID: 8062857904079584189, guid: 1ccf457af33feae4dbd9f58ff8a14c4b, type: 3}
       propertyPath: m_fontAsset

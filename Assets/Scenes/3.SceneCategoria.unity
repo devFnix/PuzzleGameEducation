@@ -135,11 +135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9188950036581902878, guid: 1376e9d8c31482d4ebda3c47784bdc2d, type: 3}
       propertyPath: isInitialized
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9188950036581902878, guid: 1376e9d8c31482d4ebda3c47784bdc2d, type: 3}
       propertyPath: gameMenuOption
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9188950036581902879, guid: 1376e9d8c31482d4ebda3c47784bdc2d, type: 3}
       propertyPath: m_RootOrder

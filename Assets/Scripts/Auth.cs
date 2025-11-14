@@ -36,7 +36,6 @@ public class Auth : MonoBehaviour
         // Ajusta la ruta de la base de datos según tu proyecto
         string dbPath = Path.Combine(Application.persistentDataPath, "usuarios.db");
         db = new SQLiteConnection(dbPath);
-        Debug.Log($"DB user in ${dbPath}");
         db.CreateTable<Usuario>();
     }
 
@@ -78,7 +77,6 @@ public class Auth : MonoBehaviour
         try
         {
             db.Insert(nuevoUsuario);
-            Debug.Log("Usuario registrado correctamente.");
             ModalMessage.Instance.Show("Usuario registrado exitosamente.", "success");
 
             // Aquí puedes cargar la siguiente escena o mostrar un mensaje de éxito
@@ -94,7 +92,6 @@ public class Auth : MonoBehaviour
         }
         catch (SQLiteException ex)
         {
-            Debug.LogError("Error al registrar usuario: " + ex.Message);
             ModalMessage.Instance.Show("Error al registrar el usuario", "error");
         }
     }
@@ -110,20 +107,17 @@ public class Auth : MonoBehaviour
     {
         string username = loginUsernameInput.text;
         string password = loginPasswordInput.text;
-
         var usuario = db.Table<Usuario>().FirstOrDefault(u => u.Username == username && u.Password == password);
+        this.mostrarData();
 
         if (usuario != null)
         {
-            Debug.Log("Login exitoso.");
             UsuarioManager.Instance.SetUsuario(usuario);
-            Debug.Log($"Usuario: {usuario.Nombre} {usuario.Apellido}, Foto: {usuario.Foto}, Género: {usuario.Genero}");
             SceneLoader.Instance.LoadSceneWithFade(sceneAuth);
             // Aquí puedes cargar la siguiente escena o mostrar el panel correspondiente
         }
         else
         {
-            Debug.LogWarning("Usuario o contraseña incorrectos.");
             ModalMessage.Instance.Show("Usuario o contraseña incorrectos.", "error");
         }
     }

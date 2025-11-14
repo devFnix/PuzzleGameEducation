@@ -253,7 +253,7 @@
         "categorias": [
             {
                 "imagen": "oficios_op.png",
-                "categoria_name": "Ruwakuna",
+                "categoria_name": "Ruwanakuna",
                 "categoria": "oficios",
                 "niveles": [
                     {
@@ -530,7 +530,7 @@
                                 "sonido": "panadero.mp3"
                             },
                             {
-                                "opciones": "Chaqra llank'aq",
+                                "opciones": "Chakra llanqaq",
                                 "opciones_es": "Agricultor",
                                 "descripcion_quechua": "kay runaqa ayllupi chaqrata ruwan",
                                 "descripcion_es": "Es una persona que se dedica a cultivar y cuidar la tierra para obtener alimentos.",
@@ -548,7 +548,7 @@
         "categorias": [
             {
                 "imagen": "casa_op.png",
-                "categoria_name": "Wasi Imaymana",
+                "categoria_name": "Wasiq Qaqninkuna",
                 "categoria": "cosas de la casa",
                 "niveles": [
                     {
@@ -640,7 +640,7 @@
             },
             {
                 "imagen": "cocina_op.png",
-                "categoria_name": "Wayk'una Imaymana",
+                "categoria_name": "Wayk'una Qaqninkuna",
                 "categoria": "cosas de la cocina",
                 "niveles": [
                     {
@@ -868,7 +868,7 @@
                                 "sonido": "vaca.mp3"
                             },
                             {
-                                "opciones": "Asnu",
+                                "opciones": "Ashnu",
                                 "opciones_es": "burro",
                                 "descripcion_quechua": "asnuq masinta mashkay",
                                 "descripcion_es": "Busca su pareja del asno",
@@ -900,7 +900,7 @@
                                 "sonido": "cerdo.mp3"
                             },
                             {
-                                "opciones": "Qowe",
+                                "opciones": "Qowi",
                                 "opciones_es": "Conejo",
                                 "descripcion_quechua": "Qowiq masinta mashkay",
                                 "descripcion_es": "Busca su pareja del conejo",
