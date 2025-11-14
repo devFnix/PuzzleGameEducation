@@ -76,7 +76,7 @@ public class SlidingButton : MonoBehaviour
     {
             panelToToggle?.SetActive(false);
     }
-    void TogglePanel()
+    public void TogglePanel()
     {
         if (currentSequence.isAlive)
             currentSequence.Stop();

@@ -79,7 +79,7 @@ public class HelpMenuCrucigrama : MonoBehaviour
             return;
         }
         Debug.Log(option.sonido);
-        description.text = option.descripcion_quechua;
+        description.text = $"{option.descripcion_quechua}\n{option.descripcion_es}";
         string nameSound = option.sonido.Replace(".mp3", "");
         string nameImage = option.imagen.Replace(".png", "");
         // Load the sprite and assign its texture to the RawImage

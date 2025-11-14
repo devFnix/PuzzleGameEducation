@@ -19,11 +19,11 @@ public class RamdomWordCruci : MonoBehaviour
     public List<Button> visitButton = new List<Button>(); // Lista de botones visitados
     CruciAristas cruciAristas;
     Niveles niveles = new Niveles();
+
     void Start()
     {
         panelLetras = panelLetrasGame.GetComponent<RectTransform>();
         cruciAristas = FindObjectOfType<CruciAristas>();
-
         //confirmButton = GameObject.Find("ButtonPLAY")?.GetComponent<Button>();
         //concatenatedText = GameObject.Find("TextConcat")?.GetComponent<Text>();
         if (concatenatedText != null)
@@ -231,7 +231,6 @@ public class RamdomWordCruci : MonoBehaviour
             if (concatenatedString == selectedWord)
             {
                 Debug.Log("Iguales");
-                //CrosswordManager crosswordManager = FindObjectOfType<CrosswordManager>();
                 int pos = PlayerController.instance.GetCurrentOption();
                 AudioControllerCoIn.instance.PlayCorrectSound();
                 //delay de 1 segundo
@@ -265,5 +264,8 @@ public class RamdomWordCruci : MonoBehaviour
         yield return new WaitForSeconds(2f);
         CrosswordManager crosswordManager = FindObjectOfType<CrosswordManager>();
         crosswordManager.ShowRespuesta(pos);
+        SlidingButton helpMenu = FindAnyObjectByType<SlidingButton>();
+        helpMenu.TogglePanel();
+
     }
 }
