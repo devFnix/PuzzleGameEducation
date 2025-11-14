@@ -36,6 +36,7 @@ public class Auth : MonoBehaviour
         // Ajusta la ruta de la base de datos según tu proyecto
         string dbPath = Path.Combine(Application.persistentDataPath, "usuarios.db");
         db = new SQLiteConnection(dbPath);
+        Debug.Log($"DB user in ${dbPath}");
         db.CreateTable<Usuario>();
     }
 
@@ -78,6 +79,8 @@ public class Auth : MonoBehaviour
         {
             db.Insert(nuevoUsuario);
             Debug.Log("Usuario registrado correctamente.");
+            ModalMessage.Instance.Show("Usuario registrado exitosamente.", "success");
+
             // Aquí puedes cargar la siguiente escena o mostrar un mensaje de éxito
             if (!string.IsNullOrEmpty(sceneAuth))
             {
@@ -92,6 +95,7 @@ public class Auth : MonoBehaviour
         catch (SQLiteException ex)
         {
             Debug.LogError("Error al registrar usuario: " + ex.Message);
+            ModalMessage.Instance.Show("Error al registrar el usuario", "error");
         }
     }
     public void mostrarData() { 

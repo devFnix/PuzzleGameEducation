@@ -10,6 +10,7 @@ public class DBsql : MonoBehaviour
     void Awake()
     {
         string dbPath = System.IO.Path.Combine(Application.persistentDataPath, "usuarios.db");
+        Debug.Log($"DB user in ${dbPath}");
         db = new SQLiteConnection(dbPath);
 
         // Crear la tabla Usuario si no existe
