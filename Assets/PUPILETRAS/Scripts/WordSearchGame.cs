@@ -45,6 +45,7 @@ public class WordSearchGame : MonoBehaviour
     // Para el manejo de palabras encontradas
     private int wordsFound = 0;
     Niveles niveles = new Niveles();
+
     // public PlayerController playerController;
     private void Start()
     {
@@ -84,7 +85,6 @@ public class WordSearchGame : MonoBehaviour
             InitializeGame();
         }
     }
-
     private void InitializeGame()
     {
         // Crear la cuadr�cula
@@ -569,6 +569,10 @@ public class WordSearchGame : MonoBehaviour
             return letterGrid[x, y];
         }
         return null;
+    }
+    public List<WordToFind> GetWordsFind()
+    {
+        return wordsToFind;
     }
 }
 

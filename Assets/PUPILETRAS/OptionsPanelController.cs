@@ -8,13 +8,12 @@ public class OptionsPanelController : MonoBehaviour
 {
     [SerializeField] private OptionItemPrefab optionItemPrefab;
     [SerializeField] private Transform contentParent;
-    [SerializeField] private ScrollRect scrollRect;
 
     private List<OptionItemPrefab> optionItems = new List<OptionItemPrefab>();
     private string selectedOptionId;
     [SerializeField] private HelpMenuPupiletras helpMenuPupiletras;
     [SerializeField] private WordSearchGame wordSearchGame;
-    List<string> listWordsFound = new List<string>();
+    public List<WordToFind> listWordsFound = new List<WordToFind>();
     private void Start()
     {
         if (wordSearchGame == null)
@@ -121,7 +120,22 @@ public class OptionsPanelController : MonoBehaviour
     {
         if (wordSearchGame != null)
         {
-            if (wordSearchGame.listWordsFound.Count != listWordsFound.Count)
+            List<WordToFind> currentWordsFound = wordSearchGame.GetWordsFind();
+
+            foreach (OptionItemPrefab item in optionItems)
+            {
+                if (item == null) continue;               // <-- evita acceso a objetos destruidos
+                if (item.gameObject == null) continue;    // <-- por seguridad
+
+                bool isFound = item.nameItem != null &&
+                    currentWordsFound.Any(w => w.word.ToLower() == item.nameItem.ToLower() && w.found);
+
+                if (isFound)
+                {
+                    Destroy(item.gameObject);
+                }
+            }
+            /*if (wordSearchGame.listWordsFound.Count != listWordsFound.Count)
             {
                 listWordsFound = wordSearchGame.listWordsFound;
             
@@ -141,7 +155,7 @@ public class OptionsPanelController : MonoBehaviour
                 {
                     optionItems.Remove(item);
                 }
-            }
+            }*/
         }
     }
 }

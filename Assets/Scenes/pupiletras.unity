@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d809f0f18ced2478bd30517f8a9d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidthHeight: 10
+  gridWidthHeight: 12
   letterPrefab: {fileID: 7276021818114426940, guid: edd5ff4e8d9baaa4994276f6ecf0cd26, type: 3}
   gridContainer: {fileID: 1452036583}
   selectionColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -2221,7 +2221,7 @@ MonoBehaviour:
   m_CellSize: {x: 72, y: 72}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
-  m_ConstraintCount: 10
+  m_ConstraintCount: 12
 --- !u!1 &1646333047
 GameObject:
   m_ObjectHideFlags: 0
