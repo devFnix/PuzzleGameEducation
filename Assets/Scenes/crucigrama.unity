@@ -694,6 +694,7 @@ MonoBehaviour:
   gridWidthHeight: 16
   cellPrefab: {fileID: 6152980029812713393, guid: e816b992f73e0e846a75f2b268fa7a44, type: 3}
   gridParent: {fileID: 912021605}
+  wordToFind: []
 --- !u!4 &822733307
 Transform:
   m_ObjectHideFlags: 0
@@ -878,8 +879,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -48, y: 0}
-  m_SizeDelta: {x: -442.2517, y: 0}
+  m_AnchoredPosition: {x: -48, y: -33.565704}
+  m_SizeDelta: {x: -442.2517, y: -67.1314}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &912021606
 MonoBehaviour:
@@ -950,6 +951,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064758059595307450, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 1064758059926764998, guid: cebe32e76ee542842986db540eb0f8d8, type: 3}
       propertyPath: m_RootOrder
       value: 14

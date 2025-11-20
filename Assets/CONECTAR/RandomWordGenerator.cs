@@ -19,6 +19,8 @@ public class RandomWordGenerator : MonoBehaviour
     public List<Button> visitButton = new List<Button>(); // Lista de botones visitados
     CreateAristas createAristas;
     Niveles niveles = new Niveles();
+    public List<WordToFind> wordToFind = new List<WordToFind>();
+
     private void Start()
     {
         StartCoroutine(WaitPlayerController());
@@ -46,6 +48,8 @@ public class RandomWordGenerator : MonoBehaviour
             foreach (Opciones item in niveles.opciones)
             {
                 wordsList.Add(item.opciones);
+                wordToFind.Add(new WordToFind { word = item.opciones, found = false });
+
             }
             words = wordsList;
             createAristas = FindObjectOfType<CreateAristas>();
@@ -62,6 +66,7 @@ public class RandomWordGenerator : MonoBehaviour
 
             // Generar la primera ronda de botones al iniciar en modo no multijugador
 
+            ScoreGame.Instance?.ChangeScoreTotal(wordToFind.Count);
 
             GenerateButtons();
         }
@@ -276,6 +281,8 @@ public class RandomWordGenerator : MonoBehaviour
                 if (selectedWord.Length != 0)
                     words.Remove(selectedWord);
                 AudioControllerCoIn.instance.PlayCorrectSound();
+                ScoreGame.Instance?.AddScore(1);
+
                 if (words.Count > 0)
                 {
                     OnConfirm(); // Generar nueva palabra si a�n hay palabras disponibles

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class CrosswordManager : MonoBehaviour
 {
@@ -18,12 +19,13 @@ public class CrosswordManager : MonoBehaviour
     private CrosswordGrid crosswordGrid;
     private List<WordPlacement> wordPlacements;
     private CrosswordGenerator generator;
+    public List<WordToFind> wordToFind = new List<WordToFind>();
     SlidingButton slidingButton;
     GameObject[][] lista;
     private void Awake()
     {
         // Inicializa la lista de celdas
-        
+
     }
     void Start()
     {
@@ -41,7 +43,7 @@ public class CrosswordManager : MonoBehaviour
         }
         Niveles levelSelected = PlayerController.instance.levelSelected;
         int maxLongitud = levelSelected.opciones.Max(o => o.opciones.Length);
-        gridWidthHeight = maxLongitud +2;//+2 de el numero horizontal o vertical
+        gridWidthHeight = maxLongitud + 2;//+2 de el numero horizontal o vertical
         gridParent.GetComponent<GridLayoutGroup>().constraintCount = gridWidthHeight;
         lista = new GameObject[gridWidthHeight][];
         for (int i = 0; i < gridWidthHeight; i++)
@@ -70,7 +72,7 @@ public class CrosswordManager : MonoBehaviour
             {
                 // new System.Tuple<string, string>("CASA", "Lugar para vivir"),
                 // new System.Tuple<string, string>("SOL", "Estrella del sistema solar"),
-                
+
             };
             for (int i = 0; i < levelSelected.opciones.Count; i++)
             {
@@ -83,7 +85,9 @@ public class CrosswordManager : MonoBehaviour
             foreach (WordPlacement w in wordPlacements)
             {
                 Debug.Log($"Palabra colocada: {w.Word} {w.Clue} en ({w.Row}, {w.Col}) - {w.IsHorizontal}");
+                wordToFind.Add(new WordToFind { word = w.Word, found = false });
             }
+            ScoreGame.Instance?.ChangeScoreTotal(wordToFind.Count);
 
             // Debug.Log($"Palabras colocadas por el generador: {wordPlacements.Count}");
             if (wordPlacements.Count == 0)
@@ -164,7 +168,8 @@ public class CrosswordManager : MonoBehaviour
         }
         //activamos el ingreso de letras
     }
-    public void ShowRespuesta(int option) {
+    public void ShowRespuesta(int option)
+    {//encontro la respuesta correcta
         Opciones optionS = PlayerController.instance.GetOptionPosition(option);
         // this.OpenPanel(optionS, option);
         Debug.Log($"Opción seleccionada: {option}");
@@ -196,6 +201,13 @@ public class CrosswordManager : MonoBehaviour
                 }
             }
         }
+        wordToFind.ForEach(w =>{
+                if (w.word == optionSelect.Word)
+                {
+                    w.found = true;
+                }
+            });
+        ScoreGame.Instance?.AddScore(1);
 
         slidingButton.ClosePanel();
     }
@@ -212,16 +224,16 @@ public class CrosswordManager : MonoBehaviour
 
         return true;
     }
-    void OpenPanel(Opciones op,int position)
+    void OpenPanel(Opciones op, int position)
     {
         if (slidingButton == null)
         {
             slidingButton = FindObjectOfType<SlidingButton>();
-            slidingButton.OpenPanel(op,position);
+            slidingButton.OpenPanel(op, position);
         }
         else
         {
-            slidingButton.OpenPanel(op,position);
+            slidingButton.OpenPanel(op, position);
         }
     }
 }
