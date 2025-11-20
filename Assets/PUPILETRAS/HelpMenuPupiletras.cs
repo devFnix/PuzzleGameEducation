@@ -81,7 +81,7 @@ public class HelpMenuPupiletras : MonoBehaviour
             return;
         }
 
-        description.text = option.descripcion_quechua;
+        description.text = $"{option.descripcion_quechua}\n{option.descripcion_es}";
         string nameSound = option.sonido.Replace(".mp3", "");
         string nameImage = option.imagen.Replace(".png", "");
 
